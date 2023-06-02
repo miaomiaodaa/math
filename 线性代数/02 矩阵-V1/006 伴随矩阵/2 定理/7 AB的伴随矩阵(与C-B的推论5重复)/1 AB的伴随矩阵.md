@@ -1,0 +1,3 @@
+**内容**
+设$A,B$是$n$阶方阵，则$(A\cdot B)^\star
+=B^\star\cdot A^\star$

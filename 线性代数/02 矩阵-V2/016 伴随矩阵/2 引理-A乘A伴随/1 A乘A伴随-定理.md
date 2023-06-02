@@ -1,0 +1,24 @@
+**内容：**
+若$A$是$n$阶方阵，则$A\cdot A^\star
+=A^\star\cdot A=|A|\cdot E$
+
+**延伸：**
+$1^\circ\ \frac1{|A|}\cdot(A\cdot A^\star)=E$
+
+
+
+$2^\circ\ \left(\frac1{|A|}\cdot A\right)\cdot A^\star=E$
+
+
+
+$3^\circ\ A\cdot\left(\frac1{|A|}\cdot A^\star\right)=E$
+
+
+
+$4^\circ\ A=(A^{-1})^{-1}
+=\left(\frac1{|A|}\cdot A^\star\right)^{-1}
+=|A|\cdot(A^\star)^{-1}$
+
+
+
+$5^\circ\ A^\star=|A|\cdot A^{-1}$
