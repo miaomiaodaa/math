@@ -1,0 +1,37 @@
+**证明Part1**
+设从基$f$到基$e$的过渡矩阵为$P$
+
+$\Rightarrow(e_1,e_2,\cdots,e_n)
+=(f_1,f_2,\cdots,f_n)\cdot P$ (1)
+
+$(f_1,f_2,\cdots,f_n)=(e_1,e_2,\cdots,e_n)\cdot A$ (2)
+
+
+
+$\overset{将(2)带入(1)式右边}\Longrightarrow
+(e_1,e_2,\cdots,e_n)
+=(e_1,e_2,\cdots,e_n)\cdot A\cdot P$
+
+
+$\Rightarrow(e_1,e_2,\cdots,e_n)\cdot E_n
+=(e_1,e_2,\cdots,e_n)\cdot A\cdot P$
+
+$\Rightarrow E_n=A\cdot P$ (形式行向量乘法消去律)
+
+
+
+$\overset{将(1)带入(2)式右边}\Longrightarrow 
+(f_1,f_2,\cdots,f_n)
+=(f_1,f_2,\cdots,f_n)\cdot P\cdot A$
+
+
+$\Rightarrow (f_1,f_2,\cdots,f_n)\cdot E_n
+=(f_1,f_2,\cdots,f_n)\cdot P\cdot A$
+
+$\Rightarrow E_n=P\cdot A$  (形式行向量乘法消去律)
+
+
+
+$\Rightarrow E_n=A\cdot P=P\cdot A$ 
+
+$\Rightarrow $过渡矩阵都是非异阵

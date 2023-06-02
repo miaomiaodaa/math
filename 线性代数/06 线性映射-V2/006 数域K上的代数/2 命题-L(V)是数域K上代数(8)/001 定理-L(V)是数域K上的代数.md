@@ -1,0 +1,28 @@
+**内容**
+设$\mathbb L(V,U)$是数域$K$上的线性空间，
+
+当$U=V$时，
+
+$\mathbb L(V,U)=\mathbb L(V,V)$变为$V_K$上全体线性变换构成的集合，
+
+再将复合映射$\Phi
+\circ\Psi$定义为$\mathbb L(V,V)$上的乘法，
+
+则$\mathbb L(V,V)$就变成了数域$K$上的代数
+
+**说明**
+加法映射：$(\Phi+\Psi)(\alpha)
+=\Phi(\alpha)+\Psi(\alpha)$
+
+数乘映射：$(k\cdot\Phi)(\alpha)
+=k\cdot\Phi(\alpha)$
+
+乘法映射：$(\Phi\cdot\Psi)(\alpha)
+=(\Phi\circ\Psi)(\alpha)$
+
+此处定义了映射的乘法运算，如无特殊说明，后续映射乘法都按该定义
+
+**辨析**
+映射的乘法是复合
+复合未必是映射乘法
+具有封闭性的复合映射才是乘法

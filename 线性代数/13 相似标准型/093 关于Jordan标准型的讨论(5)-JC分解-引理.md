@@ -1,0 +1,88 @@
+**内容(代数)**
+设$A,B\in M_n(\mathbb{C})$，$A,B$均可对角化，且$AB=BA$，
+则$A,B$可同时对角化，即存在可逆阵$P^{-1}$，使得$P^{-1}\cdot A\cdot P$与$P^{-1}\cdot B\cdot P$是对角阵
+
+**内容(几何)**
+设$\Phi,\Psi\in\mathbf{L}(V_C^n)$，$\Phi,\Psi$均可对角化，且$(\Phi\circ\Psi)(\alpha)=(\Psi\circ\Phi)(\alpha)$，
+则$\Phi,\Psi$可同时对角化，即存在一个(公共的)基，使得$\Phi,\Psi$在该基下的表示矩阵都是对角阵
+
+**证明**
+对线性空间$V_K^n$的维数进行归纳
+$\rm{dim}(V)=1$，$\Phi,\Psi$的表示矩阵都退化成了1阶矩阵，本身就是对角化了
+假设$\rm{dim}(V)<n$时结论成立，现证$\rm{dim}(V)=n$的情形
+
+设$\Phi$的全体不同特征值为$\lambda_1,\lambda_2,\cdots,\lambda_s$
+Case1 $s=1$，
+同一线性变换在不同基下的特征值是相同的
+即$\Phi$在任意基下都有$n$个相同的特征值
+
+$\Rightarrow$特征方程为$(\lambda-\lambda_0)^n=0$
+
+$\Rightarrow$特征多项式为$f(\lambda)=(\lambda-\lambda_0)^n$
+
+$\Rightarrow$特征行列式为$\begin{vmatrix}\lambda-\lambda_0\\\ &\lambda-\lambda_0\\\ &&\ddots\\\ &&&\lambda-\lambda_0\end{vmatrix}$
+
+$\Rightarrow$特征矩阵为$\begin{bmatrix}\lambda-\lambda_0\\\ &\lambda-\lambda_0\\\ &&\ddots\\\ &&&\lambda-\lambda_0\end{bmatrix}$
+
+$\Rightarrow\Phi$的表示矩阵为$\begin{bmatrix}\lambda_0\\\ &\lambda_0\\\ &&\ddots\\\ &&&\lambda_0\end{bmatrix}$
+
+$\Rightarrow\Phi$在任意基下的表示矩阵都是纯量阵
+
+$\Rightarrow \Phi$是纯量变换（辨析: 线性恒等变换）
+
+又因为$\Psi$在某个基下的表示矩阵为对角阵
+$\Rightarrow\Phi,\Psi$在该基下均可对角化
+
+Case1 $s=1$，有$n$重根
+同一线性变换在不同基下的特征值是相同的+$n$重特征根
+$\Rightarrow\Phi$在任意基下的表示矩阵都是纯量阵
+$\Rightarrow\Phi$在任意基下都可以对角化
+$\Rightarrow\Phi$是纯量变换
+
+Case2 $s>1$，$\Phi$在任意基下至少有两个不同的特征值
+即n个特征值至少有两个是不一样的
+即特征方程的结构至少为$(\lambda-\lambda_1)^{r_1}
+\cdot(\lambda-\lambda_2)^{r_2}$，其中$\lambda_1\neq\lambda_2$，$r_1+r_2=n$
+设$\Phi$的特征子空间为$V_1,V_2,\cdots,V_s$
+
+$\Phi$可对角化
+$\Rightarrow V=V_1\oplus V_2\oplus\cdots\oplus V_s$
+
+又因为和的维数=维数的和
+$\Rightarrow\rm{dim}(V_i)<n$
+
+**插播未知的二级结论**
+若$AB=BA$，则$A,B$有公共的特征向量
+其中一个的特征子空间，是另外一个的不变子空间
+**插播**
+
+下面证明，若$(\Phi\circ\Psi)(\alpha)=(\Psi\circ\Phi)(\alpha)$，则$V_i$都是$\Psi$不变子空间
+任取$v_i\in V_i$
+$\Phi(\Psi(v_i))$
+$=\Psi(\Phi(v_i))$
+$=\Psi(\lambda_i\cdot v_i)\enspace(\Phi(\lambda_i)=\lambda_i\cdot v_i)$
+$=\lambda_i\cdot\Psi(v_i)$
+$\Rightarrow \Psi(v_i)\in V_i$
+
+$\Rightarrow V_i$是$\Psi$不变子空间
+
+又因为特征子空间是不变子空间
+$\Rightarrow$可以作限制:$\enspace$ $\Phi\mid_{V_i}$，$\Psi\mid_{V_i}$
+
+再因为【命题-限制在不变子空间上可对角化】
+$\Rightarrow\Phi, \Psi$在$V_i$上仍可对角化
+
+$(\Phi\circ\Psi)(\alpha)=(\Psi\circ\Phi)(\alpha)$
+$\Rightarrow(\Phi\mid_{V_i}\circ\Psi\mid_{V_i})(\alpha)=(\Psi\mid_{V_i}\circ\Phi\mid_{V_i})(\alpha)$
+
+综合下面三点
+$1\ \Phi, \Psi$在$V_i$上可对角化
+$2\ \Phi, \Psi$在$V_i$上可交换
+$3\ \rm{dim}(V_i)<n$
+由归纳假设得
+$\Rightarrow\forall 1\le i\le s$，存在$V_i$的某个基$e_i$，使得$\Phi\mid_{V_i},\ \Psi\mid_{V_i}$可对角化
+
+又因为$V=V_1\oplus V_2\oplus\cdots\oplus V_s$
+$\Rightarrow\forall 1\le i\le s$，基$e_i$可以拼成全空间的基$e_V$
+$\Rightarrow\Phi,\Psi$在基$e_V$下的表示矩阵为对角阵（表示矩阵的定义）
+$\Rightarrow\Phi,\Psi$可同时对角化

@@ -1,0 +1,25 @@
+<font color=brown>再证明：线性同构把线性相关映射成线性相关</font>
+
+设$\mu_1\cdot\alpha_1+\cdots+\mu_n\cdot\alpha_n=\mathbf0_V$线性相关
+
+$\Rightarrow\exists\ \mu_1,\cdots,\mu_n\in K$至少一个不为零
+
+$\Rightarrow\Phi(\mu_1\cdot\alpha_1+\cdots+\mu_n\cdot\alpha_n)=\Phi(\mathbf0_V)$
+
+$\Rightarrow\mu_1\cdot\Phi(\alpha_1)+\cdots+\mu_n\cdot\Phi(\alpha_n)=\mathbf0_U$ (保持线性组合)
+
+又因为$\mu_1,\cdots,\mu_n$不全为零
+
+$\Rightarrow\mu_1\cdot\Phi(\alpha_1)+\cdots+\mu_n\cdot\Phi(\alpha_n)=\mathbf0_U$线性相关
+
+---
+
+反之，若$\mu_1\cdot\Phi(\alpha_1)+\cdots+\mu_n\cdot\Phi(\alpha_n)=\mathbf0_U$线性相关
+
+$\Rightarrow\mu_1,\mu_2,\cdots,\mu_n$不全为零
+
+$\Rightarrow\Phi(\mu_1\cdot\alpha_1+\cdots+\mu_n\cdot\alpha_n)=\mathbf0_U=\underset{线性同构保证这样是成立的}{\underline{\Phi(\mathbf0_V)}}$
+
+$\Rightarrow\mu_1\cdot\alpha_1+\cdots+\mu_n\cdot\alpha_n=\mathbf0_V$
+
+$\Rightarrow\alpha_1,\cdots,\alpha_n$线性相关
