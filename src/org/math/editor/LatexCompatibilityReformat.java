@@ -43,14 +43,14 @@ public class LatexCompatibilityReformat {
             
             System.out.println(stringBuffer);
             
-            /*FileOutputStream fileOutputStream = new FileOutputStream(md);
+            FileOutputStream fileOutputStream = new FileOutputStream(md);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
             BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
             bufferedWriter.write(stringBuffer.toString());
             bufferedWriter.flush();
             bufferedWriter.close();
             outputStreamWriter.close();
-            fileOutputStream.close();*/
+            fileOutputStream.close();
         }catch (Exception e) {
             e.printStackTrace();
         }
