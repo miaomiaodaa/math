@@ -12,7 +12,7 @@ import java.util.List;
 
 public class LatexCompatibilityReformat {
     public static void main(String[] args) {
-        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\17 相似标准型-分块对角化-V2");
+        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数");
         LatexCompatibilityReformat.entrance(dir);
     }
 
