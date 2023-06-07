@@ -24,7 +24,7 @@ public class LatexCompatibilityReformat {
             String line;
             StringBuffer stringBuffer = new StringBuffer();
             while (null != (line = bufferedReader.readLine())) {
-                stringBuffer.append(line).append("  \n");
+                stringBuffer.append(line.trim()).append("  \n");
             }
 
             LatexCompatibilityReformat.cornReformat(stringBuffer);
@@ -52,7 +52,7 @@ public class LatexCompatibilityReformat {
         while (-1 != (begin = stringBuffer.indexOf("$", begin))) {
             if (odd % 2 == 0) {
                 // 且未被格式化
-                if (!String.valueOf(stringBuffer.charAt(begin - 1)).equals(" "))
+                if (begin - 1 >= 0 && !String.valueOf(stringBuffer.charAt(begin - 1)).equals(" "))
                     stringBuffer.insert(begin, " ");
             } else if (!String.valueOf(stringBuffer.charAt(begin + 1)).equals(" ")) {
                 stringBuffer.insert(begin + 1, " ");
