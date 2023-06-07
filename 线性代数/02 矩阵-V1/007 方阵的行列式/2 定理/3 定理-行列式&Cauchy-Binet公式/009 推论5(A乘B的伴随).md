@@ -1,51 +1,51 @@
-**内容**    
-设 $A,B$ 是 $n$ 阶方阵，则 $(AB)^\star    
-=B^\star\cdot A^\star$     
-    
-**推广**    
-    
-可以推广过到有限项： $(A_1\cdots A_t)^\star=A_t^\star\cdots A_1^\star$     
-    
-**证明思路**    
-证明两个矩阵相等 $\Leftrightarrow$ 证明第 $(i,j)$ 元素相等    
-关键：余子式 $\to$ 代数余子式    
-    
-**需要想明白的关键点**    
-    
- $A$ 是 $n$ 阶方阵， $A$ 删除第 $j$ 行得 $(n-1)\times n$ 阶方阵 $A^\prime$     
- $B$ 是 $n$ 阶方阵， $B$ 删除第 $i$ 列得 $n\times(n-1)$ 阶方阵 $B^\prime$     
- $AB$ 第 $(j,i)$ 元的代数余子式构成的矩阵 $=A^\prime\cdot B^\prime$     
- $A$ 的第 $j$ 行的代数余子式是 $A^\star$ 第 $j$ 列的元素    
- $B$ 的第 $i$ 列的代数余子式是 $B^\star$ 第 $i$ 行的元素    
-    
-**证明**    
- $(AB)^\star$ 的第 $(i,j)$ 元    
- $=AB$ 第 $(j,i)$ 元的代数余子式    
- $=(-1)^{j+i}\cdot(AB)\begin{bmatrix}    
-1&2&3&\cdots&\hat{j}&\cdots&n\\\     
-1&2&3&\cdots&\hat{i}&\cdots&n    
-\end{bmatrix}$     
- $=(-1)^{j+i}$     
- $\underset{Cauchy-Binet公式的第一个推论，r=n-1}    
-{\cdot\sum\limits_{k=1}^n    
-\underset{即是A的n-1阶子式也是A的余子式}{    
-A\begin{bmatrix}    
-1&\cdots&\hat{j}&\cdots&n\\\     
-1&\cdots&\hat{k}&\cdots&n    
-\end{bmatrix}}    
-\cdot\underset{即是B的n-1阶子式也是B的余子式}{    
-B\begin{bmatrix}    
-1&\cdots&\hat{k}&\cdots&n\\\     
-1&\cdots&\hat{i}&\cdots&n    
-\end{bmatrix}}}$     
-    
- $=\sum\limits_{k=1}^n    
-\underset{矩阵A第j行的代数余子式}{A_{jk}}    
-\cdot\underset{矩阵B第i列的代数余子式}{B_{ki}}$     
-    
- $=A^\star$ 的第 $j$ 列 $\cdot B^\star$ 的第 $i$ 行 $\ $ （矩阵乘法化成点积)的形式）    
-    
- $=B^\star\cdot A^\star的第(i,j)元$     
-    
- $\Rightarrow(AB)^\star的第(i,j)元    
-=B^\star\cdot A^\star的第(i,j)元$     
+**内容**  
+设 $A,B$ 是 $n$ 阶方阵，则 $(AB)^\star  
+=B^\star\cdot A^\star$  
+  
+**推广**  
+  
+可以推广过到有限项： $(A_1\cdots A_t)^\star=A_t^\star\cdots A_1^\star$  
+  
+**证明思路**  
+证明两个矩阵相等 $\Leftrightarrow$ 证明第 $(i,j)$ 元素相等  
+关键：余子式 $\to$ 代数余子式  
+  
+**需要想明白的关键点**  
+  
+ $A$ 是 $n$ 阶方阵， $A$ 删除第 $j$ 行得 $(n-1)\times n$ 阶方阵 $A^\prime$  
+ $B$ 是 $n$ 阶方阵， $B$ 删除第 $i$ 列得 $n\times(n-1)$ 阶方阵 $B^\prime$  
+ $AB$ 第 $(j,i)$ 元的代数余子式构成的矩阵 $=A^\prime\cdot B^\prime$  
+ $A$ 的第 $j$ 行的代数余子式是 $A^\star$ 第 $j$ 列的元素  
+ $B$ 的第 $i$ 列的代数余子式是 $B^\star$ 第 $i$ 行的元素  
+  
+**证明**  
+ $(AB)^\star$ 的第 $(i,j)$ 元  
+ $=AB$ 第 $(j,i)$ 元的代数余子式  
+ $=(-1)^{j+i}\cdot(AB)\begin{bmatrix}  
+1&2&3&\cdots&\hat{j}&\cdots&n\\\  
+1&2&3&\cdots&\hat{i}&\cdots&n  
+\end{bmatrix}$  
+ $=(-1)^{j+i}$  
+ $\underset{Cauchy-Binet公式的第一个推论，r=n-1}  
+{\cdot\sum\limits_{k=1}^n  
+\underset{即是A的n-1阶子式也是A的余子式}{  
+A\begin{bmatrix}  
+1&\cdots&\hat{j}&\cdots&n\\\  
+1&\cdots&\hat{k}&\cdots&n  
+\end{bmatrix}}  
+\cdot\underset{即是B的n-1阶子式也是B的余子式}{  
+B\begin{bmatrix}  
+1&\cdots&\hat{k}&\cdots&n\\\  
+1&\cdots&\hat{i}&\cdots&n  
+\end{bmatrix}}}$  
+  
+ $=\sum\limits_{k=1}^n  
+\underset{矩阵A第j行的代数余子式}{A_{jk}}  
+\cdot\underset{矩阵B第i列的代数余子式}{B_{ki}}$  
+  
+ $=A^\star$ 的第 $j$ 列 $\cdot B^\star$ 的第 $i$ 行 $\ $ （矩阵乘法化成点积)的形式）  
+  
+ $=B^\star\cdot A^\star的第(i,j)元$  
+  
+ $\Rightarrow(AB)^\star的第(i,j)元  
+=B^\star\cdot A^\star的第(i,j)元$  
