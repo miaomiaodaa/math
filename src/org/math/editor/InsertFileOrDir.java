@@ -4,11 +4,11 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class AddOrSubFileNumFrom {
+public class InsertFileOrDir {
     public static void main(String[] args) {
-        int begin_num = 18;
-        int step = -1;
-        File dir = new File("E:\\Math\\重新梳理-线性空间");
+        int begin_num = 13; // 从第N个开始
+        int step = 1; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\22 二次型与Hermite型-V2");
         File[] files = dir.listFiles(pathname -> pathname.isDirectory());
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
@@ -16,7 +16,9 @@ public class AddOrSubFileNumFrom {
             try {
                 Integer i1 = Integer.valueOf(fileName.substring(0, file.getName().indexOf(" ")));
                 if (i1 > begin_num) {
-                    String newFileName = file.getParentFile().getCanonicalPath() + File.separator + (i1 + step) + " " + file.getName().substring(file.getName().indexOf(" ") + 1);
+                    int ser = i1 + step;
+                    String ii = (ser < 10 ? "00" + (ser) : (ser < 100 ? "0" + (ser) : (ser + "")));
+                    String newFileName = file.getParentFile().getCanonicalPath() + File.separator + ii + " " + file.getName().substring(file.getName().indexOf(" ") + 1);
                     Files.move(Paths.get(file.getCanonicalPath()), Paths.get(newFileName));
                 }
             } catch (Exception e1) {

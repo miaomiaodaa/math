@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 public class CreateDir {
     public static void main(String[] args) {
         try {
-            File file = new File("E:\\Math\\work_space\\algebra\\线性代数\\17 相似标准型-分块对角化-V2\\001 目录.md");
+            File file = new File("E:\\Math\\work_space\\algebra\\线性代数\\22 二次型与Hermite型\\001 目录.md");
             FileInputStream fileInputStream = new FileInputStream(file);
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);

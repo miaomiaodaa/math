@@ -10,17 +10,17 @@ import java.util.List;
 
 public class RestDirNum {
     public static void main(String[] args) {
-        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\17 相似标准型-分块对角化-V2");
-        extracted(dir);
+        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\22 二次型与Hermite型-V2");
+        extracted(dir, true);
     }
 
-    private static void extracted(File dir) {
+    private static void extracted(File dir, boolean reset) {
         File[] dirs = dir.listFiles();
 
         List<File> fileList = new ArrayList<>();
         for (int j = 0; j < dirs.length; j++) {
             if (dirs[j].isDirectory())
-                extracted(dirs[j]);
+                extracted(dirs[j], reset);
             else
                 fileList.add(dirs[j]);
         }
@@ -45,7 +45,9 @@ public class RestDirNum {
             String o2Name = mdFile.getName();
             try {
                 Integer i2 = Integer.valueOf(o2Name.substring(0, o2Name.indexOf(" ")));
-                String newFileName = (i2 < 10 ? "00" + (i2) : (i2 < 100 ? "0" + (i2) : i2)) + " " + mdFile.getName().substring(mdFile.getName().indexOf(" ") + 1);
+                int idx = i + 1;
+                String ser = reset ? (idx + 1 < 10 ? "00" + (idx) : (idx < 100 ? "0" + (idx) : idx + "")) : (i2 < 10 ? "00" + (i2) : (i2 < 100 ? "0" + (i2) : i2 + ""));
+                String newFileName = ser + " " + mdFile.getName().substring(mdFile.getName().indexOf(" ") + 1);
                 Files.move(Paths.get(mdFile.getCanonicalPath()), Paths.get(mdFile.getParentFile().getCanonicalPath() + File.separator + newFileName));
                 System.out.println(newFileName);
             } catch (Exception e1) {
