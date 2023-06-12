@@ -10,7 +10,7 @@ import java.util.List;
 
 public class RestDirNum {
     public static void main(String[] args) {
-        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\22 二次型与Hermite型-V2");
+        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\24 内积空间-V2");
         extracted(dir, true);
     }
 
