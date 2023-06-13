@@ -12,7 +12,7 @@ import java.util.List;
 
 public class LatexCompatibilityReformat {
     public static void main(String[] args) {
-        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数");
+        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数");
         LatexCompatibilityReformat.entrance(dir);
     }
 

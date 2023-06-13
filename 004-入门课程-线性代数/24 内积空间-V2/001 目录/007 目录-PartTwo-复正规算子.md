@@ -39,7 +39,7 @@
 举例-实正规阵  
 1 实对称阵、2 正交阵  
   
-**正规算子判定定理Part1**  
+**正规算子判定定理**  
 定理1: 复正规算子判定定理1  
 设 $V_{\mathbb{C}}^n$ 是复内积空间， $\Phi$ 是 $V$ 上的复正规算子 $\Leftrightarrow\Phi$ 在任意(某个)标准正交基下的表示阵具有 $A\cdot(\overline A)^T=(\overline A)^T\cdot A$ 的性质  
   
@@ -96,5 +96,7 @@
 <font color=green>推论1: Euclid空间正交直和分解</font>  
 设 $\Phi$ 是欧几里得空间 $V$ 上的自伴随算子， $\lambda_1,\lambda_2,\cdots,\lambda_k$ 是 $\Phi$ 的全体不同特征值，  
  $V_1,V_2,\cdots,V_k$ 是对应的特征子空间，则 $V=V_1\perp V_2\perp\cdots\perp V_k$  
+  
+(注: <font color=red>以上两条是PartThree，谱分解的引理</font>)  
   
 **番外篇-窥探计算数学基础**  

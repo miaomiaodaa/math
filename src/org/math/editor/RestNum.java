@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class RestDirNum {
+public class RestNum {
     public static void main(String[] args) {
-        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\24 内积空间-V2");
+        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\24 内积空间-V2");
         extracted(dir, true);
     }
 

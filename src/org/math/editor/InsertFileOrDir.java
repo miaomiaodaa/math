@@ -6,9 +6,9 @@ import java.nio.file.Paths;
 
 public class InsertFileOrDir {
     public static void main(String[] args) {
-        int begin_num = 28; // 从第N个开始
+        int begin_num = 147; // 从第N个开始
         int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\线性代数\\24 内积空间-V2");
+        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\23 内积空间-V1");
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
