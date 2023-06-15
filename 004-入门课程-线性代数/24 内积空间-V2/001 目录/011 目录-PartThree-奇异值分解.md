@@ -56,7 +56,39 @@
 设 $A$ 是 $m\times n$ 阶实矩阵，存在 $m$ 阶正交阵 $P$ ， $n$ 阶正交阵 $Q$ ，  
 使得 $A=P\cdot\begin{bmatrix}S&O\\\ O&O\end{bmatrix}\cdot Q^T$ ，该分解称为矩阵 $A$ 的奇异值分解  
   
-**奇异值分解与极分解**  
+**SVD应用1-奇异值分解与极分解**  
 推论1: 设 $A\in M_n(\mathbb{R})$ ，则 $A$ 的极分解 $\Leftrightarrow A$ 的奇异值分解  
   
-**求奇异值分解**  
+**SVD应用2-矩阵的广义逆**  
+引理1: 广义逆几何版  
+设 $\Phi\in\mathbf{L}(V^n,U^m)$ ，其中 $V^n$ ， $U^m$ 都是欧几里得空间  
+则存在唯一的线性映射 $\Phi^+:U^m\to V^n$ ，满足以下性质  
+ $1^\circ\ \Phi\circ\Phi^+\circ\Phi=\Phi$ ，  
+ $2^\circ\ \Phi^+\circ\Phi\circ\Phi^+=\Phi^+$ ，  
+ $3^\circ\ \Phi\circ\Phi^+$ 是 $U$ 上的自伴随算子， $\Phi^+\circ\Phi$ 是 $V$ 上的自伴随算子  
+(证明过程只理解1/3)  
+  
+引理2: 广义逆代数版  
+设 $A\in M_{m\times n}(\mathbb R)$ ，则存在唯一的 $A^+\in M_{n\times m}(\mathbb R)$ ，满足以下性质  
+ $1^\circ\ A\cdot A^+\cdot A=A$ ，  
+ $2^\circ\ A^+\cdot A\cdot A^+=A^+$ ，  
+ $3^\circ\ A\cdot A^+,A^+\cdot A$ 均为对称阵  
+  
+定义1: 广义逆  
+  
+关于广义逆的说明  
+1 广义逆的定义有很多版本，这样定义的广义逆称为 $\rm{Moore-Penrose}$ 广义逆  
+2 若 $\Phi$ 或 $A$ 可逆，则 $\Phi^+$ 或 $A^+$ 就退化成了 $\Phi^{-1}$ 或 $A^{-1}$  
+3 若 $\Phi$ 是零线性映射或 $A$ 是零矩阵，则 $\Phi^+$ 是零线性映射或 $A^+$ 是零矩阵  
+  
+推论1: 奇异值分解求广义逆  
+若 $A=P\cdot\begin{bmatrix}S&O\\\ O&O\end{bmatrix}_{m\times n}\cdot Q^T$ ，则 $A^+=Q\cdot\begin{bmatrix}S^{-1}&O\\\ O&O\end{bmatrix}_{n\times m}\cdot P^T$  
+  
+  
+**广义逆与解线性方程组**  
+引理1:  
+设 $\Phi\in\mathbf{L}(V^n,U^m)$ ， $\Phi^+$ 是 $\Phi$ 的广义逆，则 $\Phi^+\Phi$ 是 $V$ 到 $(\rm{Ker}(\Phi))^\perp$ 的正交投影算子， $\Phi\Phi^+$ 是 $U$ 到 $(\rm{Im}(\Phi))^\perp$ 的正交投影算子  
+(证明过程没看懂)  
+  
+定理1:  
+设 $AX=\beta$ 是线性方程组，若有解，则 $z=A^+\beta$ 是范数最小解；若无解，则 $z=A^+\beta$ 是最佳逼近，即 $\Vert Az-\beta\Vert\le\Vert Ax-\beta\Vert$ ， $\forall\ x\in\mathbb R^n$  
