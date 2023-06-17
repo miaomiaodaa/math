@@ -10,7 +10,7 @@ import java.util.List;
 
 public class RestNum {
     public static void main(String[] args) {
-        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\24 内积空间-V2");
+        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\06【解线性方程组】与【线性空间入门】");
         extracted(dir, true);
     }
 
@@ -21,11 +21,15 @@ public class RestNum {
         for (int j = 0; j < dirs.length; j++) {
             if (dirs[j].isDirectory())
                 extracted(dirs[j], reset);
-            else
-                fileList.add(dirs[j]);
+            fileList.add(dirs[j]);
         }
 
 
+        if (!fileList.isEmpty())
+            doSortAndRest(reset, fileList);
+    }
+
+    private static void doSortAndRest(boolean reset, List<File> fileList) {
         Collections.sort(fileList, (o1, o2) -> {
             try {
                 String o1Name = o1.getName();

@@ -9,10 +9,10 @@ import java.nio.file.Paths;
 
 public class InsertFileOrDir {
     public static void main(String[] args) {
-        String name = "076 命题-二次三次整系数多项式不可约判定";
-        int begin_num = 75; // 从第N个开始
-        int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\13 多项式-V2\\040 因式分解-有理数域");
+        String name = "";
+        int begin_num = 31; // 从第N个开始
+        int step = -1; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\06【解线性方程组】与【线性空间入门】");
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];

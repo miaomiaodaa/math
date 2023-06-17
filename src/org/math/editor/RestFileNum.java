@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
+@Deprecated
 public class RestFileNum {
     public static void main(String[] args) {
         File dir = new File("E:\\Math\\工作区\\代数\\线性代数\\4【解线性方程组】与【线性空间入门】\\14 极大无关组");
@@ -21,14 +22,14 @@ public class RestFileNum {
         });
 
         List<File> fileList = Arrays.asList(dirs);
-        for(File file : fileList) {
+        for (File file : fileList) {
             if (file.isDirectory()) {
                 List<File> subFileList = Arrays.asList(file.listFiles());
-                for (int i=0; i<subFileList.size(); i++) {
+                for (int i = 0; i < subFileList.size(); i++) {
                     try {
                         File mdFile = subFileList.get(i);
-                        String newFileName = (i+1) + " " + mdFile.getName().substring(mdFile.getName().indexOf(" ") + 1);
-                        Files.move(Paths.get(mdFile.getCanonicalPath()), Paths.get(mdFile.getParentFile().getCanonicalPath()+File.separator+newFileName));
+                        String newFileName = (i + 1) + " " + mdFile.getName().substring(mdFile.getName().indexOf(" ") + 1);
+                        Files.move(Paths.get(mdFile.getCanonicalPath()), Paths.get(mdFile.getParentFile().getCanonicalPath() + File.separator + newFileName));
                         System.out.println(newFileName);
                     } catch (Exception e1) {
                         e1.printStackTrace();
