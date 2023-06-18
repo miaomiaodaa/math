@@ -1,4 +1,4 @@
-**内容**  
+**内容V1**  
 表示矩阵映射 $T:\underset{\Phi\overset{在给定基(e_1,\cdots,e_n),(f_1,\cdots,f_m)下的}  
 \longmapsto A}{\underline{\mathbb L(V^n,U^m)\to  
 M_{m\times n}(K)}}$ 是线性同构  
@@ -20,6 +20,13 @@ M_{m\times n}(K)}}$ 是线性同构
 \Phi(e_n)=a_{1n}\cdot f_1+a_{2n}\cdot f_2  
 +\cdots+a_{mn}\cdot f_m  
 \end{cases}$  
+  
+**内容V2**  
+ $\rm{Hom}(V_K^n,U_K^m)\cong M_{m\times n}(K)$  
+  
+(说白了就是， $\rm{Hom}(V_K^n,U_K^m)$ 与 $M_{m\times n}(K)$ 之间存在线性同构)  
+  
+( $M_{m\times n}(K)$ 是 $m\times n$ 维线性空间，那么 $\rm{Hom}(V_K^n,U_K^m)$ 也是 $m\times n$ 维线性空间)  
   
 **说明**  
  $V^n_K$ 是数域 $K$ 上的 $n$ 维线性空间  
