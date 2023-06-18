@@ -10,9 +10,9 @@ import java.nio.file.Paths;
 public class InsertFileOrDir {
     public static void main(String[] args) {
         String name = "";
-        int begin_num = 1; // 从第N个开始
+        int begin_num = 12; // 从第N个开始
         int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\08 线性映射-V2\\008 线性变换的幂");
+        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\08 线性映射-V2");
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
