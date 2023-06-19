@@ -66,6 +66,10 @@
   
 命题3: 实内积运算以及实内积空间的定义相容于复内积运算以及复内积空间的定义  
   
+(补充内积的基本运算性质)  
+(数乘结合律，源自内积定义第一变元线性)  
+(加法对内积分配律，也是源自内积定义第一变元线性)  
+  
 **内积空间举例**  
 <font color=blue>例1: $n$ 维实列向量空间 $\mathbb{R}^n$ 的标准内积</font>  
 设 $V=\mathbb{R}^n$ ， $\alpha=\begin{bmatrix}x_1\\\ x_2\\\ \vdots\\\ x_n\end{bmatrix},\ \beta=\begin{bmatrix}y_1\\\ y_2\\\ \vdots\\\ y_n\end{bmatrix}$  
