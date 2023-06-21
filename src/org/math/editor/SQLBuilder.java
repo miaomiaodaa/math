@@ -114,8 +114,9 @@ public class SQLBuilder {
 
         // 删除注释
         int sigma;
+        int i;
         while ((sigma = omega.indexOf("-- ")) != -1) {
-            int i = omega.indexOf("\r\n", sigma);
+            i = ((i = omega.indexOf("\r\n", sigma)) == -1) ? omega.indexOf("\n", sigma) : i;
             omega.delete(sigma, i + 1);
         }
 
