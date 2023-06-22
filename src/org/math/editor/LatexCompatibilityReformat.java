@@ -13,10 +13,27 @@ import java.util.List;
 public class LatexCompatibilityReformat {
     public static void main(String[] args) {
         File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数");
-        LatexCompatibilityReformat.entrance(dir);
+        LatexCompatibilityReformat.findReformatFiles(dir);
     }
 
-    private static void doReformat(File md) {
+    private static void findReformatFiles(File dir) {
+        File[] dirs = dir.listFiles();
+
+        List<File> fileList = new ArrayList<>();
+        for (int j = 0; j < dirs.length; j++) {
+            if (dirs[j].isDirectory())
+                LatexCompatibilityReformat.findReformatFiles(dirs[j]);
+            else
+                fileList.add(dirs[j]);
+        }
+
+        for (int i = 0; i < fileList.size(); i++) {
+            File mdFile = fileList.get(i);
+            LatexCompatibilityReformat.readReformatFile(mdFile);
+        }
+    }
+
+    private static void readReformatFile(File md) {
         try {
             FileInputStream fileInputStream = new FileInputStream(md);
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
@@ -51,10 +68,10 @@ public class LatexCompatibilityReformat {
         int odd = 0;
         while (-1 != (begin = stringBuffer.indexOf("$", begin))) {
             if (odd % 2 == 0) {// 左边的$
-                // 且未被格式化
-                if (begin - 1 >= 0 && isChinese(stringBuffer.charAt(begin - 1)))
+                if (begin - 1 >= 0 && isChinese(stringBuffer.charAt(begin - 1))) { // $左边第1个字符是Chinese表示未被格式化
                     stringBuffer.insert(begin, " ");
-            } else if (isChinese(stringBuffer.charAt(begin + 1))) {// 右边的$
+                }
+            } else if (isChinese(stringBuffer.charAt(begin + 1))) {// $右边第1个字符是Chinese表示未被格式化
                 stringBuffer.insert(begin + 1, " ");
             }
             begin += 2;
@@ -62,23 +79,6 @@ public class LatexCompatibilityReformat {
         }
 
         //System.out.println(stringBuffer);
-    }
-
-    private static void entrance(File dir) {
-        File[] dirs = dir.listFiles();
-
-        List<File> fileList = new ArrayList<>();
-        for (int j = 0; j < dirs.length; j++) {
-            if (dirs[j].isDirectory())
-                entrance(dirs[j]);
-            else
-                fileList.add(dirs[j]);
-        }
-
-        for (int i = 0; i < fileList.size(); i++) {
-            File mdFile = fileList.get(i);
-            LatexCompatibilityReformat.doReformat(mdFile);
-        }
     }
 
     private static boolean isChinese(char c) {
