@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LatexCompatibilityReformat {
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数");
         LatexCompatibilityReformat.entrance(dir);
     }
@@ -50,11 +50,11 @@ public class LatexCompatibilityReformat {
         int begin = 0;
         int odd = 0;
         while (-1 != (begin = stringBuffer.indexOf("$", begin))) {
-            if (odd % 2 == 0) {
+            if (odd % 2 == 0) {// 左边的$
                 // 且未被格式化
-                if (begin - 1 >= 0 && !String.valueOf(stringBuffer.charAt(begin - 1)).equals(" "))
+                if (begin - 1 >= 0 && isChinese(stringBuffer.charAt(begin - 1)))
                     stringBuffer.insert(begin, " ");
-            } else if (!String.valueOf(stringBuffer.charAt(begin + 1)).equals(" ")) {
+            } else if (isChinese(stringBuffer.charAt(begin + 1))) {// 右边的$
                 stringBuffer.insert(begin + 1, " ");
             }
             begin += 2;
@@ -81,13 +81,27 @@ public class LatexCompatibilityReformat {
         }
     }
 
-    public static void main1(String[] args) {
+    private static boolean isChinese(char c) {
+        Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
+        if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
+                || ub == Character.UnicodeBlock.CJK_COMPATIBILITY_IDEOGRAPHS
+                || ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A
+                || ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B
+                || ub == Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION
+                || ub == Character.UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS
+                || ub == Character.UnicodeBlock.GENERAL_PUNCTUATION)
+            return true;
+        return false;
+    }
+
+    public static void main(String[] args) {
         StringBuffer stringBuffer = new StringBuffer("ab $cd$ aa");
 //        System.out.println(stringBuffer.indexOf("$"));
 //        System.out.println(stringBuffer.insert(2, " ")); // 插入是在前面
 //        System.out.println(stringBuffer.indexOf("$", 4));
 //        System.out.println(stringBuffer.insert(7, " "));
 
-        LatexCompatibilityReformat.cornReformat(stringBuffer);
+        //LatexCompatibilityReformat.cornReformat(stringBuffer);
+        System.out.println(isChinese('，'));
     }
 }
