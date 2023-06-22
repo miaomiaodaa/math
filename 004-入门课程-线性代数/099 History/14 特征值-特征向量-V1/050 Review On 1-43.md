@@ -2,13 +2,13 @@
 <font color=blue>特征值，特征向量</font>  
 设 $\Phi\in\mathbb{L}(V_K^n)$ ， $\lambda\in K$ ，若 $\exists\mathbb{0}_V\neq\alpha\in V_K^n$ ，  
 使得 $\Phi(\alpha)=\lambda\alpha$ ，则称 $\lambda$ 是线性变换 $\Phi$ 的特征值  
- $\alpha$ 是线性变换 $\Phi$ 关于特征值 $\lambda$ 的特征向量  
+$\alpha$ 是线性变换 $\Phi$ 关于特征值 $\lambda$ 的特征向量  
   
 设 $A\in M_n(K)$ ， $\lambda\in K$ ，若 $\exists\mathbb{0}_K\neq\alpha\in K^n$ ，  
 使得 $A\alpha=\lambda\alpha$ ，则称 $\lambda$ 是方阵 $A$ 的特征值，  
- $\alpha$ 是方阵 $A$ 的关于特征值 $\lambda$ 的特征向量  
+$\alpha$ 是方阵 $A$ 的关于特征值 $\lambda$ 的特征向量  
   
- $\Phi(\alpha)=\lambda\alpha$ : 表示伸缩变换  
+$\Phi(\alpha)=\lambda\alpha$ : 表示伸缩变换  
   
 <font color=blue>特征子空间</font>  
 设 $V_K^n$ 是线性空间， $\Phi\in\mathbb{L}(V_K^n)$ ， $\lambda\in K$  
@@ -29,13 +29,13 @@
 **命题部分**  
 <font color=brown>Part1</font>  
 1 求解特征值，特征向量  
- $\lambda_0$ 是 $\Phi$ 的特征值  
- $\Leftrightarrow\exists\mathbb{0}_V\neq\alpha$ ，使得 $\Phi(\alpha)=\lambda_0\alpha$  
- $\Leftrightarrow\exists\mathbb{0}_K\neq\alpha$ ，使得 $A\alpha=\lambda_0\alpha$  
- $\Leftrightarrow$ 齐次线性方程组 $(\lambda_0E_n-A_n)x=\mathbb{0}_K$ 有非零解 $\textendash$ <font color=blue>特征方程</font>  
- $\Leftrightarrow$ 方阵 $[\lambda_0E_n-A_n]$ 不满秩，不可逆，奇异 $\textendash$ <font color=blue>特征矩阵</font>  
- $\Leftrightarrow$ 行列式 $|\lambda_0E_n-A_n|=0,\ \textendash$ <font color=blue>特征行列式</font>  
- $\Leftrightarrow$ 多项式 $f(\lambda)=|\lambda_0E_n-A_n|$ 有根(有解) $\textendash$ <font color=blue>特征多项式，特征根</font>  
+$\lambda_0$ 是 $\Phi$ 的特征值  
+$\Leftrightarrow\exists\mathbb{0}_V\neq\alpha$ ，使得 $\Phi(\alpha)=\lambda_0\alpha$  
+$\Leftrightarrow\exists\mathbb{0}_K\neq\alpha$ ，使得 $A\alpha=\lambda_0\alpha$  
+$\Leftrightarrow$ 齐次线性方程组 $(\lambda_0E_n-A_n)x=\mathbb{0}_K$ 有非零解 $\textendash$ <font color=blue>特征方程</font>  
+$\Leftrightarrow$ 方阵 $[\lambda_0E_n-A_n]$ 不满秩，不可逆，奇异 $\textendash$ <font color=blue>特征矩阵</font>  
+$\Leftrightarrow$ 行列式 $|\lambda_0E_n-A_n|=0,\ \textendash$ <font color=blue>特征行列式</font>  
+$\Leftrightarrow$ 多项式 $f(\lambda)=|\lambda_0E_n-A_n|$ 有根(有解) $\textendash$ <font color=blue>特征多项式，特征根</font>  
 解出特征根，带入特征矩阵，求解特征方程，得到解空间，解空间就是特征值对应的全体特征向量  
   
 2 三角阵的特征值是主对角线元素  
@@ -64,7 +64,7 @@
 推广: 设 $A\in M_n(K)$ ，若 $A$ 在数域 $K$ 上存在 $n$ 个特征值，则 $A$ 在 $K$ 上存在与之相似的上(下)三角阵  
 推论1: 矩阵转置，特征值不变  
 三角阵的转置仍是三角阵，三角阵的特征值就是主对角线元素  
- $(P^{-1}\cdot A\cdot P)^T=P^T\cdot A^T\cdot(P^{-1})^T=P^T\cdot A^T\cdot(P^T)^{-1}$  
+$(P^{-1}\cdot A\cdot P)^T=P^T\cdot A^T\cdot(P^{-1})^T=P^T\cdot A^T\cdot(P^T)^{-1}$  
 推论2: 设 $A$ 是可逆阵， $\lambda$ 是 $A$ 的特征值，则 $A^{-1}$ 的特征值为 $\lambda^{-1}$ （三角阵的逆阵？）  
   
 <font color=brown>Part3</font>  
@@ -77,28 +77,28 @@
 4 特征子空间是 $\Phi$ 不变子空间  
   
 5 特征子空间的和空间是直和空间  
- $V_{\lambda_1}+V_{\lambda_1}+\cdots+V_{\lambda_k}=V_{\lambda_1}\oplus V_{\lambda_1}\oplus \cdots\oplus V_{\lambda_k}$  
+$V_{\lambda_1}+V_{\lambda_1}+\cdots+V_{\lambda_k}=V_{\lambda_1}\oplus V_{\lambda_1}\oplus \cdots\oplus V_{\lambda_k}$  
 推论: 不同特征值对应的特征向量线性无关  
   
 <font color=brown>Part4</font>  
 可对角化判定1:  
- $\Phi$ 可对角化，当且仅当 $\Phi$ 有 $n$ 个线性无关的特征向量  
- $\Phi$ 可对角化，当且仅当 $\Phi$ 的特征向量可构成全空间的一个基  
- $A$ 可对角化，当且仅当 $A$ 有 $n$ 个线性无关的特征向量  
+$\Phi$ 可对角化，当且仅当 $\Phi$ 有 $n$ 个线性无关的特征向量  
+$\Phi$ 可对角化，当且仅当 $\Phi$ 的特征向量可构成全空间的一个基  
+$A$ 可对角化，当且仅当 $A$ 有 $n$ 个线性无关的特征向量  
   
 可对角化判定2:  
 若方阵 $A$ 的特征方程没有重根，则 $A$ 可对角化  
   
 可对角化判定3:  
- $\Phi$ 可对角化，当且仅当 $V=V_{\lambda_1}\oplus V_{\lambda_1}\oplus \cdots\oplus V_{\lambda_k}$  
+$\Phi$ 可对角化，当且仅当 $V=V_{\lambda_1}\oplus V_{\lambda_1}\oplus \cdots\oplus V_{\lambda_k}$  
 全体特征子空间的和空间是全空间  
   
 可对角化判定4:  
 定义: 特征值 $\lambda_0$ 对应的特征子空间的维数 $\rm{dim}_K(V_{\lambda_0})$ 称为 $\lambda_0$ 的几何维数  
- $\lambda_0$ 所在方程的特征根 $\lambda_0$ 的重数称为 $\lambda_0$ 的代数维数  
+$\lambda_0$ 所在方程的特征根 $\lambda_0$ 的重数称为 $\lambda_0$ 的代数维数  
 引理:  $\lambda_0$ 的几何维数 $\le\lambda_0$ 的代数维数，即特征子空间的维数 $\le$ 特征根的重数  
 定义: 若 $\Phi$ 的特征子空间的维数 $=$ 特征根的重数，则称 $\Phi$ 有完全特征向量系  
- $\Phi$ 可对角化，当且仅当 $\Phi$ 有完全特征向量系  
+$\Phi$ 可对角化，当且仅当 $\Phi$ 有完全特征向量系  
   
 <font color=brown>Part5</font>  
 1 矩阵多项式的特征值  

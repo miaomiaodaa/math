@@ -9,22 +9,22 @@
   
 计算 $\lambda\cdot(\alpha,\beta)$  
   
- $=(\lambda\cdot\alpha,\beta)$  
+$=(\lambda\cdot\alpha,\beta)$  
   
- $=(\Phi(\alpha),\beta)$  
+$=(\Phi(\alpha),\beta)$  
   
- $=(\alpha,\Phi^\star(\beta))$  
+$=(\alpha,\Phi^\star(\beta))$  
   
- $=(\alpha,\Phi(\beta))$  
+$=(\alpha,\Phi(\beta))$  
   
- $=(\alpha,\mu\cdot\beta)$  
+$=(\alpha,\mu\cdot\beta)$  
   
- $=\overline{\mu}\cdot(\alpha,\beta)$  
+$=\overline{\mu}\cdot(\alpha,\beta)$  
   
- $=\mu\cdot(\alpha,\beta)$  
+$=\mu\cdot(\alpha,\beta)$  
   
 又因为 $\lambda\neq\mu$  
   
- $\Rightarrow(\alpha,\beta)=0$  
+$\Rightarrow(\alpha,\beta)=0$  
   
- $\Rightarrow\alpha\perp\beta$  
+$\Rightarrow\alpha\perp\beta$  

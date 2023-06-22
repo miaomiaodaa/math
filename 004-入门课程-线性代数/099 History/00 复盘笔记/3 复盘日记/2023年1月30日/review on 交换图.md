@@ -1,11 +1,11 @@
 交换图  
 4个节点:  $V^n_K, U^m_K, K^n, K^m$  
 5条线:  
- $\Phi:V^n_K\to U^m_K$  
- $\Phi_A:k^n\to K^m$  
- $\eta_v:V^n_K\to K^n$  
- $\eta_u:U^m_K\to U^m$  
- $T:\mathbb{L}(V,U)\to M_{m\times n}(K)$  
+$\Phi:V^n_K\to U^m_K$  
+$\Phi_A:k^n\to K^m$  
+$\eta_v:V^n_K\to K^n$  
+$\eta_u:U^m_K\to U^m$  
+$T:\mathbb{L}(V,U)\to M_{m\times n}(K)$  
   
 线性空间（交换图的节点）  
 数域 $=$ 对加减乘除四则运算封闭  
@@ -24,12 +24,12 @@
 基存在定理，基 $=$ 极大无关组，维数 $=$ 秩  
 基判定之2选1，任意 $r+1$ 个向量都线性相关  
   
- $\mathbb{L}(V,U)$ 是线性空间  
- $\mathbb{L}(V,K)$ 是 $V_K$ 的对偶空间，此时 $\Phi\in\mathbb{L}(V,K)$ 称为线性函数  
- $\mathbb{L}(V)$ 是数域 $K$ 上的代数  
+$\mathbb{L}(V,U)$ 是线性空间  
+$\mathbb{L}(V,K)$ 是 $V_K$ 的对偶空间，此时 $\Phi\in\mathbb{L}(V,K)$ 称为线性函数  
+$\mathbb{L}(V)$ 是数域 $K$ 上的代数  
 这里完成了映射的加法，减法，数乘，乘法，幂运算的定义，以及补充了幂运算的运算律  
   
- $K^n, K^m$ 是线性空间  
+$K^n, K^m$ 是线性空间  
   
 子空间部分  
 定义:  $U$ 是 $V$ 的非空子集， $V$ 上的加法与数乘作用于 $U$ 使其满足线性空间的定义  
@@ -39,10 +39,10 @@
 Part1  $V_1\cap V_2$ ， $V_1+V_2$ ， $V_1\oplus V_2$ 以及它们的推广形式  
 和空间维数公式，直和判定定理5合1  
   
- $\mathbf{L}(S)=\mathbf{L}(\alpha_1,\alpha_2,\cdots,\alpha_n)$  
- $=\mathbf{L}(\alpha_{i_1},\alpha_{i_2},\cdots,\alpha_{i_r})$  
+$\mathbf{L}(S)=\mathbf{L}(\alpha_1,\alpha_2,\cdots,\alpha_n)$  
+$=\mathbf{L}(\alpha_{i_1},\alpha_{i_2},\cdots,\alpha_{i_r})$  
 生成子空间元素形式:  $\sum\limits_{i=1}^m\lambda_i\alpha_i$  
- $\mathbf{L}(S)$ 是包含 $S$ 的最小子空间；生成子空间维数公式  
+$\mathbf{L}(S)$ 是包含 $S$ 的最小子空间；生成子空间维数公式  
 齐次线性方程组的解空间是基础解系生成的 $K^n$ 的子空间  
   
 Part2 核空间 $\rm{Ker}(\Phi)$ ，像空间 $\rm{Im}(\Phi)$  
@@ -51,7 +51,7 @@ Part2 核空间 $\rm{Ker}(\Phi)$ ，像空间 $\rm{Im}(\Phi)$
 核空间的一个基可以扩张成全空间的基，且剩余部分恰好是像空间的维数  
   
 Part3 不变子空间  
- $U$ 是 $V$ 的子空间， $\Phi(U)\subseteq V$ ，则称 $U$ 是 $\Phi$ 下的不变子空间  
+$U$ 是 $V$ 的子空间， $\Phi(U)\subseteq V$ ，则称 $U$ 是 $\Phi$ 下的不变子空间  
 不变子空间存在定理；平面上的直线在 $k\pi$ 的旋转变换下是不变子空间  
   
 线性映射（交换图的有向路径）  
@@ -64,8 +64,8 @@ Part3 不变子空间
 线性映射的复合还是线性映射  
 线性映射保持线性组合（线性映射第二定义）  
   
- $\Phi:V^n_K\to U^m_K$ 是线性映射  
- $\Phi_A:K^n\to K^m$ 是线性映射  
+$\Phi:V^n_K\to U^m_K$ 是线性映射  
+$\Phi_A:K^n\to K^m$ 是线性映射  
 表示矩阵与坐标向量； $\beta=Ax$ ，线性方程组，矩阵，行列式  
 矩阵乘法代数意义: 把一个 $n$ 维列向量映射成一个 $m$ 维列向量  
   
@@ -84,13 +84,13 @@ Part3 不变子空间
 线性自同构存在定理:  $T(\Phi)$ 可逆  
   
 坐标向量映射 $\eta_u:V^n_K\to K^n$  
- $\eta_u:V^n_K\to K^n$ 是线性同构（符合线性同构存在的充要条件: 维数相等）  
+$\eta_u:V^n_K\to K^n$ 是线性同构（符合线性同构存在的充要条件: 维数相等）  
 坐标向量唯一性: 任意向量在固定基下的坐标向量是唯一的（线性表出的唯一性）  
 基变换与过渡矩阵；坐标变换与过渡矩阵；过渡矩阵是可逆阵  
   
 线性映射的表示矩阵  
- $\Phi(e_i)=a_{1i}f_1+a_{2i}f_2+\cdots+a_{mi}f_m$  
+$\Phi(e_i)=a_{1i}f_1+a_{2i}f_2+\cdots+a_{mi}f_m$  
   
- $T:\mathbb{L}(V,U)\to M_{m\times n}(K)$ 是线性同构  
+$T:\mathbb{L}(V,U)\to M_{m\times n}(K)$ 是线性同构  
 复合映射的表示矩阵:  $T(\Phi\circ\Psi)=T(\Phi)\cdot T(\Psi)$  
 同一线性变换，在不同基下的表示矩阵是相似的 $B=P^{-1}A P$  

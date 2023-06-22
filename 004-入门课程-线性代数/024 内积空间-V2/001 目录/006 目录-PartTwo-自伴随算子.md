@@ -53,10 +53,10 @@
 定理: 设 $A,B$ 是同阶实对称阵， $A$ 与 $B$ 正交相似 $\Leftrightarrow A$ 与 $B$ 有相同的特征值  
   
 **Hermite阵的酉相似标准型**  
- $A\sim\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_n\\}$  
+$A\sim\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_n\\}$  
   
 **实对称阵的正交相似标准型**  
- $A\sim\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_n\\}$  
+$A\sim\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_n\\}$  
   
 **自伴随算子对角化应用-二次型化简**  
 1 二次型化简-正交替换法  

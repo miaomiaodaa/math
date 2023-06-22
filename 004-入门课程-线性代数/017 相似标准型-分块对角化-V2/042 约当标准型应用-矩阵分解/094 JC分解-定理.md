@@ -1,16 +1,16 @@
 **内容**  
 设 $A\in M_n(\mathbb{C})$ ，则 $A$ 可分解为 $A=B+C$ ，且该分解是唯一的  
- $1^\circ\ B$ 是可对角化阵，存在可逆阵，使得 $\Lambda=P^{-1}\cdot B\cdot P$  
- $2^\circ\ C$ 是幂零阵，存在 $k\in\mathbb{Z}^+$ ，使得 $C^k=$ 零矩阵  
- $3^\circ\ BC=CB$ ，  
- $\begin{array}{l}  
+$1^\circ\ B$ 是可对角化阵，存在可逆阵，使得 $\Lambda=P^{-1}\cdot B\cdot P$  
+$2^\circ\ C$ 是幂零阵，存在 $k\in\mathbb{Z}^+$ ，使得 $C^k=$ 零矩阵  
+$3^\circ\ BC=CB$ ，  
+$\begin{array}{l}  
 4^\circ\ B,C均可表示为A的多项式，&存在f(x),g(x)\in M_n(K)，使得B=f(A)，C=g(A)\\\  
 &B可由A经过加，减，数乘，乘(幂)得到，B=f(A)\\\  
 &C可由A经过加，减，数乘，乘(幂)得到，C=g(A)  
 \end{array}$  
   
 **说明**  
- $\rm{JC}$ 定理包含两个方面  
+$\rm{JC}$ 定理包含两个方面  
 存在性:任意复矩阵都能分解  
 唯一性:当 $A$ 确定时，这种分解方式是唯一的  
   
@@ -24,7 +24,7 @@
 \rm{diag}\{J_1,J_2,\cdots,J_s\}$ ， $\lambda_1,  
 \lambda_2,\cdots,\lambda_s$ 是 $A$ 的全体不同特征值， $J_1,J_2,\cdots,J_s$ 是 $\lambda_1,  
 \lambda_2,\cdots,\lambda_s$ 对应的根子空间块  
- $J_i=\begin{bmatrix}  
+$J_i=\begin{bmatrix}  
 J_1(\lambda_i)\\\  
 &\ddots\\\  
 &&J_k(\lambda_i)  
@@ -33,71 +33,71 @@ J_1(\lambda_i)\\\
 令 $\lambda_i I=M_i$  
   
 则 $M_i=\lambda I$ 可对角化，  
- $N_i$ 是幂零阵( $(N_i)^{m_i}=\mathbf0$ )，  
- $M_i\cdot N_i=N_i\cdot M_i$ 可交换  
+$N_i$ 是幂零阵( $(N_i)^{m_i}=\mathbf0$ )，  
+$M_i\cdot N_i=N_i\cdot M_i$ 可交换  
   
 令 $M=\rm{diag}\{M_1,M_2,\cdots,M_s\}$ ，是对角阵  
- $N=\rm{diag}\{N_1,N_2,\cdots,N_s\}$ ，是幂零阵  
+$N=\rm{diag}\{N_1,N_2,\cdots,N_s\}$ ，是幂零阵  
 易证 $M\cdot N=N\cdot M$ ，分块矩阵乘法  
 且 $J=M+N$  
   
 (上面这些结论可以用excel画个约当标准型，验证下)  
   
- $J_i$ 的特征多项式 $=(\lambda-\lambda_i)^{m_i}$  
+$J_i$ 的特征多项式 $=(\lambda-\lambda_i)^{m_i}$  
 由凯莱-哈密顿定理得  
- $\Rightarrow(J_i-\lambda_i I)^{m_i}=\mathbf O$  
- $\Rightarrow(J_i-M_i)^{m_i}=(N_i)^{m_i}$  
+$\Rightarrow(J_i-\lambda_i I)^{m_i}=\mathbf O$  
+$\Rightarrow(J_i-M_i)^{m_i}=(N_i)^{m_i}$  
   
- $\lambda_1,\lambda_2,\cdots,\lambda_s$ 互不相同  
- $\Rightarrow(\lambda-\lambda_1)^{m_1},  
+$\lambda_1,\lambda_2,\cdots,\lambda_s$ 互不相同  
+$\Rightarrow(\lambda-\lambda_1)^{m_1},  
 (\lambda-\lambda_2)^{m_2},\cdots,  
 (\lambda-\lambda_s)^{m_s}$ 两两互素  
   
 由线性同余定理得  
- $\Rightarrow\exists g(\lambda)$ ，使得 $g(\lambda)  
+$\Rightarrow\exists g(\lambda)$ ，使得 $g(\lambda)  
 =(\lambda-\lambda_i)^{m_i}\cdot q_i(\lambda)  
 +\lambda_i,\ \forall 1\le i\le s$  
   
- $\Rightarrow g(J_i)  
+$\Rightarrow g(J_i)  
 =(J_i-\lambda_i I)^{m_i}\cdot q_i(J_i)  
 +\lambda_i I,\ \forall 1\le i\le s$  
   
- $\Rightarrow g(J_i)=\lambda_i I=M_i$  
+$\Rightarrow g(J_i)=\lambda_i I=M_i$  
   
- $\Rightarrow g(J)=\rm{diag}\{g(J_1),g(J_2),\cdots,g(J_s)\}$  
- $=\rm{diag}\{M_1,M_2,\cdots,M_s\}$  
- $=M$  
+$\Rightarrow g(J)=\rm{diag}\{g(J_1),g(J_2),\cdots,g(J_s)\}$  
+$=\rm{diag}\{M_1,M_2,\cdots,M_s\}$  
+$=M$  
   
- $N=J-M=J-g(J)$  
+$N=J-M=J-g(J)$  
   
- $A=P\cdot J\cdot P^{-1}$  
- $=P\cdot (M+N)\cdot P^{-1}$  
- $=P\cdot M\cdot P^{-1}+P\cdot N\cdot P^{-1}$  
+$A=P\cdot J\cdot P^{-1}$  
+$=P\cdot (M+N)\cdot P^{-1}$  
+$=P\cdot M\cdot P^{-1}+P\cdot N\cdot P^{-1}$  
   
- $M$ 是分块对角阵  
- $\Rightarrow P\cdot M\cdot P^{-1}$ 是可以对角化阵  
+$M$ 是分块对角阵  
+$\Rightarrow P\cdot M\cdot P^{-1}$ 是可以对角化阵  
 令 $B=P\cdot M\cdot P^{-1}$  
   
- $N$ 是幂零阵  
- $\Rightarrow P\cdot N\cdot P^{-1}$ 仍是幂零阵  
+$N$ 是幂零阵  
+$\Rightarrow P\cdot N\cdot P^{-1}$ 仍是幂零阵  
 令 $C=P\cdot N\cdot P^{-1}$  
 第1，2条得证  
   
- $B\cdot C$  
- $=(P\cdot M\cdot P^{-1})  
+$B\cdot C$  
+$=(P\cdot M\cdot P^{-1})  
 \cdot(P\cdot N\cdot P^{-1})$  
- $=P\cdot M\cdot (P^{-1}\cdot P)\cdot N\cdot P^{-1}$  
- $=P\cdot M\cdot N\cdot P^{-1}$  
- $=P\cdot N\cdot M\cdot P^{-1}$  
- $=P\cdot N\cdot P^{-1}\cdot P\cdot M\cdot P^{-1}$  
- $=(P\cdot N\cdot P^{-1})\cdot (P\cdot M\cdot P^{-1})$  
- $=C\cdot B$  
+$=P\cdot M\cdot (P^{-1}\cdot P)\cdot N\cdot P^{-1}$  
+$=P\cdot M\cdot N\cdot P^{-1}$  
+$=P\cdot N\cdot M\cdot P^{-1}$  
+$=P\cdot N\cdot P^{-1}\cdot P\cdot M\cdot P^{-1}$  
+$=(P\cdot N\cdot P^{-1})\cdot (P\cdot M\cdot P^{-1})$  
+$=C\cdot B$  
   
- $g(A)=g(P\cdot J\cdot P^{-1})=  
+$g(A)=g(P\cdot J\cdot P^{-1})=  
 P\cdot g(J)\cdot P^{-1}=P\cdot M\cdot P^{-1}$  
- $=B$  
+$=B$  
   
- $C=A-B=A-g(A)$  
+$C=A-B=A-g(A)$  
 证毕  
   
 **证明V2(存在性)**  

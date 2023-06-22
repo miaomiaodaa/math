@@ -3,13 +3,13 @@
 \longmapsto A}{\underline{\mathbb L(V^n,U^m)\to  
 M_{m\times n}(K)}}$ 是线性同构  
   
- $T:\underset{1\times n}{\underline{\left(  
+$T:\underset{1\times n}{\underline{\left(  
 \Phi(e_1),\Phi(e_2),\cdots,\Phi(e_n)\right)}}  
 =\underset{1\times m}{\underline{  
 \left(f_1,f_2,\cdots,f_m\right)}}  
 \cdot\underset{m\times n}{\underline{A}}$  
   
- $T=\begin{cases}  
+$T=\begin{cases}  
 \Phi(e_1)=a_{11}\cdot f_1+a_{21}\cdot f_2  
 +\cdots+a_{m1}\cdot f_m\\\  
 \Phi(e_2)=a_{12}\cdot f_1+a_{22}\cdot f_2  
@@ -22,19 +22,19 @@ M_{m\times n}(K)}}$ 是线性同构
 \end{cases}$  
   
 **内容V2**  
- $\rm{Hom}(V_K^n,U_K^m)\cong M_{m\times n}(K)$  
+$\rm{Hom}(V_K^n,U_K^m)\cong M_{m\times n}(K)$  
   
 (说白了就是， $\rm{Hom}(V_K^n,U_K^m)$ 与 $M_{m\times n}(K)$ 之间存在线性同构)  
   
 ( $M_{m\times n}(K)$ 是 $m\times n$ 维线性空间，那么 $\rm{Hom}(V_K^n,U_K^m)$ 也是 $m\times n$ 维线性空间)  
   
 **说明**  
- $V^n_K$ 是数域 $K$ 上的 $n$ 维线性空间  
+$V^n_K$ 是数域 $K$ 上的 $n$ 维线性空间  
   
- $U^m_K$ 是数域 $K$ 上的 $m$ 维线性空间  
+$U^m_K$ 是数域 $K$ 上的 $m$ 维线性空间  
   
- $\mathbb L(V^n,U^n)$ 是全体从 $V$ 到 $U$ 的线性映射组成的集合 (线性空间)  
+$\mathbb L(V^n,U^n)$ 是全体从 $V$ 到 $U$ 的线性映射组成的集合 (线性空间)  
   
- $M_{m\times n}(K)$ 是全体 $m\times n$ 阶矩阵的集合 (也是线性空间)  
+$M_{m\times n}(K)$ 是全体 $m\times n$ 阶矩阵的集合 (也是线性空间)  
   
- $T$ ：在给定基 $e$ 和基 $f$ 下，任取一个线性映射 $\Phi$ ，存在唯一的表示矩阵 $A$ 与之对应  
+$T$ ：在给定基 $e$ 和基 $f$ 下，任取一个线性映射 $\Phi$ ，存在唯一的表示矩阵 $A$ 与之对应  

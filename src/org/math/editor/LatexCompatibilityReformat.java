@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LatexCompatibilityReformat {
-    public static void main1(String[] args) {
+    public static void main(String[] args) {
         File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数");
         LatexCompatibilityReformat.entrance(dir);
     }
@@ -94,7 +94,7 @@ public class LatexCompatibilityReformat {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         StringBuffer stringBuffer = new StringBuffer("ab $cd$ aa");
 //        System.out.println(stringBuffer.indexOf("$"));
 //        System.out.println(stringBuffer.insert(2, " ")); // 插入是在前面

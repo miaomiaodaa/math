@@ -1,25 +1,25 @@
 **内容**  
- $F[\Phi]$ 是具有单位元的交换环  
+$F[\Phi]$ 是具有单位元的交换环  
   
 **简单证明**  
- $F[\Phi]\subset\rm{Hom}(V)$  
+$F[\Phi]\subset\rm{Hom}(V)$  
   
- $\rm{Hom}(V)$ 是环  
+$\rm{Hom}(V)$ 是环  
   
- $F[\Phi]$ 对减法与乘法封闭  
+$F[\Phi]$ 对减法与乘法封闭  
   
 所以 $F[\Phi]$ 是 $\rm{Hom}(V)$ 的子环  
   
 **证明**  
 定义加法，并且证明加法是封闭的  
   
- $f(\Phi)+g(\Phi)\in F[\Phi]$  
+$f(\Phi)+g(\Phi)\in F[\Phi]$  
   
 ---  
   
 定义乘法，并且证明乘法是封闭的  
   
- $f(\Phi)\cdot g(\Phi)\in F[\Phi]$  
+$f(\Phi)\cdot g(\Phi)\in F[\Phi]$  
   
 ---  
   

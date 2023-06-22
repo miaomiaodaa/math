@@ -1,5 +1,5 @@
 **Topic1 如何选取特征向量求出广义特征向量**  
- $\begin{bmatrix}  
+$\begin{bmatrix}  
 2&6&-15\\\  
 1&1&-5\\\  
 1&2&-6  
@@ -18,20 +18,20 @@
   
 <font color=blue>证明</font>: 设 $k=\max\{i\in\mathbb{Z}^+\mid \alpha,\Phi(\alpha),\cdots,\Phi^{i-1}(\alpha)\}$ 线性无关  
 首项这个集合非空，至少有一个向量 $\alpha$ 保底，其次这个集合由上界，上界是这个循环子空间的维数，所以必然存在最大值  
- $\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性无关  
- $\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha),\Phi^k(\alpha)$ 线性相关  
- $\Rightarrow\Phi^k(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
+$\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性无关  
+$\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha),\Phi^k(\alpha)$ 线性相关  
+$\Rightarrow\Phi^k(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
   
 由归纳法  
- $\Rightarrow\forall i>k$ ， $\Phi^i(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
- $\Rightarrow C(\Phi,\alpha)$ 中任意向量可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
+$\Rightarrow\forall i>k$ ， $\Phi^i(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
+$\Rightarrow C(\Phi,\alpha)$ 中任意向量可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
 由因为 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性无关  
- $\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 是 $C(\Phi,\alpha)$  
+$\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 是 $C(\Phi,\alpha)$  
   
- $\Rightarrow\rm{dim}(C(\Phi,\alpha))=k=m$  
+$\Rightarrow\rm{dim}(C(\Phi,\alpha))=k=m$  
   
 <font color=blue>引理</font>:  $C(\Phi,\alpha)$ 是包含 $\alpha$ 的最小 $\Phi$ 不变子空间  
   
 <font color=blue>推论</font>: 设 $\Phi^m(\alpha)=-a_0\alpha-a_1\Phi(\alpha)-\cdots-a_{m-1}\Phi^{m-1}(\alpha)$  
 令 $g(x)=x^m+a_{m-1}x^{m-1}+\cdots+a_1x+a_0\in K[x]$  
- $\Phi\mid_{C(\Phi,\alpha)}$ 在基 $(\alpha,\Phi(\alpha),\Phi^2(\alpha),\cdots,\Phi^{m-1}(\alpha))$ 下的表示矩阵为 $g(x)$ 的友阵  
+$\Phi\mid_{C(\Phi,\alpha)}$ 在基 $(\alpha,\Phi(\alpha),\Phi^2(\alpha),\cdots,\Phi^{m-1}(\alpha))$ 下的表示矩阵为 $g(x)$ 的友阵  

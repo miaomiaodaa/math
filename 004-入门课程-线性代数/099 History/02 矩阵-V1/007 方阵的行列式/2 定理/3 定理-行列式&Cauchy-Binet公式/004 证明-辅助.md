@@ -2,9 +2,9 @@ $C$ 是一个 $n\times n$ 阶的方阵
 把列分成前 $n-m$ 列和后 $m$ 列  
 按前 $n-m$ 列进行拉普拉斯展开，那么对应的余子式就是 $m$ 阶的  
   
- $m=3\times n=5$  
+$m=3\times n=5$  
   
- $\left[\begin{array}{ccccc:ccc}  
+$\left[\begin{array}{ccccc:ccc}  
 a_{11}&a_{12}&a_{13}&a_{14}&a_{15}&0&0&0\\\  
 a_{21}&a_{22}&a_{23}&a_{24}&a_{25}&0&0&0\\\  
 a_{31}&a_{32}&a_{33}&a_{34}&a_{35}&0&0&0\\\  
@@ -17,7 +17,7 @@ a_{31}&a_{32}&a_{33}&a_{34}&a_{35}&0&0&0\\\
 \end{array}\right]$  
   
 选定前3行进行拉普拉斯展开，其中的一项  
- $\widetilde{A}\begin{bmatrix}  
+$\widetilde{A}\begin{bmatrix}  
 1&2&3\\\  
 1&3&4  
 \end{bmatrix}  
@@ -30,7 +30,7 @@ a_{31}&a_{32}&a_{33}&a_{34}&a_{35}&0&0&0\\\
 \end{array}\right]$  
   
 选定前2列进行拉普拉斯展开，其他项都是零，只有这一项可能不为零  
- $\begin{bmatrix}  
+$\begin{bmatrix}  
 -1&0\\\  
 0&-1  
 \end{bmatrix}  

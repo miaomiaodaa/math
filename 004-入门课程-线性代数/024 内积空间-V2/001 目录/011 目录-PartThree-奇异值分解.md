@@ -6,7 +6,7 @@
   
 **引问**  
 设 $A_{m\times n}$ 是实矩阵，则存在非异阵 $P,Q$ ，使得 $P^{-1}\cdot A\cdot Q=\begin{bmatrix}I_r&O\\\ O&O\end{bmatrix}$  
- $P$ 的几何意义是 $m$ 维列向量间的过渡矩阵， $Q$ 的几何意义是 $n$ 维列向量间的过渡矩阵  
+$P$ 的几何意义是 $m$ 维列向量间的过渡矩阵， $Q$ 的几何意义是 $n$ 维列向量间的过渡矩阵  
 进入到内积空间之后，要求 $P$ 与 $Q$ 都是正交阵(酉阵)，那么 $P^{-1}\cdot A\cdot Q=$ 什么呢？  
   
 **奇异值、右奇异向量、左奇异向量(代数版)**  
@@ -48,7 +48,7 @@
   
 **正交相抵标准型**  
 定理1: 正交相抵标准型  
- $\begin{bmatrix}S&O\\\ O&O\end{bmatrix}$ 就是 $A$ 的正交相抵标准型  
+$\begin{bmatrix}S&O\\\ O&O\end{bmatrix}$ 就是 $A$ 的正交相抵标准型  
 (回答了本节课开头的引问)  
   
 **矩阵的奇异值分解(SVD分解)**  
@@ -63,16 +63,16 @@
 引理1: 广义逆几何版  
 设 $\Phi\in\mathbf{L}(V^n,U^m)$ ，其中 $V^n$ ， $U^m$ 都是欧几里得空间  
 则存在唯一的线性映射 $\Phi^+:U^m\to V^n$ ，满足以下性质  
- $1^\circ\ \Phi\circ\Phi^+\circ\Phi=\Phi$ ，  
- $2^\circ\ \Phi^+\circ\Phi\circ\Phi^+=\Phi^+$ ，  
- $3^\circ\ \Phi\circ\Phi^+$ 是 $U$ 上的自伴随算子， $\Phi^+\circ\Phi$ 是 $V$ 上的自伴随算子  
+$1^\circ\ \Phi\circ\Phi^+\circ\Phi=\Phi$ ，  
+$2^\circ\ \Phi^+\circ\Phi\circ\Phi^+=\Phi^+$ ，  
+$3^\circ\ \Phi\circ\Phi^+$ 是 $U$ 上的自伴随算子， $\Phi^+\circ\Phi$ 是 $V$ 上的自伴随算子  
 (证明过程只理解1/3)  
   
 引理2: 广义逆代数版  
 设 $A\in M_{m\times n}(\mathbb R)$ ，则存在唯一的 $A^+\in M_{n\times m}(\mathbb R)$ ，满足以下性质  
- $1^\circ\ A\cdot A^+\cdot A=A$ ，  
- $2^\circ\ A^+\cdot A\cdot A^+=A^+$ ，  
- $3^\circ\ A\cdot A^+,A^+\cdot A$ 均为对称阵  
+$1^\circ\ A\cdot A^+\cdot A=A$ ，  
+$2^\circ\ A^+\cdot A\cdot A^+=A^+$ ，  
+$3^\circ\ A\cdot A^+,A^+\cdot A$ 均为对称阵  
   
 定义1: 广义逆  
   

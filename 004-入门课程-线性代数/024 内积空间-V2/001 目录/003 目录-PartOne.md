@@ -19,14 +19,14 @@
   
 **实内积与实内积空间**  
 定义1: 二元运算  
- $V\times V\to\mathbb{R},\ \alpha\times\beta\mapsto(\alpha,\beta)$  
+$V\times V\to\mathbb{R},\ \alpha\times\beta\mapsto(\alpha,\beta)$  
   
 定义2: 实内积运算  
 实线性空间上，满足对称性、第一变元线性、正定性的二元运算  
- $1^\circ\ $ 对称性: $\enspace$ $(\alpha,\beta)=(\beta,\alpha)$  
- $2^\circ\ $ 第一变元线性-加法: $\enspace$ $(\alpha+\beta,\gamma)=(\alpha,\gamma)+(\beta,\gamma)$  
- $3^\circ\ $ 第一变元线性-数乘: $\enspace$ $(c\alpha,\beta)=c(\alpha,\beta),\ c\in\mathbb{R}$  
- $4^\circ\ $ 正定性: $\enspace$ $(\alpha,\alpha)\geq0$ ，且等号成立 $\Leftrightarrow\alpha=\mathbf{0}$  
+$1^\circ\ $ 对称性: $\enspace$ $(\alpha,\beta)=(\beta,\alpha)$  
+$2^\circ\ $ 第一变元线性-加法: $\enspace$ $(\alpha+\beta,\gamma)=(\alpha,\gamma)+(\beta,\gamma)$  
+$3^\circ\ $ 第一变元线性-数乘: $\enspace$ $(c\alpha,\beta)=c(\alpha,\beta),\ c\in\mathbb{R}$  
+$4^\circ\ $ 正定性: $\enspace$ $(\alpha,\alpha)\geq0$ ，且等号成立 $\Leftrightarrow\alpha=\mathbf{0}$  
 (特别注意: 等号成立条件)  
   
 定义3: 实内积空间  
@@ -37,14 +37,14 @@
   
 **复内积与复内积空间**  
 定义1: 二元运算  
- $V\times V\to\mathbb{C},\ \alpha\times\beta\mapsto(\alpha,\beta)$  
+$V\times V\to\mathbb{C},\ \alpha\times\beta\mapsto(\alpha,\beta)$  
   
 定义2: 复内积运算  
 实线性空间上，满足对称性、第一变元线性、正定性的二元运算  
- $1^\circ\ $ 共轭对称性: $\enspace$ $(\alpha,\beta)=\overline{(\beta,\alpha)}$  
- $2^\circ\ $ 第一变元线性-加法: $\enspace$ $(\alpha+\beta,\gamma)=(\alpha,\gamma)+(\beta,\gamma)$  
- $3^\circ\ $ 第一变元线性-数乘: $\enspace$ $(c\alpha,\beta)=c(\alpha,\beta),\ c\in\mathbb{C}$  
- $4^\circ\ $ 正定性: $\enspace$ $(\alpha,\alpha)\geq0$ ，且等号成立 $\Leftrightarrow\alpha=\mathbf{0}$  
+$1^\circ\ $ 共轭对称性: $\enspace$ $(\alpha,\beta)=\overline{(\beta,\alpha)}$  
+$2^\circ\ $ 第一变元线性-加法: $\enspace$ $(\alpha+\beta,\gamma)=(\alpha,\gamma)+(\beta,\gamma)$  
+$3^\circ\ $ 第一变元线性-数乘: $\enspace$ $(c\alpha,\beta)=c(\alpha,\beta),\ c\in\mathbb{C}$  
+$4^\circ\ $ 正定性: $\enspace$ $(\alpha,\alpha)\geq0$ ，且等号成立 $\Leftrightarrow\alpha=\mathbf{0}$  
 (特别注意: 等号成立条件)  
   
 定义3: 复内积空间  
@@ -59,10 +59,10 @@
 由[共轭对称性]即可得  
   
 命题1: 实内积运算第二变元也具有线性  
- $(\alpha,k\cdot\beta+l\cdot\gamma)=k\cdot(\alpha,\beta)+l\cdot(\alpha,\gamma)$  
+$(\alpha,k\cdot\beta+l\cdot\gamma)=k\cdot(\alpha,\beta)+l\cdot(\alpha,\gamma)$  
   
 命题2: 复内积运算第二变元具有共轭线性  
- $(\alpha,k\cdot\beta+l\cdot\gamma)=\bar k\cdot(\alpha,\beta)+\bar l\cdot(\alpha,\gamma)$  
+$(\alpha,k\cdot\beta+l\cdot\gamma)=\bar k\cdot(\alpha,\beta)+\bar l\cdot(\alpha,\gamma)$  
   
 命题3: 实内积运算以及实内积空间的定义相容于复内积运算以及复内积空间的定义  
   
@@ -90,8 +90,8 @@
 <font color=blue>例5: 非标准内积-基于正定实对称阵的内积</font>  
 设 $V=\mathbb{C}^2$ ， $\alpha=\begin{bmatrix}x_1\\\ x_2\end{bmatrix},\ \beta=\begin{bmatrix}y_1\\\ y_2\end{bmatrix}$  
 定义 $(\alpha,\beta)=x_1y_1-x_2y_1-x_1y_2+4x_1y_1$  
- $=(x_1-x_2)(y_1-y_2)+3x_2y_2$  
- $=\alpha^T\cdot\begin{bmatrix}1&-1\\\ -1&4\end{bmatrix}\cdot\beta$  
+$=(x_1-x_2)(y_1-y_2)+3x_2y_2$  
+$=\alpha^T\cdot\begin{bmatrix}1&-1\\\ -1&4\end{bmatrix}\cdot\beta$  
 (其实例1-4就是取 $I_n$ )  
   
 <font color=blue>例6: 非标准内积-基于正定实对称阵的内积</font>  
@@ -137,7 +137,7 @@
 <font color=blue>命题3: Cauchy-Schwarz不等式</font>  
 设 $V$ 是复内积空间， $\alpha,\beta\in V$ ， $c\in\mathbb{C}$ 是常数  
 则 $\vert(\alpha,\beta)\vert\leq\Vert\alpha\Vert\cdot\Vert\beta\Vert$ ，等号成立，当且仅当 $\alpha,\beta$ 线性相关  
- $\quad\vert(\alpha,\beta)\vert^2\leq(\alpha,\alpha)\cdot(\beta,\beta)$  
+$\quad\vert(\alpha,\beta)\vert^2\leq(\alpha,\alpha)\cdot(\beta,\beta)$  
 (三种表现形式: 实数域、积分形式、欧几里得空间)  
   
 <font color=blue>命题4: 三角不等式</font>  
@@ -173,7 +173,7 @@
 若 $\alpha\perp\beta$ ，则 $\Vert\alpha+\beta\Vert^2=\Vert\alpha\Vert^2+\Vert\beta\Vert^2$  
   
 推广: 广义勾股定理  
- $\Vert\alpha+\beta+\gamma\Vert^2=\Vert\alpha\Vert^2+\Vert\beta\Vert^2+\Vert\gamma\Vert^2$  
+$\Vert\alpha+\beta+\gamma\Vert^2=\Vert\alpha\Vert^2+\Vert\beta\Vert^2+\Vert\gamma\Vert^2$  
   
 ---  
   
@@ -198,9 +198,9 @@
   
 定理2: 正定实对称阵与实内积度量阵是一一对应的  
 设 $V$ 是实线性空间， $(e_1,e_2,\cdots,e_n)$ 是给定的基  
- $\{V上的所有内积结构\}\xrightarrow{1:1}\{n阶正定实对称阵\}$  
- $\Phi:(-,-)\longmapsto\rm{G}=\lgroup(e_i,e_j)\rgroup_n$  
- $\Psi:(\alpha,\beta)=\mathbf{X}^T\cdot G\cdot\mathbf{Y}\longleftarrow G$  
+$\{V上的所有内积结构\}\xrightarrow{1:1}\{n阶正定实对称阵\}$  
+$\Phi:(-,-)\longmapsto\rm{G}=\lgroup(e_i,e_j)\rgroup_n$  
+$\Psi:(\alpha,\beta)=\mathbf{X}^T\cdot G\cdot\mathbf{Y}\longleftarrow G$  
 则 $\Phi$ 与 $\Psi$ 互为逆映射  
   
 **复内积的度量矩阵(Gram矩阵)**  
@@ -222,9 +222,9 @@
   
 定理2: 正定Hermite阵与复内积度量阵是一一对应的  
 设 $V$ 是复线性空间， $(e_1,e_2,\cdots,e_n)$ 是给定的基  
- $\{V上的所有内积结构\}\xrightarrow{1:1}\{n阶正定\rm{Hermite}阵\}$  
- $\Phi:(-,-)\longmapsto\rm{G}=\lgroup(e_i,e_j)\rgroup_n$  
- $\Psi:(\alpha,\beta)=\mathbf{X}^T\cdot G\cdot\mathbf{\overline Y}\longleftarrow G$  
+$\{V上的所有内积结构\}\xrightarrow{1:1}\{n阶正定\rm{Hermite}阵\}$  
+$\Phi:(-,-)\longmapsto\rm{G}=\lgroup(e_i,e_j)\rgroup_n$  
+$\Psi:(\alpha,\beta)=\mathbf{X}^T\cdot G\cdot\mathbf{\overline Y}\longleftarrow G$  
 则 $\Phi$ 与 $\Psi$ 互为逆映射  
   
 (实对称阵表示二次型)  
@@ -265,7 +265,7 @@
 <font color=red> $b_{k+1}=a_{k+1}-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i$ </font>  
   
 命题2: 正交基到普通基的过渡矩阵的结构  
- $(a_1,a_2,\cdots,a_m)=(b_1,b_2,\cdots,b_m)P$  
+$(a_1,a_2,\cdots,a_m)=(b_1,b_2,\cdots,b_m)P$  
 过渡矩阵 $P$ 主对角线元素为1的上三角阵  
   
 命题3: 标准化公式， $\left\Vert\dfrac{\alpha}{\Vert\alpha\Vert}\right\Vert=1$  

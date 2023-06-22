@@ -19,11 +19,11 @@
   
 <font color=blue>定理4: 伴随算子的运算性质</font>  
 设 $V$ 是内积空间(有限维或无限维，实内积或复内积)， $\Phi,\Psi\in\mathbf{L}(V)$ 是线性变换， $c$ 是常数(实内积空间是实数，复内积空间是复数)，若 $\Phi,\Psi$ 都存在伴随算子 $\Phi^\star,\Psi^\star$ ，则以下运算性质成立  
- $1^\circ\ (\Phi+\Psi)^\star=\Phi^\star+\Psi^\star$  
- $2^\circ\ (c\cdot\Phi)^\star=\overline{c}\cdot\Phi^\star$  
- $3^\circ\ (\Phi\circ\Psi)^\star=\Psi^\star\circ\Phi^\star$  
- $4^\circ\ (\Phi^\star)^\star=\Phi$  
- $5^\circ\ $ 若 $\Phi$ 可逆，则 $\Phi^\star$ 也可逆，且 $(\Phi^\star)^{-1}=(\Phi^{-1})^\star$  
+$1^\circ\ (\Phi+\Psi)^\star=\Phi^\star+\Psi^\star$  
+$2^\circ\ (c\cdot\Phi)^\star=\overline{c}\cdot\Phi^\star$  
+$3^\circ\ (\Phi\circ\Psi)^\star=\Psi^\star\circ\Phi^\star$  
+$4^\circ\ (\Phi^\star)^\star=\Phi$  
+$5^\circ\ $ 若 $\Phi$ 可逆，则 $\Phi^\star$ 也可逆，且 $(\Phi^\star)^{-1}=(\Phi^{-1})^\star$  
 (矩阵与线性变换的一一对应，矩阵运算与线性变换运算的一一对应)  
   
 <font color=red>定理5: 正交补空间是 $\Phi^\star$ 不变子空间</font>  
@@ -83,8 +83,8 @@
   
 <font color=green>命题6: 保持内积的4个充要条件</font>  
 设 $U,V$ 是 $n$ 维度实(复)内积空间， $\Phi:V\to U$ 是线性映射，则以下结论等价  
- $1^\circ\ \Phi$ 保持内积  
- $2^\circ\ \Phi$ 是保持内积的线性同构  
+$1^\circ\ \Phi$ 保持内积  
+$2^\circ\ \Phi$ 是保持内积的线性同构  
 <mark> $3^\circ\ \Phi$ 将 $V$ 的任一标准正交基映射成 $U$ 的标准正交基</mark>  
 <mark> $4^\circ\ \Phi$ 将 $V$ 的某个标准正交基映射成 $U$ 的标准正交基</mark>  
   
@@ -113,16 +113,16 @@
   
 <font color=green>定理3: 保积变换判定定理3--正交阵的3个充要条件</font>  
 设 $A\in M_n(\mathbb R)$ ，则以下结论等价  
- $1^\circ\ A$ 是正交阵  
- $2^\circ\ A$ 的 $n$ 个行向量是 $\mathbb R_n$ 标准内积下的一个标准正交基  
- $3^\circ\ A$ 的 $n$ 个列向量是 $\mathbb R^n$ 标准内积下的一个标准正交基  
+$1^\circ\ A$ 是正交阵  
+$2^\circ\ A$ 的 $n$ 个行向量是 $\mathbb R_n$ 标准内积下的一个标准正交基  
+$3^\circ\ A$ 的 $n$ 个列向量是 $\mathbb R^n$ 标准内积下的一个标准正交基  
 <font color=green>推论1: $A$ 是正交阵 $\Leftrightarrow A\cdot A^T=I_n\Leftrightarrow A^T\cdot A=I_n$ </font>  
   
 <font color=green>定理4: 保积变换判定定理4--酉阵的3个充要条件</font>  
 设 $A\in M_n(\mathbb C)$ ，则以下结论等价  
- $1^\circ\ A$ 是酉阵  
- $2^\circ\ A$ 的 $n$ 个行向量是 $\mathbb C_n$ 标准内积下的一个标准正交基  
- $3^\circ\ A$ 的 $n$ 个列向量是 $\mathbb C^n$ 标准内积下的一个标准正交基  
+$1^\circ\ A$ 是酉阵  
+$2^\circ\ A$ 的 $n$ 个行向量是 $\mathbb C_n$ 标准内积下的一个标准正交基  
+$3^\circ\ A$ 的 $n$ 个列向量是 $\mathbb C^n$ 标准内积下的一个标准正交基  
 <font color=green>推论1: $A$ 是酉阵 $\Leftrightarrow A\cdot(\overline A)^T=I_n\Leftrightarrow (\overline A)^T\cdot A=I_n$ </font>  
   
 命题1: 正交阵是一种特殊的酉阵  

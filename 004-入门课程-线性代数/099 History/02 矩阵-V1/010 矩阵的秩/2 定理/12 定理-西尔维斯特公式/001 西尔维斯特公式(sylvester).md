@@ -21,5 +21,5 @@
 以矩阵 $B$ 为主，若矩阵 $A$ 可逆，则 $AB$ 秩不变  
 若矩阵 $A$ 不可逆，则 $AB$ 秩比 $B$ 的秩小  
   
- $\rm{rank}(AB)  
+$\rm{rank}(AB)  
 \leq\min[\rm{rank}(A)，\rm{rank}(B)]$  

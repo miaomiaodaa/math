@@ -11,20 +11,20 @@
   
 设 $\alpha，\beta\in\rm{Ker(\Phi)}$  
   
- $\Rightarrow\Phi(\alpha)=\Phi(\beta)  
+$\Rightarrow\Phi(\alpha)=\Phi(\beta)  
 =\mathbf0_U$  
   
- $\Phi(\alpha+\beta)=  
+$\Phi(\alpha+\beta)=  
 \Phi(\alpha)+\Phi(\beta)=\mathbf0_U$  
   
- $\Rightarrow(\alpha+\beta)\in\rm{Ker(\Phi)}$  
+$\Rightarrow(\alpha+\beta)\in\rm{Ker(\Phi)}$  
   
 ---  
 数乘封闭，即证明 $(k\cdot\alpha)\in\rm{Ker(\Phi)}$  
   
- $\forall\ k\in K，\alpha\in\rm{Ker(\Phi)}$  
+$\forall\ k\in K，\alpha\in\rm{Ker(\Phi)}$  
   
- $\Phi(k\cdot\alpha)=k\cdot\Phi(\alpha)  
+$\Phi(k\cdot\alpha)=k\cdot\Phi(\alpha)  
 =\mathbf0_U$  
   
- $\Rightarrow(k\cdot\alpha)\in\rm{Ker(\Phi)}$  
+$\Rightarrow(k\cdot\alpha)\in\rm{Ker(\Phi)}$  

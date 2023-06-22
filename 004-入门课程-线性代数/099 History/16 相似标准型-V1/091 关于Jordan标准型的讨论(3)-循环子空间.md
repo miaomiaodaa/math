@@ -20,10 +20,10 @@
 举例3:若线性变换 $\Phi$ 在某个基下的表示矩阵为 $\rm{Jordan}$ 块，则 $\Phi$ 可构成一个循环子空间  
   
 <font color=brown>命题1</font>  
- $C(\Phi,\alpha)$ 是包含 $\alpha$ 的最小不变子空间  
+$C(\Phi,\alpha)$ 是包含 $\alpha$ 的最小不变子空间  
   
 <font color=brown>命题2</font>  
- $V_i$ 是关于线性变换 $\Psi=\Phi-\lambda_iI_V$ 的循环子空间  
+$V_i$ 是关于线性变换 $\Psi=\Phi-\lambda_iI_V$ 的循环子空间  
   
 注: $\enspace$ 特征值 $\lambda_i$ 不同循环子空间的线性变换 $\Psi$ 不同  
   
@@ -32,46 +32,46 @@
 作用于 $\begin{cases}  
 \Phi(e_{i1})=\lambda_i\cdot e_{i1}&\\\ \Phi(e_{i2})=e_{i1}+\lambda_i\cdot e_{i2}&\\\ \cdots&\\\ \Phi(e_{ir_i})=e_{ir_{i-1}}+\lambda_i\cdot e_{ir_i}  \end{cases}\ (1)\quad, \forall\ 1\le i\le k$ 得  
   
- $\Rightarrow\begin{cases}  
+$\Rightarrow\begin{cases}  
 \Psi(e_{i,1})=\mathbf{0}&\\\ \Psi(e_{i,2})=e_{i1}&\\\ \cdots&\\\ \Psi(e_{i,r_i})=e_{i,r_i-1}  
 \end{cases}\quad, \forall\ 1\le i\le k$  
   
- $\Rightarrow e_{i,r_i}\xrightarrow[第1次]{\Psi}  
+$\Rightarrow e_{i,r_i}\xrightarrow[第1次]{\Psi}  
 e_{i,r_{i}-1}\xrightarrow[第2次]{\Psi}  
 e_{i,r_{i}-2}\xrightarrow[第3次]{\Psi}  
 \cdots\xrightarrow[第r_i-2次]{\Psi}  
 e_{i,2}\xrightarrow[第r_i-1次]{\Psi}  
 e_{i,1}\xrightarrow[第r_i次]{\Psi}\mathbf0$  
   
- $\Rightarrow(e_{i,r_i},\ \Psi(e_{i,r_i}),\ \Psi^2(e_{i,r_i}),\ \cdots,\ \Psi^{r_i-1}(e_{i,r_i}))$ 构成 $V_i$ 的一个基  
+$\Rightarrow(e_{i,r_i},\ \Psi(e_{i,r_i}),\ \Psi^2(e_{i,r_i}),\ \cdots,\ \Psi^{r_i-1}(e_{i,r_i}))$ 构成 $V_i$ 的一个基  
   
- $\Rightarrow V_i$ 是 $\Psi$ 循环子空间  
+$\Rightarrow V_i$ 是 $\Psi$ 循环子空间  
   
 <font color=brown>命题3</font>  
- $V$ 可以分解成不变子空间的直和  
+$V$ 可以分解成不变子空间的直和  
   
 证明:  
 令 $V_i=L(e_{i1},e_{i2},\cdots,e_{ir_i})$  
 由 $(1)$ 得  
- $\Rightarrow\Phi(V_i)\subseteq V_i$ ，即 $V_i$ 是 $\Phi$ 不变子空间，<font color=red> $V_i$ 不是特征子空间</font>  
- $\Rightarrow \rm{J}_{r_i}(\lambda_i)$ 是 $\Phi$ 限制在 $V_i$ 下的表示矩阵  
+$\Rightarrow\Phi(V_i)\subseteq V_i$ ，即 $V_i$ 是 $\Phi$ 不变子空间，<font color=red> $V_i$ 不是特征子空间</font>  
+$\Rightarrow \rm{J}_{r_i}(\lambda_i)$ 是 $\Phi$ 限制在 $V_i$ 下的表示矩阵  
   
- $\lambda_i$ 是 $V_i$ 的特征值 $\xrightarrow{对应的特征子空间}V_{i_\lambda}\subseteq V_i$  
- $\lambda_i$ 也是 $V$ 的特征值 $\xrightarrow{对应的特征子空间}V_{\lambda_i}\subseteq V$  
+$\lambda_i$ 是 $V_i$ 的特征值 $\xrightarrow{对应的特征子空间}V_{i_\lambda}\subseteq V_i$  
+$\lambda_i$ 也是 $V$ 的特征值 $\xrightarrow{对应的特征子空间}V_{\lambda_i}\subseteq V$  
   
 令 $V_i=L(e_{i1},e_{i2},\cdots,e_{ir_i})$  
- $\Rightarrow V_i$ 的基可以拼成全空间 $V$ 的基  
- $\Rightarrow V=V_1\oplus V_2\oplus\cdots\oplus V_k\quad(2)$  
+$\Rightarrow V_i$ 的基可以拼成全空间 $V$ 的基  
+$\Rightarrow V=V_1\oplus V_2\oplus\cdots\oplus V_k\quad(2)$  
   
 <font color=brown>命题4</font>  
- $V$ 可以分解成循环子空间的直和  
+$V$ 可以分解成循环子空间的直和  
   
 证明:  
 令 $V_i=L(e_{i1},e_{i2},\cdots,e_{ir_i})$  
- $\Rightarrow V_i$ 的基可以拼成全空间 $V$ 的基  
- $\Rightarrow V=V_1\oplus V_2\oplus\cdots\oplus V_k$  
+$\Rightarrow V_i$ 的基可以拼成全空间 $V$ 的基  
+$\Rightarrow V=V_1\oplus V_2\oplus\cdots\oplus V_k$  
 再由【命题2】的结论得  
- $\Rightarrow V$ 可以分解成循环子空间的直和  
+$\Rightarrow V$ 可以分解成循环子空间的直和  
   
 <font color=brown>引理1: 相同特征值的循环子空间的直和空间</font>  
 设 $\rm{R}(\lambda_1)=V_1\oplus V_2\oplus\cdots\oplus V_s$ ， $V_i$ 是循环不变子空间  
@@ -82,7 +82,7 @@ e_{i,1}\xrightarrow[第r_i次]{\Psi}\mathbf0$
 2 特征子空间 $\subseteq$ 根子空间:  $V_{\lambda_1}\subseteq\rm{R}(\lambda_1)$  
 3 属于特征值 $\lambda_i$ 的 $\rm{Jordan}$ 块 $J_{r_i}(\lambda_i)$  
 4 相同特征值的循环子空间和在一起的空间  
- $\quad\rm{R}(\lambda_1)=V_1\oplus V_2\oplus\cdots \oplus V_s$  
+$\quad\rm{R}(\lambda_1)=V_1\oplus V_2\oplus\cdots \oplus V_s$  
 5  $\rm{Ker}(\Phi-\lambda_1I_V)^n$ 这东西用人话怎么说  
 把整个 $V$ 中的向量用 $(\Phi-\lambda_1I_V)$ 连续“筛” $n$ 次，  
 不是筛一次，留下一部分，淘汰一部分，留下来的进入第2轮  
@@ -101,30 +101,30 @@ B  $V_{\lambda_1}=\rm{Ker}[(\Phi-\lambda_1I_V)]$ 是 $\lambda_1$ 的特征子空
 要证 $\rm{R}(\lambda_1)\subseteq\rm{Ker}[(\Phi-\lambda_1 I_V)^n]$  
 只要证 $\forall v\in\rm{R}(\lambda_1)$ ，都有 $v\in\rm{Ker}[(\Phi-\lambda_1 I_V)^n]$  
   
- $\forall v\in\rm{R}(\lambda_1)$  
- $\Rightarrow v=v_1+v_2+\cdots+v_s, v_i\in V_i$  
+$\forall v\in\rm{R}(\lambda_1)$  
+$\Rightarrow v=v_1+v_2+\cdots+v_s, v_i\in V_i$  
   
   
- $V_i$ 的基具有该性质: $\ e_{i,r_i}\xrightarrow[第1次]{\Phi-\lambda_1 I_V}  
+$V_i$ 的基具有该性质: $\ e_{i,r_i}\xrightarrow[第1次]{\Phi-\lambda_1 I_V}  
 e_{i,r_{i}-1}\xrightarrow[第2次]{\Phi-\lambda_1 I_V}  
 e_{i,r_{i}-2}\xrightarrow[第3次]{\Phi-\lambda_1 I_V}  
 \cdots\xrightarrow[第r_i-2次]{\Phi-\lambda_1 I_V}  
 e_{i,2}\xrightarrow[第r_i-1次]{\Phi-\lambda_1 I_V}  
 e_{i,1}\xrightarrow[第r_i次]{\Phi-\lambda_1 I_V}\mathbf0$  
- $\Rightarrow(\Phi-\lambda_1 I_V)^{r_i}(e_{ij})=\mathbf0$  
- $\Rightarrow(\Phi-\lambda_1 I_V)^{r_i}(v_i)=\mathbf0$  
- $\Rightarrow(\Phi-\lambda_1 I_V)^n(v_i)=\mathbf0$  
+$\Rightarrow(\Phi-\lambda_1 I_V)^{r_i}(e_{ij})=\mathbf0$  
+$\Rightarrow(\Phi-\lambda_1 I_V)^{r_i}(v_i)=\mathbf0$  
+$\Rightarrow(\Phi-\lambda_1 I_V)^n(v_i)=\mathbf0$  
   
- $\Rightarrow(\Phi-\lambda_1 I_V)^n(v)=(\Phi-\lambda_1 I_V)^n(v_1)+(\Phi-\lambda_1 I_V)^n(v_2)  
+$\Rightarrow(\Phi-\lambda_1 I_V)^n(v)=(\Phi-\lambda_1 I_V)^n(v_1)+(\Phi-\lambda_1 I_V)^n(v_2)  
 +\cdots+(\Phi-\lambda_1 I_V)^n(v_s)=\mathbf0$  
- $\Rightarrow\forall v\in\rm{R}(\lambda_1)$ ，都有 $v\in\rm{Ker}[(\Phi-\lambda_1 I_V)^n]$  
+$\Rightarrow\forall v\in\rm{R}(\lambda_1)$ ，都有 $v\in\rm{Ker}[(\Phi-\lambda_1 I_V)^n]$  
 （其实n可严格取 $\max\{r_1,r_2,\cdots,r_s\}$ ，或者放宽点取 $r_1+r_2+\cdots+r_s$ ）  
   
 再证 $\rm{Ker}[(\Phi-\lambda_1 I_V)^n]\subseteq\rm{R}(\lambda_1)$  
   
- $\rm{Ker}[(\Phi-\lambda_1 I_V)^n]$ 中的向量等价于在基 $(\bigstar)$ 下，使得齐次线性方程组 $(\rm{J}-\lambda_1 I_n)^nx=0$ 成立的全体坐标向量  
+$\rm{Ker}[(\Phi-\lambda_1 I_V)^n]$ 中的向量等价于在基 $(\bigstar)$ 下，使得齐次线性方程组 $(\rm{J}-\lambda_1 I_n)^nx=0$ 成立的全体坐标向量  
 下面研究 $(\rm{J}-\lambda_1 I_n)^nx=0(\star)$ 解的情况  
- $(J_{r_i}(\lambda_i)-\lambda_1 I_{r_i})^n=  
+$(J_{r_i}(\lambda_i)-\lambda_1 I_{r_i})^n=  
 \begin{bmatrix}  
 \lambda_i-\lambda&1\\\  
 &\lambda_i-\lambda&1\\\  
@@ -140,12 +140,12 @@ e_{i,1}\xrightarrow[第r_i次]{\Phi-\lambda_1 I_V}\mathbf0$
 零矩阵时，解是整个 $V_i$ 对应的坐标向量  
 所有的解合并起来就是 $(\star)$ 的解  
 对应到几何上就是 $V_1+V_2+\cdots+V_s$  
- $\Rightarrow\rm{Ker}[(\Phi-\lambda_1 I_V)^n]=V_1+V_2+\cdots+V_s$  
+$\Rightarrow\rm{Ker}[(\Phi-\lambda_1 I_V)^n]=V_1+V_2+\cdots+V_s$  
 又因为 $V_1+V_2+\cdots+V_s$ 是直和  
- $\Rightarrow\rm{Ker}[(\Phi-\lambda_1 I_V)^n]=\rm{R}(\lambda_1)$  
+$\Rightarrow\rm{Ker}[(\Phi-\lambda_1 I_V)^n]=\rm{R}(\lambda_1)$  
   
 <font color=brown>命题5</font>  
- $V$ 可以分解成根子空间的直和  
+$V$ 可以分解成根子空间的直和  
   
 证明  
 由【引理1】直接得:  $V=R(\lambda_1)\oplus R(\lambda_2)\oplus \cdots \oplus R(\lambda_s)$  
@@ -156,10 +156,10 @@ e_{i,1}\xrightarrow[第r_i次]{\Phi-\lambda_1 I_V}\mathbf0$
 设 $\Phi\in\mathbf{L}(V_K^n)$ 可对角化，当且仅当任意特征值 $\lambda_0$ 的 $\rm{R}(\lambda_0)=V_{\lambda_0}$ ，即根子空间 $=$ 特征子空间  
   
 证明:  
- $\rm{R}(\lambda_0)=V_{\lambda_0}$  
- $\Leftrightarrow\rm{dim}[\rm{R}(\lambda_0)]=\rm{dim}[V_{\lambda_0}]$  
- $\rm{dim}[V_{\lambda_0}]=\lambda_0$ 几何重数 $=\lambda_0$ 对应的 $\rm{Jordan}$ 块的块数  
- $\rm{dim}[\rm{R}(\lambda_0)]=$ 属于特征值 $\lambda_0$ 的 $\rm{Jordan}$ 块的阶数之和 $=\lambda_0$ 的特征方阵的  
+$\rm{R}(\lambda_0)=V_{\lambda_0}$  
+$\Leftrightarrow\rm{dim}[\rm{R}(\lambda_0)]=\rm{dim}[V_{\lambda_0}]$  
+$\rm{dim}[V_{\lambda_0}]=\lambda_0$ 几何重数 $=\lambda_0$ 对应的 $\rm{Jordan}$ 块的块数  
+$\rm{dim}[\rm{R}(\lambda_0)]=$ 属于特征值 $\lambda_0$ 的 $\rm{Jordan}$ 块的阶数之和 $=\lambda_0$ 的特征方阵的  
 （这个弯转不过来了）  
   
 <font color=brown>命题6</font>  
@@ -169,23 +169,23 @@ e_{i,1}\xrightarrow[第r_i次]{\Phi-\lambda_1 I_V}\mathbf0$
 2  $\exists\ g(\lambda)\in K[\lambda]$ ，使得 $\Psi=g(\Phi)$  
   
 证明:  
- $(1)$  
- $V=\rm{C}(\Phi,\alpha)$ 的基为 $(\alpha,\Phi(\alpha),\Phi^2(\alpha),\cdots,\Phi^{n-1}(\alpha))$  
- $\Psi$ 由 $\Psi$ 在基上的作用唯一决定  
+$(1)$  
+$V=\rm{C}(\Phi,\alpha)$ 的基为 $(\alpha,\Phi(\alpha),\Phi^2(\alpha),\cdots,\Phi^{n-1}(\alpha))$  
+$\Psi$ 由 $\Psi$ 在基上的作用唯一决定  
   
- $\Phi\circ\Psi=\Psi\circ\Phi$  
- $\Rightarrow\Psi(\Phi^i(\alpha))  
+$\Phi\circ\Psi=\Psi\circ\Phi$  
+$\Rightarrow\Psi(\Phi^i(\alpha))  
 =\Phi^i(\Psi(\alpha))$  
- $\Rightarrow\Psi$ 由 $\Psi(\alpha)$ 唯一决定  
+$\Rightarrow\Psi$ 由 $\Psi(\alpha)$ 唯一决定  
   
- $(2)$  
- $\Psi(\alpha)=a_0\cdot\alpha+a_1\cdot\Phi(\alpha)+a_2\cdot\Phi^2(\alpha)+\cdots+  
+$(2)$  
+$\Psi(\alpha)=a_0\cdot\alpha+a_1\cdot\Phi(\alpha)+a_2\cdot\Phi^2(\alpha)+\cdots+  
 a_{n-1}\cdot\Phi^{n-1}(\alpha)$  
 令 $g(x)=a_0+a_1\cdot x+a_2\cdot x^2+\cdots+  
 a_{n-1}\cdot x^{n-1}$  
- $\Rightarrow\Psi(\alpha)=g(\Phi)(\alpha)$  
+$\Rightarrow\Psi(\alpha)=g(\Phi)(\alpha)$  
 由结论 $(1)$ 得  
- $\Rightarrow\Psi=g(\Phi)$  
+$\Rightarrow\Psi=g(\Phi)$  
   
 推论:  
 若 $A=F(f(\lambda))$ ， $AB=BA$ ，则 $B=g(A)$  
@@ -203,19 +203,19 @@ a_{n-1}\cdot x^{n-1}$
 证明:  
 设 $k=\max\{i\in\mathbb{Z}^+\mid \alpha,\Phi(\alpha),\cdots,\Phi^{i-1}(\alpha)\}$ 线性无关  
 首项这个集合非空，至少有一个向量 $\alpha$ 保底，其次这个集合由上界，上界是这个循环子空间的维数，所以必然存在最大值  
- $\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性无关  
- $\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha),\Phi^k(\alpha)$ 线性相关  
- $\Rightarrow\Phi^k(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
+$\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性无关  
+$\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha),\Phi^k(\alpha)$ 线性相关  
+$\Rightarrow\Phi^k(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
   
 由归纳法  
- $\Rightarrow\forall i>k$ ， $\Phi^i(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
- $\Rightarrow C(\Phi,\alpha)$ 中任意向量可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
+$\Rightarrow\forall i>k$ ， $\Phi^i(\alpha)$ 可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
+$\Rightarrow C(\Phi,\alpha)$ 中任意向量可由 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性表出  
 由因为 $\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 线性无关  
- $\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 是 $C(\Phi,\alpha)$  
+$\Rightarrow\alpha,\Phi(\alpha),\cdots,\Phi^{k-1}(\alpha)$ 是 $C(\Phi,\alpha)$  
   
- $\Rightarrow\rm{dim}(C(\Phi,\alpha))=k=m$  
+$\Rightarrow\rm{dim}(C(\Phi,\alpha))=k=m$  
   
 推论:  
 设 $\Phi^m(\alpha)=-a_0\alpha-a_1\Phi(\alpha)-\cdots-a_{m-1}\Phi^{m-1}(\alpha)$  
 令 $g(x)=x^m+a_{m-1}x^{m-1}+\cdots+a_1x+a_0\in K[x]$  
- $\Phi\mid_{C(\Phi,\alpha)}$ 在基 $(\alpha,\Phi(\alpha),\Phi^2(\alpha),\cdots,\Phi^{m-1}(\alpha))$ 下的表示矩阵为 $g(x)$ 的友阵  
+$\Phi\mid_{C(\Phi,\alpha)}$ 在基 $(\alpha,\Phi(\alpha),\Phi^2(\alpha),\cdots,\Phi^{m-1}(\alpha))$ 下的表示矩阵为 $g(x)$ 的友阵  

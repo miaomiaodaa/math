@@ -11,16 +11,16 @@
 3 该定理的叙述结构与【相似于 $\rm{Frobenius}$ 标准型】一样  
   
 **证明**  
- $A$ 与 $B$ 相似，当且仅当 $A$ 与 $B$ 有相同的初等因子组  
+$A$ 与 $B$ 相似，当且仅当 $A$ 与 $B$ 有相同的初等因子组  
   
 已知 $A$ 的初等因子组为 $(\lambda-\lambda_1)^{r_1},(\lambda-\lambda_2)^{r_2},\cdots,(\lambda-\lambda_k)^{r_k}$  
   
 又由【引理3- $\rm{Jordan}$ 标准型的初等因子组】得  
- $\Rightarrow\rm{diag}\{J_{r_1}(\lambda_1),J_{r_2}(\lambda_2),\cdots,J_{r_k}(\lambda_k)\}$ 的初等因子组为 $(\lambda-\lambda_1)^{r_1},(\lambda-\lambda_2)^{r_2},\cdots,(\lambda-\lambda_k)^{r_k}$  
+$\Rightarrow\rm{diag}\{J_{r_1}(\lambda_1),J_{r_2}(\lambda_2),\cdots,J_{r_k}(\lambda_k)\}$ 的初等因子组为 $(\lambda-\lambda_1)^{r_1},(\lambda-\lambda_2)^{r_2},\cdots,(\lambda-\lambda_k)^{r_k}$  
   
- $\Rightarrow A$ 与 $B$ 有相同的初等因子组  
- $\Rightarrow A$ 与 $B$ 相似  
+$\Rightarrow A$ 与 $B$ 有相同的初等因子组  
+$\Rightarrow A$ 与 $B$ 相似  
   
 **推论**  
- $A$ 的特征值为 $\lambda_1,\lambda_2,\cdots,\lambda_k$  
+$A$ 的特征值为 $\lambda_1,\lambda_2,\cdots,\lambda_k$  
 再进一步，可求特征值，特征空间  

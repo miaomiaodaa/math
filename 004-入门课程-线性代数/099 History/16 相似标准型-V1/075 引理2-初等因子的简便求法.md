@@ -25,7 +25,7 @@
 (\lambda-\lambda_k)^{r_{k1}},(\lambda-\lambda_k)^{r_{k2}},\cdots,(\lambda-\lambda_k)^{r_{kn}}  
 \end{array}$  
 这不就是由初等因子反求不变因子嘛  
- $(\lambda-\lambda_1)^{r_{11}}$ 首一一次多项式的幂  
+$(\lambda-\lambda_1)^{r_{11}}$ 首一一次多项式的幂  
   
 **证明**  
 <font color=blue>Step1:</font>  
@@ -36,29 +36,29 @@
 初等变换只发生在第 $i$ 与第 $j$ 行之间，不涉及其他行  
   
 不妨设 $i=1,j=2$  
- $f_1(\lambda)=g(\lambda)q(\lambda)$  
- $\Rightarrow h(\lambda)=\dfrac{f_1(\lambda)  
+$f_1(\lambda)=g(\lambda)q(\lambda)$  
+$\Rightarrow h(\lambda)=\dfrac{f_1(\lambda)  
 \cdot f_2(\lambda)}{g(\lambda)}  
 =f_2(\lambda)q(\lambda)$  
   
- $\exists\ u(\lambda),v(\lambda)$ ，使得 $g(\lambda)=f_1(\lambda)u(\lambda)+f_2(\lambda)v(\lambda)$  
+$\exists\ u(\lambda),v(\lambda)$ ，使得 $g(\lambda)=f_1(\lambda)u(\lambda)+f_2(\lambda)v(\lambda)$  
   
- $\begin{bmatrix}f_1(\lambda)&0\\\ 0&f_2(\lambda)\end{bmatrix}  
+$\begin{bmatrix}f_1(\lambda)&0\\\ 0&f_2(\lambda)\end{bmatrix}  
 \xrightarrow[第2行乘v(\lambda)，加到第1行]{第1列乘u(\lambda)，加到第2列}  
 \begin{bmatrix}f_1(\lambda)&g(\lambda)\\\ 0&f_2(\lambda)\end{bmatrix}$  
   
- $\xrightarrow[加到第1列]{第2列乘-q(\lambda)}  
+$\xrightarrow[加到第1列]{第2列乘-q(\lambda)}  
 \begin{bmatrix}0&g(\lambda)\\\ -q(\lambda)f_2(\lambda)&f_2(\lambda)\end{bmatrix}  
 =\begin{bmatrix}0&g(\lambda)\\\ -h(\lambda)&f_2(\lambda)\end{bmatrix}$  
   
- $\xrightarrow[加到第2行]{第1行乘-p(\lambda)}  
+$\xrightarrow[加到第2行]{第1行乘-p(\lambda)}  
 \begin{bmatrix}0&g(\lambda)\\\ -q(\lambda)f_2(\lambda)&f_2(\lambda)\end{bmatrix}  
 =\begin{bmatrix}0&g(\lambda)\\\ -h(\lambda)&0\end{bmatrix}$  
   
- $\xrightarrow[第2行乘-1]{交换第1，2列}  
+$\xrightarrow[第2行乘-1]{交换第1，2列}  
 \begin{bmatrix}g(\lambda)&0\\\ 0&h(\lambda)\end{bmatrix}$  
   
- $\Rightarrow\begin{bmatrix}  
+$\Rightarrow\begin{bmatrix}  
 f_1(\lambda)&g(\lambda)\\\ 0&f_2(\lambda)\end{bmatrix}  
 \sim\begin{bmatrix}g(\lambda)&0\\\ 0&h(\lambda)\end{bmatrix}$ （暗含 $g(\lambda)\mid h(\lambda)$ ）  
   
@@ -70,18 +70,18 @@ f_1(\lambda)&g(\lambda)\\\ 0&f_2(\lambda)\end{bmatrix}
   
 只要证明 $f_1(\lambda),f_2(\lambda)$ 与 $g(\lambda),h(\lambda)$ 有相同的准素因子即可，因为其他的都没变  
 在数域 $K$ 上进行公共因式分解  
- $f_1(\lambda)=p_1(\lambda)^{r_1}\cdot  
+$f_1(\lambda)=p_1(\lambda)^{r_1}\cdot  
 p_2(\lambda)^{r_2}\cdots p_t(\lambda)^{r_t}$  
- $f_2(\lambda)=p_1(\lambda)^{s_1}\cdot  
+$f_2(\lambda)=p_1(\lambda)^{s_1}\cdot  
 p_2(\lambda)^{s_2}\cdots p_t(\lambda)^{s_t}$  
 其中 $p_i(\lambda)$ 是各项互异的首一不可约多项式， $r_i,s_i\geq0$  
 令 $e_i=\min[r_i,s_i]$ ， $k_i=\max[r_i,s_i]$  
- $\Rightarrow g(\lambda)=p_1(\lambda)^{e_1}\cdot  
+$\Rightarrow g(\lambda)=p_1(\lambda)^{e_1}\cdot  
 p_2(\lambda)^{e_2}\cdots p_t(\lambda)^{e_t}$  
- $\Rightarrow h(\lambda)=p_1(\lambda)^{k_1}\cdot  
+$\Rightarrow h(\lambda)=p_1(\lambda)^{k_1}\cdot  
 p_2(\lambda)^{k_2}\cdots p_t(\lambda)^{k_t}$  
 由上面构造得  
- $\Rightarrow (f_1(\lambda),f_2(\lambda))$ 与 $(g(\lambda),h(\lambda))$ 有相同的准素因子组  
+$\Rightarrow (f_1(\lambda),f_2(\lambda))$ 与 $(g(\lambda),h(\lambda))$ 有相同的准素因子组  
   
 <font color=blue>Step2:</font>  
 <font color=blue>反复使用Step1的操作，将 $\rm{diag}\{f_1(\lambda),f_2(\lambda),\cdots,f_n(\lambda)\}$ 变成法式</font>  
@@ -89,7 +89,7 @@ p_2(\lambda)^{k_2}\cdots p_t(\lambda)^{k_t}$
 <font color=red>正确思路: 标准因式分解+相同底数的因式按幂次冒泡排序</font>  
 <font color=red>错误思路: 单纯死靠定义</font>  
   
- $\left(\begin{array}{l}  
+$\left(\begin{array}{l}  
 公共因式分解下，求最大公因式，最小公倍式\\\  
 f_1(\lambda)=p_1(\lambda)^{e_{11}}\cdot p_2(\lambda)^{e_{12}}\cdot p_3(\lambda)^{e_{13}}\cdots p_m(\lambda)^{e_{1m}}\\\  
 f_2(\lambda)=p_1(\lambda)^{e_{21}}\cdot p_2(\lambda)^{e_{22}}\cdot p_3(\lambda)^{e_{23}}\cdots p_m(\lambda)^{e_{2m}}\\\  
@@ -103,16 +103,16 @@ f_2(\lambda)=p_1(\lambda)^{e_{21}}\cdot p_2(\lambda)^{e_{22}}\cdot p_3(\lambda)^
 一般的，设第 $(1,1)$ 元到第 $(i-1,i-1)$ 元，已经做好了  
 第 $(i,i)$ 元依次与第 $(i+1,i+1)$ 元，第 $(i+2,i+2)$ 元， $\cdots$ ，第 $(n,n)$ 元进行Step1的操作  
   
- $\Rightarrow \rm{diag}\{f_1(\lambda),f_2(\lambda),\cdots,f_n(\lambda)\}$ 相抵于 $\rm{diag}\{d_1(\lambda),  
+$\Rightarrow \rm{diag}\{f_1(\lambda),f_2(\lambda),\cdots,f_n(\lambda)\}$ 相抵于 $\rm{diag}\{d_1(\lambda),  
 d_2(\lambda),\cdots,d_n(\lambda)\}$ 且 $d_i(\lambda)\mid d_{i+1}(\lambda)$  
   
- $\Rightarrow\rm{diag}\{d_1(\lambda),d_2(\lambda),\cdots,d_n(\lambda)\}$ 是法式  
+$\Rightarrow\rm{diag}\{d_1(\lambda),d_2(\lambda),\cdots,d_n(\lambda)\}$ 是法式  
   
- $\Rightarrow d_1(\lambda),d_2(\lambda),\cdots,d_n(\lambda)$ 是不变因子  
+$\Rightarrow d_1(\lambda),d_2(\lambda),\cdots,d_n(\lambda)$ 是不变因子  
   
 又因为不变因子的准素因子就是初等因子  
   
- $\Rightarrow f_1(\lambda),f_2(\lambda),\cdots,f_n(\lambda)$ 全体准素因子就是 $A$ 的初等因子  
+$\Rightarrow f_1(\lambda),f_2(\lambda),\cdots,f_n(\lambda)$ 全体准素因子就是 $A$ 的初等因子  
   
 **后记**  
 20分钟的定理证明，至少花了4个小时来理解，走死胡同里了  

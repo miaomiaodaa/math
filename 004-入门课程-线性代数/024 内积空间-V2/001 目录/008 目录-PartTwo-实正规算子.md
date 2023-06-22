@@ -20,16 +20,16 @@ Step2 极小多项式为2次不可约多项式的实正规算子具有怎样的�
 则 $f(\Phi)$ 仍是实正规算子  
   
 <font color=green>引理2</font>: 设 $V$ 是Euclid空间， $\Phi$ 是 $V$ 上的实正规算子， $f(x),g(x)\in\mathbb{R}[x]$ ，  
- $\rm{gcd}(f(x),g(x))=1$ ，任取 $\alpha\in\rm{Ker}(f(\Phi))$ ， $\beta\in\rm{Ker}(g(\Phi))$  
+$\rm{gcd}(f(x),g(x))=1$ ，任取 $\alpha\in\rm{Ker}(f(\Phi))$ ， $\beta\in\rm{Ker}(g(\Phi))$  
 则 $(\alpha,\beta)=0$  
   
 <font color=green>定理1: 全空间分解成基于实正规算子的不变子空间的正交直和</font>  
 设 $V$ 是Euclid空间， $\Phi$ 是 $V$ 上的实正规算子， $g(x)$ 是 $\Phi$ 的极小多项式，  
- $g_1(x),g_2(x),\cdots,g_k(x)$ 是 $g(x)$ 在 $\mathbb R$ 上所有各项互异的首一不可约因式，  
- $W_i=\rm{Ker}[g_i(\Phi)]$ ，则以下结论成立  
- $1^\circ\ g(x)=g_1(x)\cdot g_2(x)\cdots g_k(x)$ ，且 $\rm{deg}[g_i(x)]\leq2$ ，即极小多项式在 $\mathbb R$ 上无重因式  
- $2^\circ\ V=W_1\perp W_2\perp \cdots \perp W_k$  
- $3^\circ\ \Phi\left|\right._{W_i}$ 是实正规算子，且它的极小多项式为 $g_i(x),\ 1\le i\le k$  
+$g_1(x),g_2(x),\cdots,g_k(x)$ 是 $g(x)$ 在 $\mathbb R$ 上所有各项互异的首一不可约因式，  
+$W_i=\rm{Ker}[g_i(\Phi)]$ ，则以下结论成立  
+$1^\circ\ g(x)=g_1(x)\cdot g_2(x)\cdots g_k(x)$ ，且 $\rm{deg}[g_i(x)]\leq2$ ，即极小多项式在 $\mathbb R$ 上无重因式  
+$2^\circ\ V=W_1\perp W_2\perp \cdots \perp W_k$  
+$3^\circ\ \Phi\left|\right._{W_i}$ 是实正规算子，且它的极小多项式为 $g_i(x),\ 1\le i\le k$  
 注: 此处完成了全空间分解成不变子空间正交直和，即完成了Step1的工作  
   
 **分解成二维不变子空间正交直和(Step2-1)**  
@@ -57,7 +57,7 @@ Step2 极小多项式为2次不可约多项式的实正规算子具有怎样的�
 **极小多项式是一次的实正规算子在标准正交基下的表示矩阵(Step2-2)**  
 极小多项式是一次的情况，即 $g_i(x)=x-c_i$  
   
- $\Rightarrow\Phi\left|\right._{W_i}$ 是纯量变换 $c_i\cdot I_{w_i}$  
+$\Rightarrow\Phi\left|\right._{W_i}$ 是纯量变换 $c_i\cdot I_{w_i}$  
   
 取 $W_i$ 的一个标准正交基，则表示阵为对角阵  
   
@@ -65,12 +65,12 @@ Step2 极小多项式为2次不可约多项式的实正规算子具有怎样的�
 (<font color=brown>感觉应该还缺一步，子空间的次数是怎么确定的呢，有问题</font>)  
 <font color=green>定理1: 实正规算子正交相似标准型(几何版)</font>  
 设 $V$ 是欧几里得空间， $\Phi$ 是 $V$ 上的实正规算子，则存在 $V$ 的标准正交基，使得 $\Phi$ 表示阵为  
- $\rm{diag}\left\{\begin{bmatrix}a_1&b_1\\\ -b_1&a_1\end{bmatrix},\begin{bmatrix}a_2&b_2\\\ -b_2&a_2\end{bmatrix},\cdots,\begin{bmatrix}a_r&b_r\\\ -b_r&a_r\end{bmatrix}, c_{2r+1},\cdots,c_n\right\}$  
+$\rm{diag}\left\{\begin{bmatrix}a_1&b_1\\\ -b_1&a_1\end{bmatrix},\begin{bmatrix}a_2&b_2\\\ -b_2&a_2\end{bmatrix},\cdots,\begin{bmatrix}a_r&b_r\\\ -b_r&a_r\end{bmatrix}, c_{2r+1},\cdots,c_n\right\}$  
 其中 $a_i,b_i,c_j\in\mathbb R,\ b_i\neq0,\ 1\le i\le r,\ 2r+1\le j\le n$  
   
 <font color=green>定理2: 实正规阵正交相似标准型(代数版)</font>  
 设 $n$ 阶实正规阵 $A$ 的实特征值为 $\lambda_1,\lambda_2,\cdots,\lambda_r$ ，复特征值为 $a_i\pm b_i,\ a_i,b_i\in\mathbb{R},\ b_i\neq0$  
- $i=1,2,\cdots,s,\ r+2s=n$ ，则存在正交阵 $Q$ ，使得 $Q^TAQ=\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_r,A_1,A_2,\cdots,A_s\\}$  
+$i=1,2,\cdots,s,\ r+2s=n$ ，则存在正交阵 $Q$ ，使得 $Q^TAQ=\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_r,A_1,A_2,\cdots,A_s\\}$  
 其中 $A_i=\begin{bmatrix}a_i&b_i-b_i&a_i\end{bmatrix},\ i=1,2,\cdots,s$  
   
 **实正规算子正交相似关系的全系不变量**  
@@ -78,10 +78,10 @@ Step2 极小多项式为2次不可约多项式的实正规算子具有怎样的�
   
 **实正规算子正交相似标准型应用1-正交阵的正交相似标准型**  
 设 $A$ 是正交阵，则存在另外一个正交阵 $P$ ，使得 $P^T\cdot A\cdot P$ 是以下形式的分块对角阵  
- $\rm{diag}\left\{\begin{bmatrix}\cos\theta_1&\sin\theta_1\\\ -\sin\theta_1&\cos\theta_1\end{bmatrix},  
+$\rm{diag}\left\{\begin{bmatrix}\cos\theta_1&\sin\theta_1\\\ -\sin\theta_1&\cos\theta_1\end{bmatrix},  
 \begin{bmatrix}\cos\theta_2&\sin\theta_2\\\ -\sin\theta_2&\cos\theta_2\end{bmatrix},\cdots,  
 \begin{bmatrix}\cos\theta_r&\sin\theta_r\\\ -\sin\theta_r&\cos\theta_r\end{bmatrix}, 1,\cdots,1-1,\cdots,-1\right\}$  
   
 **实正规算子正交相似标准型应用2-实反对称阵的正交相似标准型**  
 设 $A$ 是实反对称阵( $A^T=-A$ )，则存在另外一个正交阵 $P$ ，使得 $P^T\cdot A\cdot P$ 是以下形式的分块对角阵  
- $\rm{diag}\left\{\begin{bmatrix}0&b_1\\\ -b_1&0\end{bmatrix},\begin{bmatrix}0&b_2\\\ -b_2&0\end{bmatrix},\cdots,\begin{bmatrix}0&b_r\\\ -b_r&0\end{bmatrix}, 0,\cdots,0\right\}$  
+$\rm{diag}\left\{\begin{bmatrix}0&b_1\\\ -b_1&0\end{bmatrix},\begin{bmatrix}0&b_2\\\ -b_2&0\end{bmatrix},\cdots,\begin{bmatrix}0&b_r\\\ -b_r&0\end{bmatrix}, 0,\cdots,0\right\}$  

@@ -14,34 +14,34 @@
 **证明**  
 数学归纳法，对向量个数 $m$ 进行归纳  
   
- $m=1$ ，取 $a_1=b_1$ ，结论得证  
+$m=1$ ，取 $a_1=b_1$ ，结论得证  
   
 假设 $m=k$ 时结论成立，  
- $a_1,a_2,\cdots,a_k$ 线性无关  
- $b_1,b_2,\cdots,b_k$ 非零两两正交  
- $\rm{L}(a_1,a_2,\cdots,a_k)=\rm{L}(b_1,b_2,\cdots,b_k)$  
+$a_1,a_2,\cdots,a_k$ 线性无关  
+$b_1,b_2,\cdots,b_k$ 非零两两正交  
+$\rm{L}(a_1,a_2,\cdots,a_k)=\rm{L}(b_1,b_2,\cdots,b_k)$  
   
 现证 $m=k+1$ 的情形  
   
 ---  
   
 先考虑三维欧几里得空间  
- $(a_1,a_2)\longrightarrow(b_1,b_2)$  
- $a_3\xrightarrow{?}b_3$  
- $a_3=u\cdot b_1+v\cdot b_2+b_3$  
+$(a_1,a_2)\longrightarrow(b_1,b_2)$  
+$a_3\xrightarrow{?}b_3$  
+$a_3=u\cdot b_1+v\cdot b_2+b_3$  
   
 计算 $u$  
- $(a_3,b_1)=(u\cdot b_1+v\cdot b_2+b_3,b_1)$  
- $\Rightarrow(a_3,b_1)=u\cdot(b_1,b_1)+v\cdot(b_2,b_1)+(b_3,b_1)$  
- $\Rightarrow(a_3,b_1)=u\cdot(b_1,b_1)+0+0$  
- $\Rightarrow(a_3,b_1)=u\cdot\Vert b_1\Vert^2$  
- $\Rightarrow u=\dfrac{(a_3,b_1)}{\Vert b_1\Vert^2}$  
+$(a_3,b_1)=(u\cdot b_1+v\cdot b_2+b_3,b_1)$  
+$\Rightarrow(a_3,b_1)=u\cdot(b_1,b_1)+v\cdot(b_2,b_1)+(b_3,b_1)$  
+$\Rightarrow(a_3,b_1)=u\cdot(b_1,b_1)+0+0$  
+$\Rightarrow(a_3,b_1)=u\cdot\Vert b_1\Vert^2$  
+$\Rightarrow u=\dfrac{(a_3,b_1)}{\Vert b_1\Vert^2}$  
   
 同理可得  $v=\dfrac{(a_3,b_2)}{\Vert b_2\Vert^2}$  
   
- $\Rightarrow b_3=a_3-u\cdot b_1-v\cdot b_2$  
+$\Rightarrow b_3=a_3-u\cdot b_1-v\cdot b_2$  
   
- $\Rightarrow b_3=a_3-\dfrac{(a_3,b_1)}{\Vert b_1\Vert^2}\cdot b_1-\dfrac{(a_3,b_2)}{\Vert b_2\Vert^2}\cdot b_2$  
+$\Rightarrow b_3=a_3-\dfrac{(a_3,b_1)}{\Vert b_1\Vert^2}\cdot b_1-\dfrac{(a_3,b_2)}{\Vert b_2\Vert^2}\cdot b_2$  
   
 猜想一般的线性空间具有的形式  
   
@@ -62,57 +62,57 @@
   
 反证法: 若 $b_{k+1}=\mathbf0$  
   
- $\Rightarrow a_{k+1}=\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i$  
+$\Rightarrow a_{k+1}=\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i$  
   
- $\Rightarrow a_{k+1}\in\rm{L}(b_1,b_2,\cdots,b_k)=\rm{L}(a_1,a_2,\cdots,a_k)$  
+$\Rightarrow a_{k+1}\in\rm{L}(b_1,b_2,\cdots,b_k)=\rm{L}(a_1,a_2,\cdots,a_k)$  
   
- $\Rightarrow$ 与 $a_1,a_2,\cdots,a_k,a_{k+1}$ 线性无关矛盾  
+$\Rightarrow$ 与 $a_1,a_2,\cdots,a_k,a_{k+1}$ 线性无关矛盾  
   
- $\Rightarrow b_{k+1}\neq\mathbf0$  
+$\Rightarrow b_{k+1}\neq\mathbf0$  
   
 <font color=blue>2 证明正交</font>  
 即证明  $1\le j\le k,\ (b_{k+1},b_j)=0$  
   
- $(b_{k+1},b_j)$  
+$(b_{k+1},b_j)$  
   
- $=\left(a_{k+1}-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i,b_j\right)$  
+$=\left(a_{k+1}-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i,b_j\right)$  
   
- $=(a_{k+1},b_j)-\left(\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i,b_j\right)$  
+$=(a_{k+1},b_j)-\left(\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i,b_j\right)$  
   
- $=(a_{k+1},b_j)-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot(b_i,b_j)$  
+$=(a_{k+1},b_j)-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot(b_i,b_j)$  
   
- $=(a_{k+1},b_j)-\dfrac{(a_{k+1},b_j)}{\Vert b_j\Vert^2}\cdot(b_j,b_j)$  
+$=(a_{k+1},b_j)-\dfrac{(a_{k+1},b_j)}{\Vert b_j\Vert^2}\cdot(b_j,b_j)$  
   
- $=(a_{k+1},b_j)-\dfrac{(a_{k+1},b_j)}{\Vert b_j\Vert^2}\cdot\Vert b_j\Vert^2$  
+$=(a_{k+1},b_j)-\dfrac{(a_{k+1},b_j)}{\Vert b_j\Vert^2}\cdot\Vert b_j\Vert^2$  
   
- $=(a_{k+1},b_j)-(a_{k+1},b_j)$  
+$=(a_{k+1},b_j)-(a_{k+1},b_j)$  
   
- $=0$  
+$=0$  
   
 <font color=blue>3 证明相等</font>  
 <font color=red> $b_{k+1}=a_{k+1}-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i$ </font>  
   
 由和空间的定义+生成子空间的定义得  
   
- $\Rightarrow\rm{L}(a_1,a_2,\cdots,a_k,a_{k+1})=\rm{L}(a_1,a_2,\cdots,a_k)+\rm{L}(a_{k+1})$  
+$\Rightarrow\rm{L}(a_1,a_2,\cdots,a_k,a_{k+1})=\rm{L}(a_1,a_2,\cdots,a_k)+\rm{L}(a_{k+1})$  
   
- $=\rm{L}(b_1,b_2,\cdots,b_k)+\rm{L}(a_{k+1})$  
+$=\rm{L}(b_1,b_2,\cdots,b_k)+\rm{L}(a_{k+1})$  
   
- $\left(\begin{array}{l}  
+$\left(\begin{array}{l}  
 &\rm{L}(a_{k+1})表示a_{k+1}所有可能的线性组合&\\\  
 &a_{k+1}=b_{k+1}+\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i&\\\  
 &这个式子用文字描述是: a_{k+1}可由b_1,b_2,\cdots,b_k,b_{k+1}线性表出&\\\  
 &\Rightarrow\rm{L}(a_{k+1})=\rm{L}(b_1,b_2,\cdots,b_k,b_{k+1})  
 \end{array}\right)$  
   
- $\Rightarrow\rm{L}(a_1,a_2,\cdots,a_k,a_{k+1})\subseteq\rm{L}(b_1,b_2,\cdots,b_k,b_{k+1})$  
+$\Rightarrow\rm{L}(a_1,a_2,\cdots,a_k,a_{k+1})\subseteq\rm{L}(b_1,b_2,\cdots,b_k,b_{k+1})$  
   
 反之  
- $\Rightarrow\rm{L}(b_1,b_2,\cdots,b_k,b_{k+1})=\rm{L}(b_1,b_2,\cdots,b_k)+\rm{L}(b_{k+1})$  
+$\Rightarrow\rm{L}(b_1,b_2,\cdots,b_k,b_{k+1})=\rm{L}(b_1,b_2,\cdots,b_k)+\rm{L}(b_{k+1})$  
   
- $=\rm{L}(a_1,a_2,\cdots,a_k)+\rm{L}(b_{k+1})$  
+$=\rm{L}(a_1,a_2,\cdots,a_k)+\rm{L}(b_{k+1})$  
   
- $\left(\begin{array}{l}  
+$\left(\begin{array}{l}  
 &由归纳假设得&\\\  
 &\Rightarrow b_i可由a_1,a_2,\cdots,a_k线性表出&\\\  
 &b_{k+1}=a_{k+1}-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i&\\\  
@@ -120,4 +120,4 @@
 &\Rightarrow\rm{L}(b_{k+1})=\rm{L}(a_1,a_2,\cdots,a_k,a_{k+1})&  
 \end{array}\right)$  
   
- $\Rightarrow\rm{L}(b_1,b_2,\cdots,b_k,b_{k+1})\subseteq\rm{L}(a_1,a_2,\cdots,a_k,a_{k+1})$  
+$\Rightarrow\rm{L}(b_1,b_2,\cdots,b_k,b_{k+1})\subseteq\rm{L}(a_1,a_2,\cdots,a_k,a_{k+1})$  

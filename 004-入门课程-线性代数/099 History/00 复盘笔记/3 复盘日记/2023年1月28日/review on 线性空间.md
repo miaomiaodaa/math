@@ -33,15 +33,15 @@
   
 15 过渡矩阵与坐标变换公式  
 辨析:  $V_K$ 下同一组基，线性变换 $\Phi\longrightarrow$ 线性变换的表示矩阵  
- $V_K$ 下不同基，没有映射 $\longrightarrow$  基变换的过渡矩阵:  $(f_1,\cdots,f_n)=(e_1,\cdots,e_n)A$  
+$V_K$ 下不同基，没有映射 $\longrightarrow$  基变换的过渡矩阵:  $(f_1,\cdots,f_n)=(e_1,\cdots,e_n)A$  
 坐标变换公式:  $Y=A^{-1}\cdot X$  
 助记: 基 $e$ 先经过 $A$ ，到达了基 $f$  
   
 16 过渡矩阵都是可逆阵  
   
 17 坐标复合变换公式:  $(g_1,\cdots,g_n), (f_1,\cdots,f_n), (e_1,\cdots,e_n)$  
- $(g_1,\cdots,g_n)=(f_1,\cdots,f_n)B, (f_1,\cdots,f_n)=(e_1,\cdots,e_n)A$  
- $\Rightarrow(g_1,\cdots,g_n)=(e_1,\cdots,e_n)(AB)$  
+$(g_1,\cdots,g_n)=(f_1,\cdots,f_n)B, (f_1,\cdots,f_n)=(e_1,\cdots,e_n)A$  
+$\Rightarrow(g_1,\cdots,g_n)=(e_1,\cdots,e_n)(AB)$  
 助记: 基 $e$ 先经过 $A$ ，再经过 $B$ 到达了基 $g$  
   
 18  $\mathbb{L}(V,U)$ 是线性空间  

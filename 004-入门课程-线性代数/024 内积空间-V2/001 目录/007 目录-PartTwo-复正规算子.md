@@ -81,7 +81,7 @@
 定理: 设 $A,B$ 是同阶复正规阵， $A$ 与 $B$ 酉相似 $\Leftrightarrow A$ 与 $B$ 有相同的特征值  
   
 **复正规阵的酉相似标准型**  
- $A\sim\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_n\\}$  
+$A\sim\rm{diag}\\{\lambda_1,\lambda_2,\cdots,\lambda_n\\}$  
   
 **复正规算子对角化应用-酉算子对角化**  
 <font color=green>定理1: 酉算子对角化</font>  
@@ -91,11 +91,11 @@
 **复正规算子对角化应用-酉空间正交直和分解**  
 <font color=green>定理1: 酉空间正交直和分解</font>  
 设 $\Phi$ 是酉空间 $V$ 上的线性算子， $\lambda_1,\lambda_2,\cdots,\lambda_k$ 是 $\Phi$ 的全体不同特征值，  
- $V_1,V_2,\cdots,V_k$ 是对应的特征子空间，则 $\Phi$ 是正规算子，当且仅当 $V=V_1\perp V_2\perp\cdots\perp V_k$  
+$V_1,V_2,\cdots,V_k$ 是对应的特征子空间，则 $\Phi$ 是正规算子，当且仅当 $V=V_1\perp V_2\perp\cdots\perp V_k$  
   
 <font color=green>推论1: Euclid空间正交直和分解</font>  
 设 $\Phi$ 是欧几里得空间 $V$ 上的自伴随算子， $\lambda_1,\lambda_2,\cdots,\lambda_k$ 是 $\Phi$ 的全体不同特征值，  
- $V_1,V_2,\cdots,V_k$ 是对应的特征子空间，则 $V=V_1\perp V_2\perp\cdots\perp V_k$  
+$V_1,V_2,\cdots,V_k$ 是对应的特征子空间，则 $V=V_1\perp V_2\perp\cdots\perp V_k$  
   
 (注: <font color=red>以上两条是PartThree，谱分解的引理</font>)  
   

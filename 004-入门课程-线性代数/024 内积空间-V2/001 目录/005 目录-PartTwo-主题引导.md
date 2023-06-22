@@ -4,12 +4,12 @@
 <font color=green>引理1: 实内积空间，标准正交基间的过渡矩阵是正交阵</font>  
 设 $V_{\mathbb{R}}^n$ 是实内积空间， $(e_1,e_2,\cdots,e_n)$ 与 $(f_1,f_2,\cdots,f_n)$ 是 $V$ 的两个不同的标准正交基，  
 则他们之间的过渡矩阵是正交阵  
- $(f_1,f_2,\cdots,f_n)=(e_1,e_2,\cdots,e_n)A,\ A^T=A^{-1}$  
+$(f_1,f_2,\cdots,f_n)=(e_1,e_2,\cdots,e_n)A,\ A^T=A^{-1}$  
   
 <font color=green>引理2: 复内积空间，标准正交基间的过渡矩阵是酉阵</font>  
 设 $V_{\mathbb{C}}^n$ 是实内积空间， $(e_1,e_2,\cdots,e_n)$ 与 $(f_1,f_2,\cdots,f_n)$ 是 $V$ 的两个不同的标准正交基，  
 则他们之间的过渡矩阵是酉阵  
- $(f_1,f_2,\cdots,f_n)=(e_1,e_2,\cdots,e_n)A,\ (\overline{A})^T=A^{-1}$  
+$(f_1,f_2,\cdots,f_n)=(e_1,e_2,\cdots,e_n)A,\ (\overline{A})^T=A^{-1}$  
   
 **特殊的相似关系--正交相似-酉相似**  
 <font color=green>定理1: 同一线性变换，在不同标准正交基下的表示矩阵是正交相似或酉相似</font>  

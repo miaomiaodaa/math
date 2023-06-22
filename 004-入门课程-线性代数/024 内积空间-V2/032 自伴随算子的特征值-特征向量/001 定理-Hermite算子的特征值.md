@@ -9,24 +9,24 @@
   
 计算 $\lambda\cdot(\alpha,\alpha)$  
   
- $=(\lambda\cdot\alpha,\alpha)$  
+$=(\lambda\cdot\alpha,\alpha)$  
   
- $=(\Phi(\alpha),\alpha)$  
+$=(\Phi(\alpha),\alpha)$  
   
- $=(\alpha,\Phi^\star(\alpha))$  
+$=(\alpha,\Phi^\star(\alpha))$  
   
- $=(\alpha,\Phi(\alpha))$  
+$=(\alpha,\Phi(\alpha))$  
   
- $=(\alpha,\lambda\cdot\alpha)$  
+$=(\alpha,\lambda\cdot\alpha)$  
   
- $=\overline{\lambda}\cdot(\alpha,\alpha)$  
+$=\overline{\lambda}\cdot(\alpha,\alpha)$  
   
 又因为内积的正定性，且特征值 $\alpha\neq\mathbf0$  
   
- $\Rightarrow(\alpha,\alpha)>0$  
+$\Rightarrow(\alpha,\alpha)>0$  
   
- $\Rightarrow\lambda=\overline{\lambda}$  
+$\Rightarrow\lambda=\overline{\lambda}$  
   
- $\Rightarrow\lambda\in\mathbb{R}$  
+$\Rightarrow\lambda\in\mathbb{R}$  
   
 疑问: 上述证明哪一步对欧几里得空间不成立？  

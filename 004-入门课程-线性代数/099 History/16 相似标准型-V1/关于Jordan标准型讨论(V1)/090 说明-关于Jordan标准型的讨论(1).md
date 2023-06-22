@@ -7,36 +7,36 @@
 属于特征值 $\lambda_1$ 的 $\rm{Jordan}$ 块  
   
 为什么潜意识里认为 $V_i$ 是特征子空间呢？  
- $V_i$ ， $V_{\lambda_i}$  
- $V_i$ 的在基 $(\bigstar)$ 下的表示矩阵为 $\rm{J}_{r_i}(\lambda_i)$  
+$V_i$ ， $V_{\lambda_i}$  
+$V_i$ 的在基 $(\bigstar)$ 下的表示矩阵为 $\rm{J}_{r_i}(\lambda_i)$  
 线性变换 $\Phi$ 限制在 $V_i$ 下的表示矩阵为 $\rm{J}_{r_i}(\lambda_i)$  
   
- $\rm{Jordan}$ 标准型来着 $\rm{Jordan}$ 块  
- $\rm{Jordan}$ 块来自初等因子  
+$\rm{Jordan}$ 标准型来着 $\rm{Jordan}$ 块  
+$\rm{Jordan}$ 块来自初等因子  
 初等因子来自不变因子  
 不同不变因子可以分解成具有相同特征根但幂次不同的多项式  
   
 解空间 $=$ 核空间有点陌生，反应不过来  
 特征值 $\lambda_1$ 的全体特征向量构成的空间  
- $=\lambda_1$ 对应的齐次线性方程组的解空间  
- $=K^n$ 在线性变换 $J-\lambda_1I$ 下的核空间  
- $=V_n$ 在线性变换 $\Phi-\lambda_1I_V$ 下的核空间  
+$=\lambda_1$ 对应的齐次线性方程组的解空间  
+$=K^n$ 在线性变换 $J-\lambda_1I$ 下的核空间  
+$=V_n$ 在线性变换 $\Phi-\lambda_1I_V$ 下的核空间  
   
 核空间的维数与像空间的维数，有点陌生  
   
 level3级陌生  
 分块对角阵的秩=每个分块秩的和  
   
- $(e_{11},e_{21},\cdots,e_{s1})$ 是 $\lambda_1$ 对应的特征子空间的一个基  
+$(e_{11},e_{21},\cdots,e_{s1})$ 是 $\lambda_1$ 对应的特征子空间的一个基  
   
 循环子空间定义中的 $\Psi$ 是抽象的， $\Psi=\Phi-\lambda_1I_V$ 是一个具体例子  
 此时找到了 $V_i$ 的两个基，普通基，循环链基  
 循环子空间是新的知识，其他都是原来知识的综合  
   
 相同特征值的循环子空间和在一起的空间  
- $\rm{R}(\lambda_1)=V_1\oplus V_2\oplus\cdots \oplus V_s$  
+$\rm{R}(\lambda_1)=V_1\oplus V_2\oplus\cdots \oplus V_s$  
   
- $\rm{Ker}(\Phi-\lambda_1I_V)^n$ 这东西用人话怎么说  
+$\rm{Ker}(\Phi-\lambda_1I_V)^n$ 这东西用人话怎么说  
 把整个 $V$ 中的向量用 $(\Phi-\lambda_1I_V)$ 连续“筛” $n$ 次，  
 不是筛一次，留下一部分，淘汰一部分，留下来的进入第2轮  
 是有 $n$ 次机会，不是只有一次机会，这样筛选，越来越多  
@@ -46,7 +46,7 @@ level3级陌生
 难道说，(对角/三角)矩阵分块意味着空间分解??!!，每一个分解空间又是子空间  
   
 定理6算是二级结论吧？  
- $V=R(\lambda_1)\oplus R(\lambda_2)\oplus \cdots \oplus R(\lambda_s)$  
+$V=R(\lambda_1)\oplus R(\lambda_2)\oplus \cdots \oplus R(\lambda_s)$  
 全空间 $=$ 全体特征值的根子空间的直和  
   
 截止到定理6，第一大模块完结，撒花  

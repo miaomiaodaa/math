@@ -3,7 +3,7 @@
   
 **说明**  
 二次型 $\xrightarrow{对称初等变换}$ 标准型 $\xrightarrow{称初等变换}$ 规范标准型  
- $\rm{Hermite}$ 型 $\xrightarrow{共轭对称初等变换}$ 标准型 $\xrightarrow{也是共轭对称初等变换}$ 规范标准型  
+$\rm{Hermite}$ 型 $\xrightarrow{共轭对称初等变换}$ 标准型 $\xrightarrow{也是共轭对称初等变换}$ 规范标准型  
 二次型、 $\rm{Hermite}$ 型: 标准型，规范标准型  
 实对称阵、 $\rm{Hermite}$ 阵: 合同标准型、复相合标准型  
   
@@ -16,7 +16,7 @@ Case2 若 $a_{11}=0$ ，但是 $a_{ii}\neq0,2\le i\le n$
 Case3 若 $a_{ii}\neq0,1\le i\le n$  
 任取 $a_{ij}\neq0(i<j)$  
   
- $\begin{bmatrix}  
+$\begin{bmatrix}  
 0&a_{ij}\\\ \overline{a_{ij}}&0  
 \end{bmatrix}  
 \xrightarrow[第j列乘\overline{a_{ij}}，加到第i列]{第j行乘a_{ij}，加到第i行}  
@@ -26,10 +26,10 @@ Case3 若 $a_{ii}\neq0,1\le i\le n$
 转换成Case2的情况  
   
 接下来是数学归纳法  
- $A=\begin{bmatrix}a_{11}&a_{12}&\cdots&a_{1n}\\\ a_{21}&\\\ a_{31}&\\\ \vdots&\\\ a_{n1}\end{bmatrix}  
+$A=\begin{bmatrix}a_{11}&a_{12}&\cdots&a_{1n}\\\ a_{21}&\\\ a_{31}&\\\ \vdots&\\\ a_{n1}\end{bmatrix}  
 \xrightarrow[第1列乘-\tfrac{\overline{a_{i1}}}{a_{11}}，加到第i列]{第1行乘-\tfrac{a_{i1}}{a_{11}}，加到第i行}  
 \begin{bmatrix}a_{11}&a_{12}&\cdots&a_{1n}\\\ a_{21}&\\\ a_{31}&\\\ \vdots&\\\ a_{n1}\end{bmatrix}$  
- $A_{n-1}$ 为 $n-1$ 阶 $\rm{Hermite}$ 型  
+$A_{n-1}$ 为 $n-1$ 阶 $\rm{Hermite}$ 型  
   
 **证明说明**  
 引理-任意对称阵都可以合同于首元非零阵  

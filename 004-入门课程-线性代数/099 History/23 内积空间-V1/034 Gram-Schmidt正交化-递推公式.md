@@ -1,7 +1,7 @@
 **举例**  
 <font color=red> $b_{k+1}=a_{k+1}-\sum\limits_{i=1}^k\dfrac{(a_{k+1},b_i)}{\Vert b_i\Vert^2}\cdot b_i$ </font>  
   
- $\begin{array}{l}  
+$\begin{array}{l}  
 &a_1=b_1\\\  
 k=1&b_2=a_2-\dfrac{(a_2,b_1)}{\Vert b_1\Vert^2}\cdot b_1=a_2-\dfrac{(a_2,a_1)}{\Vert a_1\Vert^2}\cdot a_1\\\  
 &\\\  
