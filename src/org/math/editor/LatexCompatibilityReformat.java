@@ -14,6 +14,9 @@ public class LatexCompatibilityReformat {
     public static void main(String[] args) {
         File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数");
         LatexCompatibilityReformat.findReformatFiles(dir);
+
+        //dir = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\002 数列极限\\008 数列收敛判定方法\\003 单调有界定理\\009 例4.md");
+        //LatexCompatibilityReformat.readReformatFile(dir);
     }
 
     private static void findReformatFiles(File dir) {
@@ -33,7 +36,7 @@ public class LatexCompatibilityReformat {
         }
     }
 
-    private static void readReformatFile(File md) {
+    public static void readReformatFile(File md) {
         try {
             FileInputStream fileInputStream = new FileInputStream(md);
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
@@ -68,10 +71,10 @@ public class LatexCompatibilityReformat {
         int odd = 0;
         while (-1 != (begin = stringBuffer.indexOf("$", begin))) {
             if (odd % 2 == 0) {// 左边的$
-                if (begin - 1 >= 0 && isChinese(stringBuffer.charAt(begin - 1))) { // $左边第1个字符是Chinese表示未被格式化
+                if (begin - 1 >= 0 && FormatUtils.isChinese(stringBuffer.charAt(begin - 1))) { // $左边第1个字符是Chinese表示未被格式化
                     stringBuffer.insert(begin, " ");
                 }
-            } else if (isChinese(stringBuffer.charAt(begin + 1))) {// $右边第1个字符是Chinese表示未被格式化
+            } else if (FormatUtils.isChinese(stringBuffer.charAt(begin + 1))) {// $右边第1个字符是Chinese表示未被格式化
                 stringBuffer.insert(begin + 1, " ");
             }
             begin += 2;
@@ -79,19 +82,6 @@ public class LatexCompatibilityReformat {
         }
 
         //System.out.println(stringBuffer);
-    }
-
-    private static boolean isChinese(char c) {
-        Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
-        if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
-                || ub == Character.UnicodeBlock.CJK_COMPATIBILITY_IDEOGRAPHS
-                || ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A
-                || ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B
-                || ub == Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION
-                || ub == Character.UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS
-                || ub == Character.UnicodeBlock.GENERAL_PUNCTUATION)
-            return true;
-        return false;
     }
 
     public static void main1(String[] args) {
@@ -102,6 +92,6 @@ public class LatexCompatibilityReformat {
 //        System.out.println(stringBuffer.insert(7, " "));
 
         //LatexCompatibilityReformat.cornReformat(stringBuffer);
-        System.out.println(isChinese('，'));
+        System.out.println(FormatUtils.isChinese('，'));
     }
 }
