@@ -3,5 +3,5 @@ $\begin{bmatrix}
 2&6&-15\\\  
 1&1&-5\\\  
 1&2&-6  
-\end{bmatrix}$ ，求约当标准型，以及过渡矩阵 $P$  
+\end{bmatrix}$ ，求 $\rm{Jordan}$ 标准型，以及过渡矩阵 $P$  
 经计算可得， $A$ 的初等因子为 $(\lambda+1),(\lambda+1)^2$  

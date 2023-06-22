@@ -1,4 +1,4 @@
-**二级结论1: 利用约当标准型，求特征值的几何重数、代数重数、特征子空间的基**  
+**二级结论1: 利用 $\rm{Jordan}$ 标准型，求特征值的几何重数、代数重数、特征子空间的基**  
   
 设 $\Phi\in\mathbb{L}(V_\mathbb{C}^n)$ ，初等因子组为 $(\lambda-\lambda_1)^{r_1},\ (\lambda-\lambda_2)^{r_2},\ \cdots,\ (\lambda-\lambda_k)^{r_k}$  
   

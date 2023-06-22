@@ -3,13 +3,13 @@ $\begin{bmatrix}
 2&6&-15\\\  
 1&1&-5\\\  
 1&2&-6  
-\end{bmatrix}$ ，求约当标准型，以及过渡矩阵 $P$  
+\end{bmatrix}$ ，求 $\rm{Jordan}$ 标准型，以及过渡矩阵 $P$  
 经计算可得， $A$ 的初等因子为 $(\lambda+1),(\lambda+1)^2$  
   
-**Topic2 含参矩阵的约当标准型**  
+**Topic2 含参矩阵的 $\rm{Jordan}$ 标准型**  
 1 选取特殊子式，求行列式因子  
-2 特征值几何重数，确定约当块的个数  
-3 计算极小多项式，确定最大约当块的阶数  
+2 特征值几何重数，确定 $\rm{Jordan}$ 块的个数  
+3 计算极小多项式，确定最大 $\rm{Jordan}$ 块的阶数  
   
 **Topic3 循环子空间应用**  
 <font color=blue>定义</font>: 设 $\Phi\in\mathbf{L}(V_K^n)$ ， $0\neq\alpha$ ，由 $(\alpha,\Phi(\alpha),\Phi^2(\alpha),\cdots)$ 张成的空间，称为 $\Phi$ 的关于循环向量 $\alpha$ 的循环子空间，记作 $C(\Phi,\alpha)$  

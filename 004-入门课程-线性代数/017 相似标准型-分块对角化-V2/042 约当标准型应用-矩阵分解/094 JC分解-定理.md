@@ -41,7 +41,7 @@ $N=\rm{diag}\{N_1,N_2,\cdots,N_s\}$ ，是幂零阵
 易证 $M\cdot N=N\cdot M$ ，分块矩阵乘法  
 且 $J=M+N$  
   
-(上面这些结论可以用excel画个约当标准型，验证下)  
+(上面这些结论可以用excel画个 $\rm{Jordan}$ 标准型，验证下)  
   
 $J_i$ 的特征多项式 $=(\lambda-\lambda_i)^{m_i}$  
 由凯莱-哈密顿定理得  
