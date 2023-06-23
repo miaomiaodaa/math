@@ -67,8 +67,8 @@ public class ReformatByLine2 {
                 FileOutputStream fileOutputStream = new FileOutputStream(md);
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
-                bufferedWriter.write("****");
-                bufferedWriter.newLine();
+                //bufferedWriter.write("****");
+                //bufferedWriter.newLine();
                 bufferedWriter.write(stringBuffer.toString());
                 bufferedWriter.flush();
                 bufferedWriter.close();
