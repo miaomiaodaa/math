@@ -1,4 +1,4 @@
-package org.math.editor;
+package org.math.editor.transfer;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -9,8 +9,8 @@ public class CreateDirByArray {
     public static void main(String[] args) {
         try {
             boolean isDir = false;
-            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\004 函数列极限\\006 必要条件\\002 换序定理-逐项可积");
-            String[] names = new String[]{"引问", "定理", "证明", "推论1", "推论2", "例"};
+            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\004 函数列极限\\006 必要条件\\003 换序定理-逐项可导");
+            String[] names = new String[]{"引问", "定理", "证明", "推论1", "推论2"};
             int ser = 1;
             for (int i = 0; i < names.length; i++) {
                 String prefix = String.valueOf((ser < 10 ? "00" + (ser) : (ser < 100 ? "0" + (ser) : ser)));

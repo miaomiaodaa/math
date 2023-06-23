@@ -1,4 +1,4 @@
-package org.math.editor;
+package org.math.editor.transfer;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
