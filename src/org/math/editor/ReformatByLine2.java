@@ -33,7 +33,8 @@ public class ReformatByLine2 {
                         .replaceAll("\\\\frac", "\\\\dfrac")
                         .replaceAll("\\\\liminf_", "\\\\liminf\\\\limits_")
                         .replaceAll("\\\\limsup_", "\\\\limsup\\\\limits_")
-                        .replaceAll("\\\\sum_", "\\\\sum\\\\limits_");
+                        .replaceAll("\\\\sum_", "\\\\sum\\\\limits_")
+                        .replaceAll("\\\\sup_", "\\\\sup\\\\limits_");
                 //.replaceAll("\\\\int_", "\\\\int\\\\limits_");
 
                 stringBuffer.append(line);
