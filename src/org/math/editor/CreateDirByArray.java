@@ -9,9 +9,9 @@ public class CreateDirByArray {
     public static void main(String[] args) {
         try {
             boolean isDir = false;
-            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\003 函数极限(6种)\\005 必要条件(6种)\\006 函数极限四则运算\\001 线性运算法则");
-            String[] names = new String[]{"定理", "证明"};
-            int ser = 1;
+            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\003 函数极限(6种)\\007 充要条件(6种)\\002 海涅归结原理");
+            String[] names = new String[]{"定理", "证明", "推广1-趋于零负", "推广2-趋于零正", "推广3-趋于无穷", "推广4-趋于正无穷", "推广5-趋于负无穷", "推论", "命题结构"};
+            int ser = 2;
             for (int i = 0; i < names.length; i++) {
                 String prefix = String.valueOf((ser < 10 ? "00" + (ser) : (ser < 100 ? "0" + (ser) : ser)));
                 String name = prefix + " " + names[i];
