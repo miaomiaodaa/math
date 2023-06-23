@@ -17,7 +17,7 @@ public class ReformatByLine3 {
     private static boolean write = true;
 
     public static void main(String[] args) {
-        File md = new File("E:\\Math\\temp_space\\transfer\\20230623215216.txt");
+        File md = new File("E:\\Math\\temp_space\\transfer\\(康拖)一致连续性定理.txt");
         formatByLine(md);
     }
 
