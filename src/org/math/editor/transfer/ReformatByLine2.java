@@ -12,7 +12,7 @@ public class ReformatByLine2 {
     private static boolean write = true;
 
     public static void main(String[] args) {
-        File md = new File("E:\\Math\\temp_space\\for_latex_formate.md");
+        File md = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\for_latex_formate2.md");
         formatByLine(md);
     }
 

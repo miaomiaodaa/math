@@ -17,7 +17,7 @@ public class ReformatByLine3 {
     private static boolean write = true;
 
     public static void main(String[] args) {
-        File md = new File("E:\\Math\\temp_space\\transfer\\求导与求极限互换.txt");
+        File md = new File("E:\\Math\\temp_space\\transfer\\20230623215216.txt");
         formatByLine(md);
     }
 
@@ -77,7 +77,7 @@ public class ReformatByLine3 {
             }
 
             if (write) {
-                File target = new File("E:\\Math\\temp_space\\for_latex_formate.md");
+                File target = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\for_latex_formate3.md");
                 FileOutputStream fileOutputStream = new FileOutputStream(target);
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
