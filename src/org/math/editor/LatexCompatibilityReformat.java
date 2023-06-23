@@ -12,8 +12,14 @@ import java.util.List;
 
 public class LatexCompatibilityReformat {
     public static void main(String[] args) {
-        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数");
-        LatexCompatibilityReformat.findReformatFiles(dir);
+        String[] dirs = new String[]{
+                "E:\\Math\\work_space\\algebra\\004-入门课程-线性代数",
+                "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析"
+        };
+        for (int i = 0; i < dirs.length; i++) {
+            File dir = new File(dirs[i]);
+            LatexCompatibilityReformat.findReformatFiles(dir);
+        }
 
         //dir = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\002 数列极限\\008 数列收敛判定方法\\003 单调有界定理\\009 例4.md");
         //LatexCompatibilityReformat.readReformatFile(dir);

@@ -10,6 +10,7 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+@Deprecated
 public class ReformatByLine {
     public static void main(String[] args) {
         File md = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\002 数列极限\\008 数列收敛判定方法\\004 Stolz定理\\001 定理-Stolz定理-零比零型.md");
