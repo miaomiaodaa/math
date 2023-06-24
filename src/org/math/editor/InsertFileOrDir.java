@@ -10,9 +10,9 @@ import java.nio.file.Paths;
 public class InsertFileOrDir {
     public static void main(String[] args) {
         String name = "";
-        int begin_num = 1; // 从第N个开始
+        int begin_num = 3; // 从第N个开始
         int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何");
+        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\002 向量代数\\007 向量间的位置关系");
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
