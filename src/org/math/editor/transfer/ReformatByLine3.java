@@ -17,7 +17,7 @@ public class ReformatByLine3 {
     private static boolean write = true;
 
     public static void main(String[] args) {
-        File md = new File("E:\\Math\\temp_space\\transfer\\运算性律.txt");
+        File md = new File("E:\\Math\\temp_space\\transfer\\平面方程.txt");
         formatByLine(md);
     }
 
