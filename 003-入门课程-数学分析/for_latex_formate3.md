@@ -1,57 +1,20 @@
-<font color=blue>Step1: 定理</font>  
-条件  
-$\forall\;x_0\in[a,b],\;\forall\;\epsilon>0,\;\exists\;\delta>0,\;|x-x_0|<\delta,\;|\,f(x)-f(x_0)|<\epsilon$  
-  
-$\iff\forall\;x_0\in[a,b],\;\lim\limits_{x\to x_0}f(x)=f(x_0)$  
-  
-$\iff\,f(x)\in C[a,b]$  
+<font color=blue>Step1: 不支持交换律</font>  
+方向相反，模相等 \vec a \times \vec b  =  - (\vec b \times \vec a)  
+<font color=blue>Step2: 对加法的分配律</font>  
+$(\vec a + \vec b)\times \vec c = \vec a \times  \vec c + \vec b  \times \vec c$  
   
   
-结论  
-若函数f(x)闭区间[a,b]上连续，则函数f(x)在闭区间[a,b]上一致连续 \forall\,\epsilon>0,\;\exists\,\delta=\delta(\epsilon)>0,\;  
-$\forall\,x^\prime,x^{\prime\prime}\in(a,b),\;|x^\prime-x^{\prime\prime}|<\delta,\;|\,f(x^\prime)-f(x^{\prime\prime})|<\epsilon$  
+<font color=blue>Step3: 数乘结合律</font>  
+$(\vec a \times  \vec b)\cdot( \lambda\vec c +  \mu  \vec d) $  
   
-$$  
-  
-  
-<font color=blue>Step2: 证明</font>  
-$\exists\;\epsilon_0>0,\;\forall\;\delta>0,\;\exists\;s,t\in[a,b],\;|s-t|<\delta,\;|\,f(s)-f(t)|\geq\epsilon_0$  
-  
-$\rm{let}\;\delta=1\;\Rightarrow\exists\;s_1,t_1\in[a,b],\;|s_1-t_1|<1,\;|\,f(s_1)-f(t_1)|\geq\epsilon_0$  
-  
-$\rm{let}\;\delta=\dfrac12\;\Rightarrow\exists\;s_2,t_2\in[a,b],\;|s_2-t_2|<\dfrac12,\;|\,f(s_2)-f(t_2)|\geq\epsilon_0$  
-  
-$\rm{let}\;\delta=\dfrac13\;\Rightarrow\exists\;s_3,t_3\in[a,b],\;|s_3-t_3|<\dfrac13,\;|\,f(s_3)-f(t_3)|\geq\epsilon_0$  
-  
-$\cdots$  
-  
-$\rm{let}\;\delta=\dfrac1n\;\Rightarrow\exists\;s_n,t_n\in[a,b],\;|s_n-t_n|<\dfrac1n,\;|\,f(s_n)-f(t_n)|\geq\epsilon_0$  
-  
-$\cdots$  
-  
-$\Rightarrow\exists\;\epsilon_0>0,\;\forall\;n\in N^+,\;\exists\;s_n,t_n\in[a,b],\;|s_n-t_n|<\dfrac1n,\;|\,f(s_n)-f(t_n)|\geq\epsilon_0$  
-  
-$\Rightarrow\{s_n\},\;\{t_n\}\in[a,b],\quad\lim\limits_{k\to\infty}s_{n_k}=s,\;\lim\limits_{k\to\infty}t_{n_k}=t,\;\underline{s,t\in[a,b]}$  
-  
-$\Rightarrow|t_{n_k}-s|=|t_{n_k}-s_{n_k}+s_{n_k}-s|\leq|t_{n_k}-s_{n_k}|+|s_{n_k}-s|<\dfrac1{n_k}+|s_{n_k}-s|$  
-  
-$\Rightarrow|t_{n_k}-s|<\dfrac1{n_k}+|s_{n_k}-s|\leq\dfrac1{n}+|s_{n_k}-s|$  
-  
-$\Rightarrow0<|t_{n_k}-s|<\dfrac1{n}+|s_{n_k}-s|$  
-  
-$\Rightarrow \lim\limits_{k\to\infty}t_{n_k}=s\Rightarrow\lim\limits_{k\to\infty}s_{n_k}=\lim\limits_{k\to\infty}t_{n_k}=x_0$  
-  
-$$  
-  
-$\quad\lim\limits_{x\to x_0}f(x)=f(x_0),\;\lim\limits_{k\to\infty}s_{n_k}=\lim\limits_{k\to\infty}t_{n_k}=x_0$  
-  
-$\Rightarrow\lim\limits_{k\to\infty}f(s_{n_k})=\lim\limits_{k\to\infty}f(t_{n_k})=f(x_0)$  
-  
-$\Rightarrow\lim\limits_{k\to\infty}[\,f(s_{n_k})-f(t_{n_k})]=0$  
+$= \lambda(\vec a \times \vec b) \cdot \vec c + \mu (\vec a  \times \vec b) \cdot \vec d$  
   
   
-<font color=blue>Step3: 推论</font>  
-初等函数在闭区间上都是一致连续的  
-<font color=blue>Step4: 备注</font>  
-开区间上的函数未必不一致连续  
-证明连续→可积时用到了  
+<font color=blue>Step4: 叉乘与点乘的关系</font>  
+$(\vec a\cdot \vec b)^2 + |\vec a \times \vec b|^2 = |\vec a|^2|\vec b|^2       (\vec a \times \vec b) \times \vec c$  
+  
+$=\begin{vmatrix}\vec a\cdot\vec c & \vec b\cdot\vec c&\\\ \vec a & \vec b\end{vmatrix}$  
+  
+$=(\vec a\cdot\vec c)\cdot\vec b-(\vec b\cdot\vec c)\cdot\vec a$  
+  
+  

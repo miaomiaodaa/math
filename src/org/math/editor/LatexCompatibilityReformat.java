@@ -14,7 +14,8 @@ public class LatexCompatibilityReformat {
     public static void main(String[] args) {
         String[] dirs = new String[]{
                 "E:\\Math\\work_space\\algebra\\004-入门课程-线性代数",
-                "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析"
+                "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析",
+                "E:\\Math\\work_space\\algebra\\005-入门课程-解析几何"
         };
         for (int i = 0; i < dirs.length; i++) {
             File dir = new File(dirs[i]);
