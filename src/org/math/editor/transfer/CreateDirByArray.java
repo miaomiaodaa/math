@@ -9,8 +9,8 @@ public class CreateDirByArray {
     public static void main(String[] args) {
         try {
             boolean isDir = false;
-            File parent = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\004 点-直线-平面\\002 平面方程");
-            String[] names = new String[]{"点法式", "一般式", "截距式", "三点式", "平面束"};
+            File parent = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\005 点-直线-平面\\008 面-面");
+            String[] names = new String[]{"定理-面面重合", "定理-面面相交", "定理-面面夹角", "定理-面面垂直"};
             int ser = 1;
             for (int i = 0; i < names.length; i++) {
                 String prefix = String.valueOf((ser < 10 ? "00" + (ser) : (ser < 100 ? "0" + (ser) : ser)));
