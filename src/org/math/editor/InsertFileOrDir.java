@@ -11,8 +11,8 @@ public class InsertFileOrDir {
     public static void main(String[] args) {
         String name = "";
         int begin_num = 0; // 从第N个开始
-        int step = 2; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\005 点-直线-平面\\002 平面方程");
+        int step = 1; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\005 点-直线-平面\\008 面-面");
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
