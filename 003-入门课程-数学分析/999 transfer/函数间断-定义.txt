@@ -1,0 +1,65 @@
+定义
+   可去间断
+      定义
+          \lim_{x\to x_0^+}f(x)=
+\lim_{x\to x_0^-}f(x)=A\\
+\,f(x_0)=\rm{undefined}
+          \lim_{x\to x_0^+}f(x)=
+\lim_{x\to x_0^-}f(x)=A\\
+\,f(x_0)=B\quad A\neq B
+      举例
+          \,f(x)=\begin{cases}
+\frac{\sin x}x&x\neq0\\
+0&x=0
+\end{cases}\quad\Rightarrow
+\,g(x)=\begin{cases}
+\frac{\sin x}x&x\neq0\\
+1&x=0
+\end{cases}
+          \lim_{x\to0}\left(x\sin\frac1x\right)
+          \,f(x)=\frac{x^2-1}{x-1}\\
+\lim_{x\to1}f(x)=2
+   跳跃间断
+      定义
+         跳跃间断
+             \lim_{x\to x_0^+}f(x)=f(x_0^-)\\
+\lim_{x\to x_0^-}f(x)=f(x_0^+)\\
+\,f(x_0^-)\neq f(x_0^+)
+         跳跃度
+             \left|\,f(x_0^-)-f(x_0^+)\right|
+      举例
+          \,f(x)=\begin{cases}
+\frac1{x-2}&x<1\\
+x^2&x\geq1
+\end{cases}\\
+\lim_{x\to1^-}f(x)=-1,\;
+\lim_{x\to1^+}f(x)=1
+   无穷间断
+      定义
+          i).\lim_{x\to x_0^+}f(x)=\infty\,(+\infty,-\infty)\\
+ii).\lim_{x\to x_0^-}f(x)=\infty\,(+\infty,-\infty)\\
+iii).\lim_{x\to x_0^+}f(x)=\infty,\;
+\lim_{x\to x_0^-}f(x)=\infty\\
+      举例
+          \lim_{x\to0^+}e^{\frac1x}=+\infty\\
+\lim_{x\to0^-}e^{\frac1x}=0
+          \,f(x)=\begin{cases}
+\frac1{x-1}&x\leq2\\
+x^2-3&x>2
+\end{cases}\\
+\lim_{x\to2^-}f(x)=1,\;
+\lim_{x\to2^+}f(x)=1\\
+\lim_{x\to1^-}f(x)=-\infty,\;
+\lim_{x\to1^+}f(x)=+\infty\\
+   振荡间断
+      有界振荡
+          \lim_{x\to0}\sin\frac1x
+          \lim_{x\to x_0}D(x)
+            归结原理 \lim_{x\to x_0}D(x)\\
+\{x_n\}=\{x|x\in Q\},\;\lim_{n\to\infty}x_n=x_0\\
+\{y_n\}=\{y|y\in R-Q\},\;
+\lim_{n\to\infty}y_n=x_0\\
+\lim_{n\to\infty}D(x_n)=1,\;
+\lim_{n\to\infty}D(y_n)=0
+      无穷振荡
+          y=\frac1x\cdot\cos\frac1x

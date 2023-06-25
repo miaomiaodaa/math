@@ -20,12 +20,12 @@ import java.util.List;
  * 按空格数，空格数相同的是同一级目录
  */
 public class ReformatByLine3 {
+    public static final String parent = "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\999 transfer";
+    public static final String fileName = "函数连续-必要条件-共性";
     private static boolean write = true;
 
-    private static int SPACE_NUM = 6;
-
     public static void main(String[] args) {
-        File md = new File("E:\\Math\\temp_space\\transfer\\平面方程.txt");
+        File md = new File(parent, fileName + ".txt");
         formatByLine(md);
     }
 
@@ -62,7 +62,7 @@ public class ReformatByLine3 {
                         result.add(formatByLine(stringBuffer).toString());
                         stringBuffer = new StringBuffer();
                     }
-                    int i1 = countSpace(str);
+                    int i1 = FormatUtils.countSpace(str);
 
                     /*if (i1 == 3) {
                         str = "<font color=blue>" + "Step" + step + ": " + str.trim() + "</font>";
@@ -85,7 +85,7 @@ public class ReformatByLine3 {
             }
 
             if (write) {
-                File target = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\for_latex_formate3.md");
+                File target = new File(parent, fileName + ".md");
                 FileOutputStream fileOutputStream = new FileOutputStream(target);
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
@@ -98,22 +98,6 @@ public class ReformatByLine3 {
                 bufferedWriter.close();
                 outputStreamWriter.close();
                 fileOutputStream.close();
-
-                List<String> dirsNames = new ArrayList<>();
-                fileInputStream = new FileInputStream(target);
-                inputStreamReader = new InputStreamReader(fileInputStream);
-                bufferedReader = new BufferedReader(inputStreamReader);
-                while (null != (line = bufferedReader.readLine())) {
-                    int i1 = countSpace(line);
-                    if (i1 == SPACE_NUM) {
-                        dirsNames.add(line.trim());
-                    }
-                }
-
-                for (String dirName : dirsNames) {
-                    System.out.println(dirName);
-                }
-
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -122,7 +106,7 @@ public class ReformatByLine3 {
 
     private static StringBuffer formatByLine(StringBuffer stringBuffer) {
         try {
-            int countSpace = countSpace(stringBuffer.toString());
+            int countSpace = FormatUtils.countSpace(stringBuffer.toString());
             stringBuffer.delete(0, countSpace);
 
             stringBuffer.insert(0, "$");
@@ -140,16 +124,5 @@ public class ReformatByLine3 {
         }
 
         return stringBuffer;
-    }
-
-    private static int countSpace(String line) {
-        int num = 0;
-        char[] charArray = line.toCharArray();
-        for (int i = 0; i < charArray.length; i++) {
-            if (charArray[i] == ' ')//建议换成ASCII码
-                num++;
-            else break;
-        }
-        return num;
     }
 }

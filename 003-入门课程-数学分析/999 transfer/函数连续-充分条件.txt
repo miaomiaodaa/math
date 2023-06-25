@@ -1,0 +1,256 @@
+充分条件
+   邻域
+      连续三要素(定义法)
+         函数在点x0处有定义
+         x→x0时极限存在
+         极限值等于函数值
+   区间
+      (逐点\点态)连续
+         基本初等函数
+            定理
+               基本初等函数在其定义域内都是连续的
+            证明
+               常数函数
+                   y=C\Rightarrow\lim_{x\to x_0}C=C
+                   \forall\;x_0\in R,\;\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|x-x_0|<\delta,\;|C-C|=0<\epsilon
+               三角函数
+                   y=\sin(x)
+                     定理
+                         y=\sin x\Rightarrow\lim_{x\to x_0}\sin x=x_0
+                     证明
+                         \,f(x)=\sin x\in C(R)\\
+\forall\;x_0\in R,\;\exists\;\delta>0,\;
+|x-x_0|<\delta,\;|\sin x-\sin x_0|<\epsilon\\
+
+\Leftarrow2\left|\sin\frac{x-x_0}2\right|<
+2\left|\frac{x-x_0}2\right|=|x-x_0|<\epsilon\\
+
+\Leftarrow\rm{let}\;\delta\leq\epsilon\\
+
+\Leftarrow |\sin x-\sin x_0|=\left|
+2\cos\frac{x+x_0}2\cdot\sin\frac{x-x_0}2\right|
+\leq2\left|\sin\frac{x-x_0}2\right|\\
+                   y=\sec(x)
+                     定理
+                         y=\sec x\Rightarrow\lim_{x\to x_0}\sec x=\sec x_0
+                     证明
+                         \lim_{x\to x_0}\sin x=\sin x_0\\
+\lim_{x\to x_0}\sec x\\
+=\lim_{x\to x_0}\frac1{\sin x}\\
+=\lim_{x\to x_0}1\div\lim_{x\to x_0}\sin x\\
+=1\div\sin x_0\\
+=\sec x_0
+                   y=\cos(x)
+                     定理
+                         y=\cos x\Rightarrow\lim_{x\to x_0}\cos x=\cos x_0
+                     证明
+                         \,f(x)=\cos x\in C(R)\\
+\forall\;x_0\in R,\;\exists\;\delta>0,\;
+|x-x_0|<\delta,\;|\cos x-\cos x_0|<\epsilon\\
+
+\Leftarrow2\left|\sin\frac{x-x_0}2\right|<
+2\left|\frac{x-x_0}2\right|=|x-x_0|<\epsilon\\
+
+\Leftarrow\rm{let}\;\delta\leq\epsilon\\
+
+\Leftarrow |\cos x-\cos x_0|=\left|
+-2\sin\frac{x+x_0}2\cdot
+\sin\frac{x-x_0}2\right|
+\leq2\left|\sin\frac{x-x_0}2\right|\\
+                   y=\csc(x)
+                     定理
+                         y=\csc x\Rightarrow\lim_{x\to x_0}\csc x=\csc x_0
+                     证明
+                         \lim_{x\to x_0}\cos x=\cos x_0\\
+\lim_{x\to x_0}\csc x\\
+=\lim_{x\to x_0}\frac1{\cos x}\\
+=\lim_{x\to x_0}1\div\lim_{x\to x_0}\cos x\\
+=1\div\cos x_0\\
+=\csc x_0
+                   y = \tan(x)
+                     定理
+                         y = \tan x\Rightarrow\lim_{x\to x_0}\tan x=\tan x_0
+                     证明
+                         \lim_{x\to x_0}\sin x=\sin x_0\\
+\lim_{x\to x_0}\cos x=\cos x_0\\
+\Rightarrow \lim_{x\to x_0}\tan x=
+\lim_{x\to x_0}\frac{\sin x}{\cos x}=
+
+\lim_{x\to x_0}{\sin x}\div\lim_{x\to x_0}{\cos x}
+\\
+
+\Rightarrow \lim_{x\to x_0}\tan x=
+\frac{\sin x_0}{\cos x_0}=\tan x_0
+                   y=\cot(x)
+                     定理
+                         y=\cot x\Rightarrow\lim_{x\to x_0}\cot x=\cot x_0
+                     证明
+                         \lim_{x\to x_0}\tan x=\tan x_0\\
+\lim_{x\to x_0}\cot x\\
+=\lim_{x\to x_0}\frac1{\tan x}\\
+=\lim_{x\to x_0}1\div\lim_{x\to x_0}\tan x\\
+=\frac1{\tan x_0}\\
+=\cot x_0
+               指数函数
+                  定理
+                      y=a^x\,(a>0,a\neq1)\\
+\Rightarrow\lim_{x\to x_0}a^x=a^{x_0}
+                  证明
+                     分析
+                         \lim_{x\to x_0}a^x=a^{x_0}\\
+\iff \lim_{x\to x_0}(a^x-a^{x_0})=0\\
+\iff \lim_{x\to x_0}[a^{x_0}(a^{x-x_0}-1)]=0\\
+\iff a^{x_0}\lim_{x\to x_0}(a^{x-x_0}-1)=0\\
+\Leftarrow\lim_{x\to x_0}(a^{x-x_0}-1)=0\\
+\iff \lim_{x\to x_0}a^{x-x_0}=1\\
+\Leftarrow \lim_{x\to0}a^x=1\,(x-x_0=\Delta x)
+                      a>1
+                        证法一(夹逼定理)
+                            \lim_{n\to\infty}\sqrt[n]a=
+\lim_{n\to\infty}a^{\frac1n}=1\\
+a>1,\;0<x<\frac1n\;
+\left(\frac1n=\frac1{[x]},0<x<1\right)\\
+\Rightarrow 1<a^x<a^{\frac1n}\\
+\lim_{n\to\infty}1=1,\;
+\lim_{n\to\infty}a^{\frac1n}=1\\
+\Rightarrow \lim_{x\to0^+}a^x=1\\
+
+\\
+x<0,\;y=-x\\
+\Rightarrow a^x=a^{-y}=\frac1{a^y}\\
+\Rightarrow\lim_{x\to0^-}a^x
+=\lim_{y\to0^+}a^{-y}
+=\lim_{y\to0^+}\frac1{a^y}
+=1\div\lim_{y\to0^+}a^y=1
+                        证法二(ε-δ语言)
+                            \lim_{x\to0}a^x=1\\
+\iff\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|x-0|<\delta,\;|a^x-1|<\epsilon\\
+\iff\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|x|<\delta,\;
+1-\epsilon<a^x<1+\epsilon\\
+\iff\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|x|<\delta,\;
+\log_a^{1-\epsilon}<x<\log_a^{1+\epsilon}\\
+\Leftarrow
+-\log_a^{1+\epsilon}<x<\log_a^{1+\epsilon}\\
+\Leftarrow
+\rm{let}\;\delta=
+\max\left\{\log_a^{1-\epsilon},\log_a^{1+\epsilon}\right\}=\log_a^{1+\epsilon}
+                               0<\epsilon<1\\
+\Rightarrow 1<1+\epsilon<2\\
+\Rightarrow 
+\log_a^{1}<\log_a^{1+\epsilon}<\log_a^2\\
+\Rightarrow
+-\log_a^{2}<-\log_a^{1+\epsilon}<-\log_a^1=0\\
+\Rightarrow
+-\log_a^{2}<-\log_a^{1+\epsilon}<0\\
+
+\\
+\Rightarrow -1<-\epsilon<0\\
+\Rightarrow 0<1-\epsilon<1\\
+\Rightarrow-\infty<\log_a^{1-\epsilon}<0\\
+
+\\
+-\log_a^{1+\epsilon}<x\Rightarrow
+\log_a^{1-\epsilon}<x
+                      0<a<1
+                         \rm{let}\;a=\frac1b\Rightarrow b>1\\
+\Rightarrow\lim_{x\to0}a^x=
+\lim_{x\to0}\frac1{b^x}=1
+               对数函数
+                  定理
+                      y=\log_a^ x,\;(x>0)\\
+\Rightarrow\lim_{x\to x_0}\log_a^ x=\log_a^{x_0}
+                  证明
+                     反函数连续性定理
+               幂函数
+                  定理
+                      y=x^\alpha\\
+\Rightarrow \lim_{x\to x_0}x^\alpha=x_0^\alpha
+                  证明
+                     复合函数连续性
+                         \lim_{x\to x_0}x^\alpha=x_0^\alpha\\
+\iff\lim_{x\to x_0}(x^\alpha-x_0^\alpha)=0\\
+\rm{let}\;x^\alpha=e^{\alpha\ln x},\;
+x\in(0,+\infty)\\
+\iff\lim_{x\to x_0}
+(e^{\alpha\ln x}-e^{\alpha\ln x_0})=0\\
+\iff e^{\alpha\ln x_0}\lim_{x\to x_0}
+[e^{\alpha(\ln x-\ln x_0)}-1]=0\\
+y=e^u,\;u=\alpha(v),\;v=\ln x-\ln x_0
+                         \rm{or}\\
+x^\alpha=e^{\ln x^\alpha}=e^{\alpha\ln x},\;
+x\in(0,+\infty)\\
+\Rightarrow y=e^u,\;u=\alpha\ln x
+               反三角函数
+                  定理
+                      y=\arcsin x,\;
+x\in[-1,1],\;
+y\in\left[-\frac\pi2,\frac\pi2\right]\\
+\Rightarrow\lim_{x\to x_0}\arcsin x=y_0
+                      y=\arccos x,\;
+x\in[-1,1],\;
+y\in\left[-\frac\pi2,\frac\pi2\right]\\
+\Rightarrow\lim_{x\to x_0}\arccos x=y_0
+                      y=\arctan x,\;
+x\in(-\infty,+\infty),\;
+y\in\left(-\frac\pi2,\frac\pi2\right)\\
+\Rightarrow\lim_{x\to x_0}\arctan x=y_0
+                      y=\rm{arccot}\;x,\;x\in(-\infty,+\infty),\;
+y\in\left(0,\pi\right)\\
+\Rightarrow\lim_{x\to x_0}\rm{arccot}\;x=y_0
+                  证明
+                     反函数存在定理
+         反函数连续性
+            见反函数系列
+         初等函数
+            定理
+               初等函数在定义区间上是连续的
+            证明
+               基本初等函数连续
+               连续的四则运算
+               复合函数连续
+            反例
+               定义域是孤立点 y=\sqrt{\cos x-1}\\
+\,f(x)=\sqrt{x^2-1}+\sqrt{1-x^2}
+         若一致连续，则连续
+            若函数f(x)在I上一致连续，则f(x)在I上连续
+            证明
+                \forall\,x\in I,\;y=f(x)\\
+\forall\,\epsilon>0,\;\exists\,\delta=\delta(\epsilon)>0,\;
+\forall\,x^\prime,x^{\prime\prime}\in(a,b),\;
+|x^\prime-x^{\prime\prime}|<\delta,\;
+|\,f(x^\prime)-f(x^{\prime\prime})|<\epsilon\\
+
+\rm{let}\;x^{\prime\prime}=x_0\\
+\Rightarrow\forall\,\epsilon>0,\;\exists\,\delta=\delta(\epsilon)>0,\;
+\forall\,x^\prime\in(a,b),\;
+|x^\prime-x_0|<\delta,\;
+|\,f(x^\prime)-f(x_0)|<\epsilon
+      一致连续
+         康拖定理
+(闭区间一致连续)
+            见闭区间连续函数性质
+         导函数有界
+            表述
+               导函数有界则原函数一致连续
+                y=f(x)\in D[a,b],\;
+m\leq y^\prime=f^\prime(x)\leq M\\
+\Rightarrow\forall\,\epsilon>0,\;\exists\,\delta=\delta(\epsilon)>0,\;
+\forall\,x_1,x_2\in I,\;
+|x_1-x_2|<\delta,\;|\,f(x_1)-f(x_2)|<\epsilon
+            证明
+               拉格朗日中值定理
+                   |\,f(x_2)-f(x_1)|
+=|\,f^\prime(\xi)\cdot(x_2-x_1)|
+=|\,f^\prime(\xi)|\cdot|x_2-x_1|
+\leq M\cdot|x_2-x_1|<\epsilon\\
+\Rightarrow\forall\;\epsilon>0,\;
+\exists\;\delta(=\frac\epsilon M)>0,\;
+|x_2-x_1|<\delta,\;|\,f(x_2)-f(x_1)|<\epsilon
+            一致连续与可导
+               y＝|x|，一致连续，不一定可导
+   共性
+      复合函数的连续性

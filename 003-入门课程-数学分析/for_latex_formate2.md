@@ -1,3 +1,0 @@
-$\lim\limits_{x\to x_0}f(x)=f(x_0)$  
-  
-$\Rightarrow\exists\;\delta_0>0,\;\forall\;x\in\mathbf{U}(x_0,\;\delta_0),\;|\,f(x)|\leq M$  

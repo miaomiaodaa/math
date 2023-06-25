@@ -1,0 +1,201 @@
+共性
+   连续的四则运算
+      连续函数的和，差，积，商，数乘仍是连续函数
+      线性运算法则
+         基本
+             \quad
+\lim_{x\to x_0}f(x)=f(x_0),\;
+\lim_{x\to x_0}g(x)=g(x_0)
+\\
+
+\Rightarrow\\
+
+\quad\alpha\lim_{x\to x_0}f(x)+
+\beta\lim_{x\to x_0}g(x)\\
+
+\quad=\lim_{x\to x_0}\alpha f(x)+
+\lim_{x\to x_0}\beta g(x)\\
+
+\quad=\lim_{x\to x_0}[\alpha f(x)+\beta g(x)]\\
+
+
+\quad=\alpha f(x_0)+\beta g(x_0)
+         推广至有限项
+             \lim_{x\to x_0}\sum_{k=1}^nu_k(x)=
+\sum_{k=1}^n\lim_{x\to x_0}u_k(x)
+      乘法性质
+          \quad
+\lim_{x\to x_0}f(x)=f(x_0),\;
+\lim_{x\to x_0}g(x)=g(x_0)
+
+\\\Rightarrow \\
+
+\quad\lim_{x\to x_0}f(x)\cdot
+\lim_{x\to x_0}g(x)\\
+
+\quad=\lim_{x\to x_0}[f(x)\cdot g(x)]\\
+\quad=f(x_0)\cdot g(x_0)
+      除法性质
+          \quad
+\lim_{x\to x_0}f(x)=f(x_0),\;
+\lim_{x\to x_0}g(x)=g(x_0),\;(g(x_0)\neq0)
+
+\\\Rightarrow \\
+
+\quad\lim_{x\to x_0}f(x)\div
+\lim_{x\to x_0}g(x)\\
+
+\quad=\lim_{x\to x_0} \frac{f(x)}{g(x)}
+=\frac{f(x_0)}{g(x_0)}
+      正整数次幂
+         定理
+             \lim_{x\to x_0}f(x)=f(x_0),\ m\in N^+\\
+\Rightarrow \lim_{x\to x_0}[f(x)]^m
+=\left[\lim_{x\to x_0}f(x)\right]^m
+= f(x_0)^m
+         推论(负整数次幂)
+             \lim_{x\to x_0}f(x)=f(x_0),\ m\in Z^-\\
+\Rightarrow \lim_{x\to x_0}[f(x)]^m
+=\left[\lim_{x\to x_0}f(x)\right]^m
+= f(x_0)^m
+         例
+             g(x)=x\\
+\Rightarrow x^2,x^3,x^4,\cdots,x^n,\cdots\\
+\Rightarrow 
+P_n(x)=a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+
+\cdots+a_2x^2+a_1x+a_0\\
+\Rightarrow
+Q_n(x)=\frac
+{a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+
+\cdots+a_2x^2+a_1x+a_0}
+{b_mx^n+b_{m-1}x^{m-1}+b_{m-2}x^{m-2}+
+\cdots+b_2x^2+b_1x+b_0}
+   复合函数的连续性
+(极限符号与外函数函数可交换顺序)
+      定理
+         表述
+            内层函数连续＋外层函数连续＝整体连续
+         表达式
+             u=\varphi(x),\;
+\lim_{x\to x_0}\varphi(x)=\varphi(x_0)=u_0\\
+y=f(u),\;
+\lim_{u\to u_0}f(u)=f(u_0)\\
+\Rightarrow y=f\,[\varphi(x)],\\
+\lim_{x\to x_0}f\,[\varphi(x)]=
+f\,[\varphi(x_0)]=
+f\,[\lim_{x\to x_0}\varphi(x)]\\
+\Rightarrow\lim_{x\to x_0}f\,[\varphi(x)]=
+f\,[\lim_{x\to x_0}\varphi(x)]
+      证明
+          y=f(u),\;\lim_{u\to u_0}f(u)=f(u_0)\\
+\Rightarrow\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|u-u_0|<\delta,\;|\,f(u)-f(u_0)|<\epsilon\\
+\Rightarrow\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|\varphi(x)-\varphi(x_0)|<\delta,\;
+\left|\,f\,[\varphi(x)]-f\,[\varphi(x_0)]\right|<\epsilon\\
+
+\\\rm{let}\;\epsilon\prime=\delta,\;
+(\lim_{x\to x_0}\varphi(x)=\varphi(x_0))\\
+\Rightarrow\exists\;\delta^\prime>0,\;|x-x_0|<
+\delta^\prime,\;|\varphi(x)-\varphi(x_0)|
+<\epsilon\prime=\delta\\
+
+\\\underline{
+(\forall\;\epsilon\to\exists\;\delta\to
+\forall\;\epsilon\prime(\leq\delta)\to\exists\;\delta\prime)}\\
+\\
+\Rightarrow
+\forall\;\epsilon>0,\;\exists\;\delta\prime>0,\;
+|x-x_0|<\delta^\prime,\;
+\left|\,f\,[\varphi(x)]-f\,[\varphi(x_0)]\right|<\epsilon\\
+
+\Rightarrow y=f\,[\varphi(x)],\;
+\lim_{x\to x_0}f\,[\varphi(x)]=f\,[\varphi(x_0)]
+      推论
+         表述
+            内层函数极限存在＋外层函数连续 ＝ 整体极限存在
+         表达式
+             u=\varphi(x),\;
+\lim_{x\to x_0}\varphi(x)=u_0\\
+y=f(u),\;
+\lim_{u\to u_0}f(u)=f(u_0)\\
+\Rightarrow y=f\,[\varphi(x)],\\
+\lim_{x\to x_0}f\,[\varphi(x)]=
+f\,[\lim_{x\to x_0}\varphi(x)]
+         证明
+            用定义
+                y=f(u),\;\lim_{u\to u_0}f(u)=f(u_0)\\
+
+\Rightarrow\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|u-u_0|<\delta,\;|\,f(u)-f(u_0)|<\epsilon\\
+
+\Rightarrow\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|\varphi(x)-u_0|<\delta,\;
+\left|\,f\,[\varphi(x)]-f(u_0)\right|<\epsilon\\
+
+\\\rm{let}\;\epsilon\prime=\delta,\;
+(\lim_{x\to x_0}\varphi(x)=u_0)\\
+\Rightarrow\exists\;\delta^\prime>0,\;|x-x_0|<
+\delta^\prime,\;|\varphi(x)-u_0|
+<\epsilon\prime=\delta\\
+
+\\\underline{
+(\forall\;\epsilon\to\exists\;\delta\to
+\forall\;\epsilon\prime(\leq\delta)\to\exists\;\delta\prime)}\\
+\\
+\Rightarrow
+\forall\;\epsilon>0,\;\exists\;\delta\prime>0,\;
+|x-x_0|<\delta^\prime,\;
+\left|\,f\,[\varphi(x)]-f(u_0)\right|<\epsilon\\
+
+\Rightarrow y=f\,[\varphi(x)],\;
+\lim_{x\to x_0}f\,[\varphi(x)]=f(u_0)=
+f\,[\lim_{x\to x_0}\varphi(x)]
+            可去间断点
+                h(x)=\begin{cases}
+\varphi(x)&x\neq x_0\\
+u_0&x=x_0
+\end{cases}\\
+\Rightarrow\lim_{x\to x_0}f\,[h(x)]=
+f\lim_{x\to x_0}[h(x_0)]\\
+
+\\
+x\to x_0\Rightarrow x\neq x_0\Rightarrow
+h(x)=\varphi(x)\\
+
+\Rightarrow\lim_{x\to x_0}f\,[h(x)]=
+f\lim_{x\to x_0}[h(x_0)]
+         反例
+             g(x)=x\cdot\sin\frac1x,\;
+
+f(u)=\begin{cases}
+0&u=0\\
+1&u\neq0
+\end{cases}\\
+\,f\,[g(x)]
+=\begin{cases}
+0&u=g(x)=0\\
+1&u=g(x)\neq\frac1{n\pi}
+\end{cases}
+=\begin{cases}
+0&x=\frac1{n\pi}\\
+1&x\neq\frac1{n\pi}
+\end{cases}\\
+
+\\
+x_n^{\prime}=\frac1{n\pi},\;
+\lim_{n\to\infty}x_n^\prime=0,\;
+\lim_{n\to\infty}f\,[g(x_n^{\prime})]=0\\
+
+x_n^{\prime\prime}=\frac1{n\pi+1},\;
+\lim_{n\to\infty}x_n^{\prime\prime}=0,\;
+\lim_{n\to\infty}f\,[g(x_n^{\prime\prime})]=1\\
+\Rightarrow\lim_{x\to x_0}\,f\,[g(x)]\;
+\rm{not\;exists}\\
+
+\\
+\lim_{x\to0}g(x)=0,\;\lim_{u\to0}f(u)=1\\
+      说明
+         极限是一种运算，函数也是一种运算
+         极限符号与函数符号可以交换顺序
+         简化求极限

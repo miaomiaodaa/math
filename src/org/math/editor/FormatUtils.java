@@ -22,7 +22,18 @@ public class FormatUtils {
         for (int i = 0; i < charArray.length; i++)
             if (isChinese(charArray[i]))
                 return true;
-        
+
         return false;
+    }
+
+    public static int countSpace(String line) {
+        int num = 0;
+        char[] charArray = line.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            if (charArray[i] == ' ')//建议换成ASCII码
+                num++;
+            else break;
+        }
+        return num;
     }
 }

@@ -1,0 +1,140 @@
+例
+   用定义证明连续
+       \,f(x)=\frac1x,x\in(0,1)
+          \,f(x)=\frac1x,x\in(0,1)\\
+\left|\frac1x-\frac1{x_0}\right|=
+\frac{|x-x_0|}{|x\cdot x_0|}<\epsilon\\
+\rm{let}\;|x-x_0|<\frac{x_0}2\\
+\Rightarrow\frac{|x-x_0|}{|x\cdot x_0|}<
+\frac{2|x-x_0|}{|x_0|^2}<\epsilon\\
+\Rightarrow|x-x_0|<\frac{|x_0|^2\epsilon}{2}\\
+\rm{let}\;\delta=
+\min
+\left\{\frac{x_0}2,\frac{|x_0|^2\epsilon}{2}\right\}\\
+\Rightarrow\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|x-x_0|<\delta,\;|\,f(x)-f(x_0)|<\epsilon
+       \,f(x)=\sin x\in C(R)
+          \,f(x)=\sin x\in C(R)\\
+\forall\;x_0\in R,\;\exists\;\delta>0,\;
+|x-x_0|<\delta,\;|\sin x-\sin x_0|<\epsilon\\
+\Leftarrow2\left|\sin\frac{x-x_0}2\right|<
+2\left|\frac{x-x_0}2\right|=|x-x_0|<\epsilon\\
+\Leftarrow\rm{let}\;\delta=
+\min\left\{\epsilon,\frac\pi2\right\}\\
+\Leftarrow |\sin x-\sin x_0|=\left|
+2\cos\frac{x+x_0}2\cdot\sin\frac{x-x_0}2\right|
+\leq2\left|\sin\frac{x-x_0}2\right|\\
+       y=\sqrt{x(1-x)},x\in[0,1]
+          y=\sqrt{x(1-x)},x\in[0,1]\\
+\rm{let}\;\eta=\min\{x_0,1-x_0\}\\
+\left|\sqrt{x(1-x)}-\sqrt{x_0(1-x_0)}\right|\\
+=\frac{|1-x-x_0|}
+{\sqrt{x(1-x)}\cdot\sqrt{x_0(1-x_0)}}\cdot
+|x-x_0|\\
+<\frac1{\sqrt{x_0(1-x_0)}}\cdot|x-x_0|<\epsilon\\
+\Rightarrow|x-x_0|<\sqrt{x_0(1-x_0)}\epsilon\\
+
+\\
+\rm{let}\;
+\delta=\min\{\eta,\sqrt{x_0(1-x_0)}\epsilon\}\\
+\Rightarrow
+\forall\;\epsilon>0,\;\exists\;\delta>0,\;
+|x-x_0|<\delta,\;|\,f(x)-f(x_0)|<\epsilon\\
+
+\\
+\lim_{x\to0^+}f(x)=0\\
+\left|\sqrt{x(1-x)}-0\right|=\sqrt{x(1-x)}\leq
+\sqrt x<\epsilon\\
+\Rightarrow x<\epsilon^2\\
+\Rightarrow\rm{when}\;\epsilon<1,\;
+\delta=\epsilon^2\\
+\forall\;\epsilon>0,\;\exists\;\delta>0,\;|x-0|<
+\delta,\;|\sqrt{x(1-x)}-0|<\epsilon\\
+
+\\
+\lim_{x\to1^-}f(x)=0\\
+\left|\sqrt{x(1-x)}-0\right|=\sqrt{x(1-x)}<\sqrt{1-x}<\epsilon\\
+\Rightarrow |x-1|<\epsilon^2\\
+\Rightarrow\rm{when}\;\epsilon<1,\;
+\delta=\epsilon^2\\
+\forall\;\epsilon>0,\;\exists\;\delta>0,\;|x-1|<
+\delta,\;|\sqrt{x(1-x)}-0|<\epsilon\\
+   连续函数求极限
+       \lim_{x\to0}
+\frac{1+e^{x^2}+\sqrt{1+x^2}}{\sin x^2+\cos x+1}
+=\frac32
+       \lim_{x\to0}\frac{\tan x-\sin x}{\sin x^3}\\
+=\lim_{x\to0}
+\frac{\tan x\cdot(1-\cos x)}{\sin x^3}\\
+=\lim_{x\to0}\frac{x\cdot\frac12x^2}{x^3}=\frac12
+          =\lim_{x\to0}
+\frac{\sin x\cdot\left(\frac1{\cos x}-1\right)}
+{\sin x^3}\\
+=\lim_{x\to0}
+\frac{x\cdot\left(\frac1{\cos x}-1\right)}{x^3}\\
+=\lim_{x\to0}
+\frac{x\cdot(1-\cos x)}{x^3\cdot\cos x}\\
+=\lim_{x\to0}
+\frac{x\cdot\frac{x^2}2}{x^3\cdot\cos x}\\
+\cos x\sim1\;(x\to0)\\
+=\lim_{x\to0}
+\frac{x\cdot\frac{x^2}2}{x^3\cdot1}\\
+   一致连续
+      例1
+          y=\sin x\\
+|\sin x_1-\sin x_2|\\=
+2\cdot\left|\cos\frac{x_1+x_2}2\right|\cdot
+\left|\sin\frac{x_1-x_2}2\right|\\
+\leq2\cdot
+\left|\sin\frac{x_1-x_2}2\right|\\
+<2\cdot\left|\frac{x_1-x_2}2\right|=
+|x_1-x_2|<\epsilon\\
+\Rightarrow\forall\;\epsilon>0,\;\exists\;\delta=\epsilon>0,\;|x_1-x_2|<\delta,\;
+|\sin x_1-\sin x_2|<\epsilon
+       y=\frac1x
+         连续，但不一致连续
+            证法一
+                y=\frac1x,\;x\in(0,1)\\
+\left|\frac1x-\frac1{x_0}\right|<\epsilon\\\iff
+\frac1{x_0}-\epsilon<\frac1x<\frac1{x_0}+\epsilon
+\\\iff
+\frac{1-\epsilon x_0}{x_0}<\frac1x<
+\frac{1+\epsilon x_0}{x_0}\\\iff
+\frac{x_0}{1+\epsilon x_0}<x<
+\frac{x_0}{1-\epsilon x_0}\\\iff
+\frac{x_0}{1+\epsilon x_0}-x_0<x-x_0<
+\frac{x_0}{1-\epsilon x_0}-x_0\\\iff
+-\frac{\epsilon x^2_0}{1+\epsilon x_0}<x-x_0<
+\frac{\epsilon x^2_0}{1-\epsilon x_0}\\
+\rm{let}\;\delta^*=\min\left\{\frac{\epsilon x^2_0}{1+\epsilon x_0},\frac{\epsilon x^2_0}{1-\epsilon x_0}\right\}=\frac{\epsilon x^2_0}{1+\epsilon x_0}\\
+\inf \frac{\epsilon x^2_0}{1+\epsilon x_0}=0
+            证法二
+                y=\frac1x,\;x\in(0,1)\\
+s_n=\frac1{2n},\;t_n=\frac1n,\;
+\lim_{n\to\infty}(s_n-t_n)=0\\
+\Rightarrow\lim_{n\to\infty}[\,f(s_n)-f(t_n)]=-n
+         一致连续
+             y=\frac1x,\;x\in[\eta,1),0<\eta<1\\
+\left|\frac1{x_1}-\frac1{x_2}\right|
+=\left|\frac{x_2-x_1}{x_1x_2}\right|<
+\frac{|x_2-x_1|}{\eta^2}<\epsilon\\
+\Rightarrow\forall\;\epsilon>0,
+\exists\;\delta(\delta=\eta^2\epsilon)>0,\;
+|x_2-x_1|<\delta,\;|y_2-y_1|<\epsilon
+       y=x^2
+          y=x^2,x\in[1,+\infty)\\
+x_n^\prime=\sqrt{n+1},\;
+x_n^{\prime\prime}=\sqrt{n}\\
+\lim_{n\to\infty}
+(x_n^\prime-x_n^{\prime\prime})=0,\;
+\lim_{n\to\infty}[
+f(x_n^\prime)-f(x_n^{\prime\prime})]=1\neq0
+          y=x^2,x\in[1,A]\\
+|x_a^2-x_b^2|=|x_a+x_b|\cdot|x_a-x_b|<
+2A\cdot|x_a-x_b|\\
+\Rightarrow |x_a-x_b|<
+\frac{\epsilon}{2A}\\
+
+\Rightarrow\forall\;\epsilon>0,
+\exists\;\delta(\delta=\frac{\epsilon}{2A})>0,\;
+|x_a-x_b|<\delta,\;|y_a-y_b|<\epsilon

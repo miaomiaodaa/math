@@ -1,20 +1,47 @@
 package org.math.editor.transfer;
 
+import org.math.editor.FormatUtils;
+
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CreateDirByArray {
+    private static int SPACE_NUM = 6;
+
     public static void main(String[] args) {
         try {
-            boolean isDir = false;
-            File parent = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\005 点-直线-平面\\008 面-面");
-            String[] names = new String[]{"定理-面面重合", "定理-面面相交", "定理-面面夹角", "定理-面面垂直"};
+            boolean isDir = true;
+
+            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\004 特殊的极限-连续\\001 连续\\006 必要条件-共性");
+
+            File target = new File(ReformatByLine3.parent, ReformatByLine3.fileName + ".md");
+            FileInputStream fileInputStream = new FileInputStream(target);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            String line;
+            List<String> dirsNames = new ArrayList<>();
+            while (null != (line = bufferedReader.readLine())) {
+                int i1 = FormatUtils.countSpace(line);
+                if (i1 == SPACE_NUM) {
+                    dirsNames.add(line.trim());
+                }
+            }
+
+            for (String dirName : dirsNames) {
+                System.out.println(dirName);
+            }
+
             int ser = 1;
-            for (int i = 0; i < names.length; i++) {
+            for (int i = 0; i < dirsNames.size(); i++) {
                 String prefix = String.valueOf((ser < 10 ? "00" + (ser) : (ser < 100 ? "0" + (ser) : ser)));
-                String name = prefix + " " + names[i];
+                String name = prefix + " " + dirsNames.get(i);
                 if (!isDir) {
                     name = name + ".md";
                 }

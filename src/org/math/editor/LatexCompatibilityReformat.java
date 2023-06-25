@@ -31,9 +31,10 @@ public class LatexCompatibilityReformat {
 
         List<File> fileList = new ArrayList<>();
         for (int j = 0; j < dirs.length; j++) {
-            if (dirs[j].isDirectory())
-                LatexCompatibilityReformat.findReformatFiles(dirs[j]);
-            else
+            if (dirs[j].isDirectory()) {
+                if (!dirs[j].getName().equals("999 transfer"))
+                    LatexCompatibilityReformat.findReformatFiles(dirs[j]);
+            } else
                 fileList.add(dirs[j]);
         }
 

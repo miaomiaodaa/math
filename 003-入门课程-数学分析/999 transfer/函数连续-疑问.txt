@@ -1,0 +1,10 @@
+疑问
+   开区间连续是否等价于内闭连续 \forall\;x_0\in(a,b),\;\lim_{x\to x_0}f(x)=f(x_0)\\
+
+?\iff?\\
+\forall\;\epsilon>0,\;\forall\;\delta>0,\;
+\forall\;x_0\in[a+\delta,b-\epsilon]
+\subset(a,b),\;\lim_{x\to x_0}f(x)=f(x_0)
+    \forall\;x_0\in(a,b),\;\lim_{x\to x_0}f(x)=f(x_0)\\
+\lim_{x\to a^+}f(x)=?,\;
+\lim_{x\to b^-}f(x)=?
