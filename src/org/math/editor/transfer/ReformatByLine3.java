@@ -21,7 +21,7 @@ import java.util.List;
  */
 public class ReformatByLine3 {
     public static final String parent = "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\999 transfer";
-    public static final String fileName = "函数连续-必要条件-共性";
+    public static final String fileName = "函数连续-充分条件";
     private static boolean write = true;
 
     public static void main(String[] args) {

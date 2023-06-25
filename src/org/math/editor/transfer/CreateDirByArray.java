@@ -13,24 +13,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreateDirByArray {
-    private static int SPACE_NUM = 6;
+    private static int SPACE_NUM = 15;
 
     public static void main(String[] args) {
         try {
-            boolean isDir = true;
+            boolean isDir = false;
+            String beginName = "常数函数";
+            String endName = "反三角函数";
+            String pre = "证明-";
+            int ser = 2;
 
-            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\004 特殊的极限-连续\\001 连续\\006 必要条件-共性");
+            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\004 特殊的极限-连续\\001 连续\\007 充分条件\\002 基本初等函数");
 
             File target = new File(ReformatByLine3.parent, ReformatByLine3.fileName + ".md");
             FileInputStream fileInputStream = new FileInputStream(target);
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             String line;
+            boolean add = false;
             List<String> dirsNames = new ArrayList<>();
             while (null != (line = bufferedReader.readLine())) {
                 int i1 = FormatUtils.countSpace(line);
-                if (i1 == SPACE_NUM) {
-                    dirsNames.add(line.trim());
+                String trim = line.trim();
+                if (trim.equals(beginName))
+                    add = true;
+                if (i1 == SPACE_NUM && add) {
+                    dirsNames.add(pre + trim);
+                    if (trim.equals(endName))
+                        break;
                 }
             }
 
@@ -38,7 +48,6 @@ public class CreateDirByArray {
                 System.out.println(dirName);
             }
 
-            int ser = 1;
             for (int i = 0; i < dirsNames.size(); i++) {
                 String prefix = String.valueOf((ser < 10 ? "00" + (ser) : (ser < 100 ? "0" + (ser) : ser)));
                 String name = prefix + " " + dirsNames.get(i);
