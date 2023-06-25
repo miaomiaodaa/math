@@ -13,8 +13,16 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * TODO
+ * <p>
+ * 这样就能自动生成目录了
+ * 按空格数，空格数相同的是同一级目录
+ */
 public class ReformatByLine3 {
     private static boolean write = true;
+
+    private static int SPACE_NUM = 6;
 
     public static void main(String[] args) {
         File md = new File("E:\\Math\\temp_space\\transfer\\平面方程.txt");
@@ -56,7 +64,7 @@ public class ReformatByLine3 {
                     }
                     int i1 = countSpace(str);
 
-                    if (i1 == 3) {
+                    /*if (i1 == 3) {
                         str = "<font color=blue>" + "Step" + step + ": " + str.trim() + "</font>";
                         result.add(str);
                         step++;
@@ -65,7 +73,7 @@ public class ReformatByLine3 {
 
                     if (i1 == 0) {
                         continue;
-                    }
+                    }*/
 
                     result.add(str);
                 } else
@@ -90,6 +98,22 @@ public class ReformatByLine3 {
                 bufferedWriter.close();
                 outputStreamWriter.close();
                 fileOutputStream.close();
+
+                List<String> dirsNames = new ArrayList<>();
+                fileInputStream = new FileInputStream(target);
+                inputStreamReader = new InputStreamReader(fileInputStream);
+                bufferedReader = new BufferedReader(inputStreamReader);
+                while (null != (line = bufferedReader.readLine())) {
+                    int i1 = countSpace(line);
+                    if (i1 == SPACE_NUM) {
+                        dirsNames.add(line.trim());
+                    }
+                }
+
+                for (String dirName : dirsNames) {
+                    System.out.println(dirName);
+                }
+
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -109,7 +133,8 @@ public class ReformatByLine3 {
                 begin += "$\r\n\r\n$".length();
             }
 
-            stringBuffer.append("$\r\n\r\n");
+            //stringBuffer.append("$\r\n\r\n");
+            stringBuffer.append("$");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -121,7 +146,7 @@ public class ReformatByLine3 {
         int num = 0;
         char[] charArray = line.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
-            if (charArray[i] == ' ')
+            if (charArray[i] == ' ')//建议换成ASCII码
                 num++;
             else break;
         }
