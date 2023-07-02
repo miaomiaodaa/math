@@ -165,3 +165,8 @@ $\Leftrightarrow f(\sqrt{x_m^2+y_m^2},z_m)\cdot f(-\sqrt{x_m^2+y_m^2},z_m)=0$
 **解**: 带入公式得: $((\sqrt{x_m^2+y_m^2})^2-2pz_m)((-\sqrt{x_m^2+y_m^2})^2-2pz_m))=0$  
   
 化简得: $x_m^2+y_m^2=2pz_m$  
+  
+**旋转面的方程-推导思路-场景3-集合角度**  
+从集合角度出发，以旋转柱面为例，圆柱面是空间中所有到直线 $l$ 距离为 $r$ 的点构成的曲面 $S$  
+  
+则 $M(x,y,z)\in S\Leftrightarrow d(M,l)=r=\dfrac{\left|(x-x_0,y-y_0,z-z_0)\times(l,m,n)\right|}{\sqrt{l^2+m^2+n^2}}$  
