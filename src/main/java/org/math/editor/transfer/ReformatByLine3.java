@@ -21,11 +21,11 @@ import java.util.List;
  */
 public class ReformatByLine3 {
     public static final String parent = "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\999 transfer";
-    public static final String fileName = "函数连续-疑问";
+    public static final String fileName = "draft";
     private static boolean write = true;
 
     public static void main(String[] args) {
-        File md = new File(parent, fileName + ".txt");
+        File md = new File(parent, fileName + (fileName.endsWith(".txt") ? "" : ".txt"));
         formatByLine(md);
     }
 

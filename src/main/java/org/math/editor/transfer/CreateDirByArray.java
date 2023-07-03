@@ -13,17 +13,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreateDirByArray {
-    private static int SPACE_NUM = 15;
+    private static int SPACE_NUM = 3;
 
     public static void main(String[] args) {
         try {
             boolean isDir = false;
-            String beginName = "常数函数";
-            String endName = "反三角函数";
-            String pre = "证明-";
+            String beginName = "可去间断";
+            String endName = "振荡间断";
+            String pre = "定义-";
             int ser = 2;
 
-            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\004 特殊的极限-连续\\001 连续\\007 充分条件\\002 基本初等函数");
+            File parent = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\004 函数的连续与间断(特殊的极限)\\002 间断");
 
             File target = new File(ReformatByLine3.parent, ReformatByLine3.fileName + ".md");
             FileInputStream fileInputStream = new FileInputStream(target);
