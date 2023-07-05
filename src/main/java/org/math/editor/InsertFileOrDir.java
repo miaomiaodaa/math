@@ -10,10 +10,10 @@ import java.nio.file.Paths;
 public class InsertFileOrDir {
     public static void main(String[] args) {
         String name = "";
-        int begin_num = 5; // 从第N个开始
+        int begin_num = 8; // 从第N个开始
         int end_num = 999;
-        int step = -1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\002 向量代数\\005 向量的叉积");
+        int step = 1; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\004-入门课程-线性代数\\006【解线性方程组】与【线性空间入门】\\038 克莱姆法则");
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
