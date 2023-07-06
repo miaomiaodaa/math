@@ -11,7 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LatexCompatibilityReformat {
+    static List<String> ignores = new ArrayList<>();
+
     public static void main(String[] args) {
+        ignores.add("001 线-面位置关系概述.md"); // 不在名单里的才格式化
+
         String[] dirs = new String[]{
                 "E:\\Math\\work_space\\algebra\\004-入门课程-线性代数",
                 "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析",
@@ -41,7 +45,8 @@ public class LatexCompatibilityReformat {
 
         for (int i = 0; i < fileList.size(); i++) {
             File mdFile = fileList.get(i);
-            LatexCompatibilityReformat.readReformatFile(mdFile);
+            if (!ignores.contains(mdFile.getName()))
+                LatexCompatibilityReformat.readReformatFile(mdFile);
         }
     }
 
