@@ -13,7 +13,7 @@ public class InsertFileOrDir {
         int begin_num = 2; // 从第N个开始
         int end_num = 999;
         int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 曲线\\002 圆锥曲线\\002 椭圆");
+        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 曲线\\002 圆锥曲线\\003 双曲线");
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
