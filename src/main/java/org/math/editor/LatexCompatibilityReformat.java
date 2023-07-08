@@ -15,6 +15,8 @@ public class LatexCompatibilityReformat {
 
     public static void main(String[] args) {
         ignores.add("001 线-面位置关系概述.md"); // 不在名单里的才格式化
+        ignores.add("999 transfer");
+        ignores.add("098 resources");
 
         String[] dirs = new String[]{
                 "E:\\Math\\work_space\\algebra\\004-入门课程-线性代数",
@@ -37,7 +39,7 @@ public class LatexCompatibilityReformat {
         List<File> fileList = new ArrayList<>();
         for (int j = 0; j < dirs.length; j++) {
             if (dirs[j].isDirectory()) {
-                if (!dirs[j].getName().equals("999 transfer"))
+                if (!ignores.contains(dirs[j].getName()))
                     LatexCompatibilityReformat.findReformatFiles(dirs[j]);
             } else
                 fileList.add(dirs[j]);
