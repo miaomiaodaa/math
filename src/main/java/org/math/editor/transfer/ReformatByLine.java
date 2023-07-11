@@ -1,7 +1,7 @@
 package org.math.editor.transfer;
 
-import org.math.editor.FormatUtils;
-import org.math.editor.LatexCompatibilityReformat;
+import org.math.editor.formate.FormatUtils;
+import org.math.editor.formate.LatexCompatibilityReformat;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -9,17 +9,29 @@ import java.nio.file.Paths;
 
 public class InsertFileOrDir {
     public static void main(String[] args) {
-        String name = "";
-        int begin_num = 2; // 从第N个开始
+        String name = ""; // 新文件的文件名
+        String add_prefix = ""; // 添加统一前缀
+        String del_prefix = "抛物线-"; // 删除统一前缀
+        int begin_num = -999; // 从第N个开始
         int end_num = 999;
-        int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 曲线\\002 圆锥曲线\\003 双曲线");
+        int step = -29; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 曲线\\002 圆锥曲线\\007 常用结论-抛物线");
+
+
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
             String fileName = files[i].getName();
             try {
-                Integer i1 = Integer.valueOf(fileName.substring(0, file.getName().indexOf(" ")));
+                String fileSeir = fileName.substring(0, file.getName().indexOf(" "));
+                char[] charArray = fileSeir.toCharArray();
+                int x = 0;
+                for (; x < charArray.length; x++)
+                    if (charArray[x] != '0')
+                        break;
+                fileSeir = fileSeir.substring(x);
+
+                Integer i1 = Integer.valueOf(fileSeir);
                 if (i1 <= begin_num)
                     continue;
                 if (i1 >= end_num)
@@ -27,7 +39,9 @@ public class InsertFileOrDir {
 
                 int ser = i1 + step;
                 String ii = (ser < 10 ? "00" + (ser) : (ser < 100 ? "0" + (ser) : (ser + "")));
-                String newFileName = file.getParentFile().getCanonicalPath() + File.separator + ii + " " + file.getName().substring(file.getName().indexOf(" ") + 1);
+                String newFileName = file.getParentFile().getCanonicalPath() + File.separator + ii + " " + add_prefix + file.getName().substring(file.getName().indexOf(" ") + 1);
+                if (!del_prefix.isEmpty())
+                    newFileName = newFileName.replace(del_prefix, "");
                 Files.move(Paths.get(file.getCanonicalPath()), Paths.get(newFileName));
 
             } catch (Exception e1) {
