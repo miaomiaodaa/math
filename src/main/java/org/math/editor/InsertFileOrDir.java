@@ -14,8 +14,8 @@ public class InsertFileOrDir {
         String del_prefix = ""; // 删除统一前缀
         int begin_num = 2; // 从第N个开始
         int end_num = 999;
-        int step = -11; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 曲线\\002 圆锥曲线\\008 典型例题");
+        int step = 1; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\008 曲线\\002 圆锥曲线\\003 椭圆-常用结论");
 
 
         File[] files = dir.listFiles();
