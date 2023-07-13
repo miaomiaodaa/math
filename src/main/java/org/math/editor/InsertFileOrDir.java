@@ -11,11 +11,11 @@ public class InsertFileOrDir {
     public static void main(String[] args) {
         String name = ""; // 新文件的文件名
         String add_prefix = ""; // 添加统一前缀
-        String del_prefix = "抛物线-"; // 删除统一前缀
-        int begin_num = -999; // 从第N个开始
+        String del_prefix = ""; // 删除统一前缀
+        int begin_num = 2; // 从第N个开始
         int end_num = 999;
-        int step = -29; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 曲线\\002 圆锥曲线\\007 常用结论-抛物线");
+        int step = -11; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 曲线\\002 圆锥曲线\\008 典型例题");
 
 
         File[] files = dir.listFiles();
