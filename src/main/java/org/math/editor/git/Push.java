@@ -17,9 +17,12 @@ public class Push {
         try {
             Repository localRepo = new FileRepository("E:\\Math\\work_space\\algebra");
             Git git = new Git(localRepo);
+
             RemoteAddCommand remoteAddCommand = git.remoteAdd();
-            remoteAddCommand.setName("origin dev");
+            remoteAddCommand.setName("origin");
             remoteAddCommand.setUri(new URIish("https://github.com/miaomiaodaa/math.git"));
+            remoteAddCommand.call();
+
             PushCommand pushCommand = git.push();
             pushCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider("562873345@qq.com", "10293847_WSXokn"));
             pushCommand.call();
