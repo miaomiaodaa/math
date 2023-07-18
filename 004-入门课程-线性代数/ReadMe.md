@@ -1,10 +1,3 @@
-**工具网站**  
-http://www.yehes.com/  
-  
-https://blog.51cto.com/u_15917702/5953725  
-  
-https://blog.csdn.net/ganxiwu9686/article/details/91872685 （latex符号大全）  
-  
 **视频**  
 俗说矩阵  
 宋浩的线代  
