@@ -22,6 +22,10 @@ public class InsertFileOrDir {
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
             String fileName = files[i].getName();
+
+            if ("98 resources".equals(fileName))
+                continue;
+            
             try {
                 String fileSeir = fileName.substring(0, file.getName().indexOf(" "));
                 char[] charArray = fileSeir.toCharArray();
