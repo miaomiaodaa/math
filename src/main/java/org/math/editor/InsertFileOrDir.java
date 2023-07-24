@@ -12,10 +12,10 @@ public class InsertFileOrDir {
         String name = ""; // 新文件的文件名
         String add_prefix = ""; // 添加统一前缀
         String del_prefix = ""; // 删除统一前缀
-        int begin_num = 4; // 从第N个开始
+        int begin_num = 3; // 从第N个开始
         int end_num = 999;
-        int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何");
+        int step = 2; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\007 点-直线-平面\\006 位置关系-线-线");
 
 
         File[] files = dir.listFiles();
