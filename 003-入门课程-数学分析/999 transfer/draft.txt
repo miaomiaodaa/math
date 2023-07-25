@@ -1,21 +1,20 @@
-\forall\;\epsilon>0,\;\exists\;\delta>0,\;\forall\;x,\;
-0\leq|x-x_0|<\delta,\;|\,f(x)-f(x_0)|<\epsilon\\
+\int_{\partial D}Q(x,y)\,dy
+=\int\int_DQ^\prime_x(x,y)\,dxdy\\
 
-\forall\;\epsilon>0,\;\exists\;\delta>0,\;\forall\;x,\;
-0\leq x_0-x<\delta,\;|\,f(x)-f(x_0)|<\epsilon\\
+\rm{let\ }Q^\prime_x(x,y)=1
+\Rightarrow Q(x,y)=x\\
 
-\forall\;\epsilon>0,\;\exists\;\delta>0,\;\forall\;x,\;
-0\leq x-x_0<\delta,\;|\,f(x)-f(x_0)|<\epsilon\\
+\Rightarrow
+\int_{\partial D}x\,dy=\int\int_D1\,dxdy\\
 
-\\
-\forall\;\epsilon>0,\;\exists\;\delta>0,\;\forall\;x,\;
-0\leq b-x<\delta,\;|\,f(x)-f(b)|<\epsilon\\
+\rm{let\ }D:x^2+y^2\leq R^2\\
 
-\forall\;\epsilon>0,\;\exists\;\delta>0,\;\forall\;x,\;
-0\leq x-a<\delta,\;|\,f(x)-f(a)|<\epsilon\\
+x=R\cos\theta,\;y=R\sin\theta\\
 
-\\
-\forall\;\epsilon>0,\;\exists\;\delta>0,\;\forall\;
-x^\prime,x^{\prime\prime},\;
-|x^\prime-x^{\prime\prime}|<\delta,\;
-|\,f(x^\prime)-f(x^{\prime\prime})|<\epsilon
+\Rightarrow\int_{\partial D}x\,dy
+=\int_0^{2\pi}R\cos\theta\cdot R\cos\theta\,
+d\theta\\
+
+=R^2\int_0^{2\pi}\cos^2\theta\,d\theta\\
+
+=\pi R^2
