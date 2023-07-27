@@ -79,6 +79,37 @@ public class SQLBuilder {
                 omega.delete(lambda, rho + "</isEqual>".length() + 1);
         }
 
+        // isNotEqual
+        while ((lambda = omega.indexOf("<isNotEqual")) != -1) {
+            int xi_1 = omega.indexOf(">", lambda);
+            String substring = omega.substring(lambda + "<isNotEqual".length() + 1, xi_1);
+
+            String substring1;
+            String substring2;
+            int i1 = substring.indexOf("property");
+            int i2 = substring.indexOf("compareValue");
+            if (i1 > i2) {
+                int tmp = i2;
+                i2 = i1;
+                i1 = tmp;
+            }
+            substring1 = substring.substring(i1, i2);
+            int phi = substring1.indexOf("'");
+            int psi = substring1.lastIndexOf("'");
+            substring1 = substring1.substring(phi + 1, psi);
+
+            phi = substring.indexOf("'", i2);
+            psi = substring.indexOf("'", phi + 1);
+            substring2 = substring.substring(phi + 1, psi);
+
+            int rho = omega.indexOf("</isNotEqual>", lambda);
+            if (!paramMap.get(substring1).equals(substring2)) {
+                omega.delete(rho, rho + "</isNotEqual>".length() + 1);
+                omega.delete(lambda, xi_1 + 1);
+            } else
+                omega.delete(lambda, rho + "</isNotEqual>".length() + 1);
+        }
+
         // isNotEmpty
         while ((lambda = omega.indexOf("<isNotEmpty")) != -1) {
             int xi_1 = omega.indexOf(">", lambda);
