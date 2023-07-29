@@ -12,10 +12,10 @@ public class InsertFileOrDir {
         String name = ""; // 新文件的文件名
         String add_prefix = ""; // 添加统一前缀
         String del_prefix = ""; // 删除统一前缀
-        int begin_num = 15; // 从第N个开始
+        int begin_num = 4; // 从第N个开始
         int end_num = 999;
-        int step = 2; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\algebra\\005-入门课程-解析几何\\011 圆锥曲线\\002 圆锥曲线-圆\\003 直线与圆");
+        int step = 1; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\math\\005-入门课程-解析几何");
 
 
         File[] files = dir.listFiles();
@@ -23,7 +23,7 @@ public class InsertFileOrDir {
             File file = files[i];
             String fileName = files[i].getName();
 
-            if ("98 resources".equals(fileName))
+            if ("098 resources".equals(fileName))
                 continue;
 
             try {
@@ -53,7 +53,7 @@ public class InsertFileOrDir {
             }
         }
 
-        if (name.isBlank())
+        if (name.isEmpty())
             return;
 
         try {
