@@ -20,7 +20,7 @@ import java.util.List;
  * 按空格数，空格数相同的是同一级目录
  */
 public class ReformatByLine3 {
-    public static final String parent = "E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\999 transfer";
+    public static final String parent = "E:\\Math\\work_space\\math\\003-入门课程-数学分析\\999 transfer";
     public static final String fileName = "draft";
     private static boolean write = true;
 

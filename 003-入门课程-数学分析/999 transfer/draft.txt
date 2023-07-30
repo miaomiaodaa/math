@@ -1,20 +1,17 @@
-\int_{\partial D}Q(x,y)\,dy
-=\int\int_DQ^\prime_x(x,y)\,dxdy\\
+\cos3\alpha\\
 
-\rm{let\ }Q^\prime_x(x,y)=1
-\Rightarrow Q(x,y)=x\\
+=\cos(\alpha+2\alpha)\\
 
-\Rightarrow
-\int_{\partial D}x\,dy=\int\int_D1\,dxdy\\
+=\cos\alpha\cdot\cos2\alpha
+-\sin\alpha\cdot\sin2\alpha\\
 
-\rm{let\ }D:x^2+y^2\leq R^2\\
+=\cos\alpha\cdot(2\cos^2\alpha-1)
+-2\sin\alpha\cdot\sin\alpha\cdot\cos\alpha\\
 
-x=R\cos\theta,\;y=R\sin\theta\\
+=2\cos^3\alpha-\cos\alpha
+-2(1-\cos^2\alpha)\cdot\cos\alpha\\
 
-\Rightarrow\int_{\partial D}x\,dy
-=\int_0^{2\pi}R\cos\theta\cdot R\cos\theta\,
-d\theta\\
+=2\cos^3\alpha-\cos\alpha
+-2\cos\alpha+2\cos^3\alpha\\
 
-=R^2\int_0^{2\pi}\cos^2\theta\,d\theta\\
-
-=\pi R^2
+=4\cos^3\alpha-3\cos\alpha
