@@ -1,13 +1,7 @@
-$\cos3\alpha$
+$\tan\alpha-\tan\beta$
 
-$=\cos(\alpha+2\alpha)$
+$=\dfrac{\sin\alpha}{\cos\alpha}-\dfrac{\sin\beta}{\cos\beta}$
 
-$=\cos\alpha\cdot\cos2\alpha-\sin\alpha\cdot\sin2\alpha$
+$= \dfrac{\sin\alpha\cdot\cos\beta-\sin\beta\cdot\cos\alpha}{\cos\alpha\cdot\cos\beta}$
 
-$=\cos\alpha\cdot(2\cos^2\alpha-1)-2\sin\alpha\cdot\sin\alpha\cdot\cos\alpha$
-
-$=2\cos^3\alpha-\cos\alpha-2(1-\cos^2\alpha)\cdot\cos\alpha$
-
-$=2\cos^3\alpha-\cos\alpha-2\cos\alpha+2\cos^3\alpha$
-
-$=4\cos^3\alpha-3\cos\alpha$
+$=\dfrac{\sin(\alpha-\beta)}{\cos\alpha\cdot\cos\beta}$
