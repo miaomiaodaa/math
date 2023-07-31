@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class InsertFileOrDir {
@@ -12,10 +13,10 @@ public class InsertFileOrDir {
         String name = ""; // 新文件的文件名
         String add_prefix = ""; // 添加统一前缀
         String del_prefix = ""; // 删除统一前缀
-        int begin_num = 28; // 从第N个开始
+        int begin_num = 13; // 从第N个开始
         int end_num = 999;
-        int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\math\\005-入门课程-解析几何\\008 三角形\\015 任意角三角函数");
+        int step = -5; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\math\\002-初等数学\\004 关于三角函数");
 
 
         File[] files = dir.listFiles();
@@ -46,8 +47,8 @@ public class InsertFileOrDir {
                 String newFileName = file.getParentFile().getCanonicalPath() + File.separator + ii + " " + add_prefix + file.getName().substring(file.getName().indexOf(" ") + 1);
                 if (!del_prefix.isEmpty())
                     newFileName = newFileName.replace(del_prefix, "");
-                Files.move(Paths.get(file.getCanonicalPath()), Paths.get(newFileName));
-
+                Path moved = Files.move(Paths.get(file.getCanonicalPath()), Paths.get(newFileName));
+                System.out.println(moved.getFileName());
             } catch (Exception e1) {
                 e1.printStackTrace();
             }
