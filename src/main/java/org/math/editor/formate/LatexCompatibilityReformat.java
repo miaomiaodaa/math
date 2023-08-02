@@ -14,7 +14,7 @@ public class LatexCompatibilityReformat {
     static List<String> ignores = new ArrayList<>();
 
     public static void main(String[] args) {
-        ignores.add("001 线-面位置关系概述.md"); // 不在名单里的才格式化
+        //ignores.add("001 线-面位置关系概述.md"); // 不在名单里的才格式化
         ignores.add("999 transfer");
         ignores.add("098 resources");
 
