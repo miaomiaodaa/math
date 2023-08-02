@@ -7,24 +7,33 @@ import java.io.OutputStreamWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class InsertFileOrDir {
     public static void main(String[] args) {
         String name = ""; // 新文件的文件名
         String add_prefix = ""; // 添加统一前缀
         String del_prefix = ""; // 删除统一前缀
-        int begin_num = 0; // 从第N个开始
-        int end_num = 999;
-        int step = 1; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\math\\005-入门课程-解析几何\\014 点-直线-平面位置关系\\007 位置关系-线-面");
+        int begin_num = 3; // 从第N个开始
+        int end_num = 999; 
+        int step = 2; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\math\\005-入门课程-解析几何\\016 曲面与几何体\\002 体积表面积");
 
 
+        Pattern pattern = Pattern.compile("^([0-9]{3}).*$");
+
+        String fileName =null;
         File[] files = dir.listFiles();
         for (int i = 0; i < files.length; i++) {
             File file = files[i];
-            String fileName = files[i].getName();
+             fileName = files[i].getName();
 
             if ("098 resources".equals(fileName))
+                continue;
+
+            Matcher matcher = pattern.matcher(fileName);
+            if (!matcher.matches())
                 continue;
 
             try {
@@ -51,6 +60,7 @@ public class InsertFileOrDir {
                 System.out.println(moved.getFileName());
             } catch (Exception e1) {
                 e1.printStackTrace();
+                System.out.println(fileName);
             }
         }
 
