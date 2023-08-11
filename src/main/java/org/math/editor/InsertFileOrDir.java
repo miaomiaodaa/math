@@ -15,10 +15,10 @@ public class InsertFileOrDir {
         String name = ""; // 新文件的文件名
         String add_prefix = ""; // 添加统一前缀
         String del_prefix = ""; // 删除统一前缀
-        int begin_num = 3; // 从第N个开始
+        int begin_num = 4; // 从第N个开始
         int end_num = 999; 
-        int step = 3; // 每次增加或减少step个
-        File dir = new File("E:\\Math\\work_space\\math\\005-入门课程-解析几何\\012 圆锥曲线\\006 圆锥曲线-抛物线\\005 直线与抛物线");
+        int step = 1; // 每次增加或减少step个
+        File dir = new File("E:\\Math\\work_space\\math\\005-入门课程-解析几何\\014 点-直线-平面位置关系\\008 位置关系-面-面");
 
 
         Pattern pattern = Pattern.compile("^([0-9]{3}).*$");
