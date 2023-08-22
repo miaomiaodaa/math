@@ -15,7 +15,7 @@ public class InsertFileOrDir {
         String name = ""; // 新文件的文件名
         String add_prefix = ""; // 添加统一前缀
         String del_prefix = ""; // 删除统一前缀
-        int begin_num = 6; // 从第N个开始
+        int begin_num = 9; // 从第N个开始
         int end_num = 999; 
         int step = 1; // 每次增加或减少step个
         File dir = new File("E:\\Math\\work_space\\math\\004-入门课程-线性代数\\006【解线性方程组】与【线性空间入门】\\027 坐标变换公式");
