@@ -8,12 +8,18 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LatexCompatibilityReformat {
     static List<String> ignores = new ArrayList<>();
 
+    public static Map<String,Long> cache = new HashMap<>();
+    
     public static void main(String[] args) {
+        cache = InitCache.readCache();
+        
         //ignores.add("001 线-面位置关系概述.md"); // 不在名单里的才格式化
         ignores.add("999 transfer");
         ignores.add("098 resources");
@@ -23,12 +29,15 @@ public class LatexCompatibilityReformat {
                 "E:\\Math\\work_space\\math\\003-入门课程-数学分析",
                 "E:\\Math\\work_space\\math\\005-入门课程-解析几何",
                 "E:\\Math\\work_space\\math\\002-初等数学\\004 关于三角函数"
+                //"E:\\Math\\work_space\\math\\005-入门课程-解析几何\\013 圆锥曲线\\012 二次曲线"
         };
         for (int i = 0; i < dirs.length; i++) {
             File dir = new File(dirs[i]);
             LatexCompatibilityReformat.findReformatFiles(dir);
         }
 
+        InitCache.updateCache(cache);
+        
         //dir = new File("E:\\Math\\work_space\\algebra\\003-入门课程-数学分析\\002 数列极限\\008 数列收敛判定方法\\003 单调有界定理\\009 例4.md");
         //LatexCompatibilityReformat.readReformatFile(dir);
     }
@@ -47,8 +56,15 @@ public class LatexCompatibilityReformat {
 
         for (int i = 0; i < fileList.size(); i++) {
             File mdFile = fileList.get(i);
-            if (!ignores.contains(mdFile.getName()))
+            try {
+                Long aLong = cache.get(mdFile.getCanonicalPath());
+                if (aLong!=null && mdFile.lastModified()==aLong && !ignores.contains(mdFile.getName()))
+                    continue;
                 LatexCompatibilityReformat.readReformatFile(mdFile);
+                cache.put(mdFile.getCanonicalPath(),mdFile.lastModified());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -77,6 +93,8 @@ public class LatexCompatibilityReformat {
             bufferedWriter.close();
             outputStreamWriter.close();
             fileOutputStream.close();
+
+            System.out.println(md.getPath()+" is format OK");
         } catch (Exception e) {
             e.printStackTrace();
         }
